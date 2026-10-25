@@ -61,3 +61,8 @@ Home, About, Services overview and all four service detail pages are implemented
 Temporary AI-generated images have been added at the owner’s request for layout visualisation. They remain labelled and separate from real case evidence; see [temporary imagery](docs/temporary-imagery.md). Phase 4 About is implemented for review; founder details and final assets await approval.
 
 About now has a dedicated studio/approach page with truthful Devon positioning. The optional Devon landing page remains omitted pending differentiated original content. Founder details are not inferred; see [phase status](docs/phase-status.md).
+
+## Phase 5 Insights and founder source review
+Insights now has a finished development hub, topic filters and structured article layouts. Two substantive draft guides are available for editorial review, with no published article yet. Public draft detail URLs return 404. With the local-only review flag enabled, `/review/insights` opens both complete draft articles. Keep this flag false on public hosts; it is not authentication.
+
+Review the [CV-derived biography](docs/founder-biography-draft.md), [LMS guide](docs/editorial-review/choosing-an-lms-for-your-organisation.md) and [accessibility guide](docs/editorial-review/practical-accessibility-for-digital-learning.md). Copy/byline/image approval remains required; the CV contains a candidate founder portrait awaiting website selection. The CV itself and personal contact details are not published. Only Contact and legal routes remain scaffolds; Phase 6 needs separate instruction.

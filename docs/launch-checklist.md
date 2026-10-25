@@ -35,3 +35,12 @@ Owner-authorised AI-generated placeholders now aid layout review. Labels and pro
 
 ## Phase 4 review
 About design and engineering ready for review. Remaining sign-off: expanded studio/working-style prose, owner-approved biography/credentials and genuine cleared portrait; official brand assets still missing. Devon/South West/UK statements use confirmed brief wording. Optional regional page intentionally omitted for quality; no eligibility/listing/address assumptions made. Phase 3 approved-case blocker and all contact/legal/deployment/indexing gates remain unresolved.
+
+## Phase 5 remaining launch gates
+- [ ] Approve or revise the two prepared substantive guides, their author summary and Daniel's byline; record exact owner/author approval references.
+- [ ] Supply cleared editorial hero/thumbnail assets and meaningful alt text; temporary concept images do not pass article publication validation.
+- [ ] Set real publication/update dates only when publication occurs. Never replace draft preparation dates with assumed historical dates.
+- [ ] Approve CV-derived biography/qualification wording and confirm the CV portrait selection/website use or supply a preferred alternative. Do not use CV contact details as Butter's contact configuration without a separate decision.
+- [ ] Publish eligible articles/hub only on instruction, then review canonical/OG/schema/sitemap against the approved domain. Global noindex/robots and preview exclusions remain until separate launch approval.
+- [ ] Keep ENABLE_DESIGN_REVIEW false on any public host. This flag is not access control.
+- [ ] Resolve earlier genuine case, final brand/media, contact inbox/provider, legal, QA and deployment gates. Phase 6 has not begun.

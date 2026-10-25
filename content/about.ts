@@ -1,4 +1,4 @@
-// Confirmed directly by the owner in this conversation. Career details remain pending.
+// Identity confirmed directly by the owner. CV received; biography draft in docs/founder-biography-draft.md.
 export const founderIdentity = {
   name: "Daniel Deveney",
   role: "Founder",

@@ -168,3 +168,37 @@ Status CONDITIONAL for final content/brand approval: founder name, biography, cr
 
 ### Phase 4 identity update
 Owner confirmed founder Daniel Deveney; About's founder reservation now uses that name and role. CV/career details from other chats are not accessible in this session, so biography, credentials and portrait still need source material. This does not clear the remaining content or publication gates.
+
+## Phase 5 — CONDITIONAL (editorial system delivered; draft approval pending)
+Owner supplied the CV and explicitly authorised Phase 5 on main. Phase 6 NOT STARTED. No deployment or indexing enabled.
+
+### Delivered
+- `/insights`: finished development hub, real topic filters/live result counts, reset and honest empty state, Devon/South West/UK context and meaningful About/Work/Services/Contact links.
+- `/insights/[slug]`: server-rendered structured article layout with one H1, answer-first introduction, contents anchors, five substantial sections, references/source scope, author context, dates, relevant services and approved related articles. Unknown/unapproved articles return true 404s.
+- Two substantive AI-assisted cornerstone drafts: LMS selection and practical accessibility. Actual full prose/source references prepared for owner review, with readable Markdown copies under docs/editorial-review/. No invented case, attributed personal anecdote, approval or publication date.
+- Shared publish predicate for Home, hub, details, related cards, sitemap and Article/BreadcrumbList data. Requires owner/copy, author/byline and biography approval, genuine dates, cleared editorial image, usable source/section references and service links. Draft approval alone never publishes. All current draft detail URLs remain 404.
+- Local opt-in `/review/insights` and both article reviews show the real prepared drafts, labelled proposed authorship, accurate preparation date and temporary concept images. They return 404 by default, remain outside public navigation/sitemap and emit no Article schema/canonical. Review flag is not authentication; keep off on public hosts.
+- CV-derived biography draft and selected qualification review prepared. Raw CV/personal contacts are outside Git/public assets; employment experience is not converted to Butter client proof. Visual inspection found a candidate portrait in the CV. About now records the supplied CV and pending wording/photo selection; full approved founder profile remains null.
+
+### Executed checks
+| Check | Result |
+| --- | --- |
+| Lint | PASS |
+| Strict types / Next route types | PASS |
+| Unit tests | 10 passed; 0 failed/skipped |
+| Production build | PASS; Insights hub prerendered, detail/review runtime-gated |
+| Full browser suite | 31 passed; 0 failed; 1 intentional desktop duplicate of mobile-only menu test skipped |
+| Default production configuration | Insights 200/noindex; both draft details and all three Insights review URLs 404; Work review 404; sitemap zero URLs |
+| Format / whitespace | PASS |
+
+New browser checks cover public draft isolation, unknown/draft 404s, hub active navigation, real empty/populated filters by keyboard/pointer, draft card-to-article navigation, actual full server HTML, metadata, one H1, honest byline/date, contents target scrolling, unique IDs, source URLs, related links, all internal destinations and six-width overflow. Both articles contain over 800 words of body content; no empty template is presented as a finished guide. Screenshot evidence captured/inspected. Unit checks exercise missing approvals, dates, rights, placeholder/traversal images, unsafe source links, missing section sources and qualified Article/breadcrumb output. An initial type narrowing issue in the schema assertions and a test-selector spacing mismatch were corrected before final passing checks. No dependency added.
+
+After visual PDF inspection clarified that the CV contains a portrait, the About receipt text was corrected. Lint/types/build/format and a further focused About browser check were rerun for this final text change; the full 31-test result above applies to the complete Phase 5 UI and controls.
+
+### Search / evidence / geographic gate
+Unique hub and article metadata/H1 and crawlable body/source/author structure implemented. Canonical/social article URLs require the configured HTTPS origin; review has none. Article schema is blocked for unapproved drafts, and visible public content has no unsupported author/award/metric/schema claims. The sitemap requires published records and hubs plus origin; actual sitemap remains empty. All website responses remain noindex and robots disallows crawling. Devon cue is proportionate at hub level with no invented office/local example or city page. General guidance retains its own distinct intents without geographic filler. No analytics, conversion, provider receipt or AI-citation guarantee claimed.
+
+### Outstanding acceptance inputs
+Phase 5 is CONDITIONAL until the owner reviews the two actual drafts, author summary/byline and supplies cleared editorial imagery before publication. Draft preparation is not owner approval. CV biography wording/qualification titles and portrait selection also remain for review. Prior Phase 3 real-case permission/evidence/media blocker and final brand assets/contact/legal/release gates persist. The master requires only approved publishable articles in public lists; the implemented empty state and 404s enforce that rule while review proceeds.
+
+Next: review the biography and two complete guides, choose the CV portrait or preferred alternative, and authorise Phase 6 separately when ready.

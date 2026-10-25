@@ -27,3 +27,6 @@ Original generated PNGs remain in `/workspace/generated_images`; repository copi
 | `laptop-concept.png` | `ddb3efa162eb8ea97f5ae9d31f67ba5b99ee230e48f18842a29972822f71d275` |
 | `ribbon-concept.png` | `057a22e28e349a0f9b8c58d7bb1b61c718203abedd752584d32dbeeb213b29cb` |
 | `workshop-concept.png` | `017a0056b519710accc58b0964899bc4be02b5a008f4073694e1b35d81dd8851` |
+
+## Phase 5 reuse
+The existing ribbon concept is reused in the Insights hero; laptop and headphones concepts illustrate the two local review drafts and related cards. All retain the visible AI-generated placeholder badge. No new image generation or source editing in Phase 5. These paths are rejected by article publication validation and do not supply author portraits, original artwork or publishable editorial image rights.

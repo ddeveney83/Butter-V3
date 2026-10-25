@@ -9,6 +9,8 @@ import { services, processSteps } from "@/content/services";
 import { routeMetadata } from "@/lib/seo";
 import { routes } from "@/content/routes";
 import { siteConfig } from "@/lib/site-config";
+import { publishedInsights, insightCard } from "@/lib/insights";
+import { InsightCards } from "@/components/insights/insight-cards";
 
 export const metadata = {
   ...routeMetadata(routes[0]),
@@ -22,6 +24,7 @@ const icons = {
   support: Users,
 };
 export default function Home() {
+  const articles = publishedInsights().slice(0, 3);
   return (
     <main id="main" className="home" tabIndex={-1}>
       <section className="hero shell" aria-labelledby="home-heading">
@@ -213,31 +216,38 @@ export default function Home() {
           </div>
           <ActionLink href="/insights">Explore all insights</ActionLink>
         </div>
-        <div className="three-grid">
-          {["Learning strategy", "Instructional design", "Accessibility"].map(
-            (topic) => (
-              <div key={topic}>
-                <AssetPlaceholder
-                  label={`${topic} editorial imagery`}
-                  image={
-                    topic === "Accessibility"
-                      ? "headphones"
-                      : topic === "Learning strategy"
-                        ? "ribbon"
-                        : "workshop"
-                  }
-                  className="insight-image"
-                />
-                <Eyebrow>{topic}</Eyebrow>
-                <h3>Editorial content in preparation</h3>
-                <p className="approval-note">
-                  No article published. Author, copy and sources require
-                  approval.
-                </p>
-              </div>
-            ),
-          )}
-        </div>
+        {articles.length > 0 ? (
+          <InsightCards
+            entries={articles.map((entry) => insightCard(entry))}
+            related
+          />
+        ) : (
+          <div className="three-grid">
+            {["Learning strategy", "Instructional design", "Accessibility"].map(
+              (topic) => (
+                <div key={topic}>
+                  <AssetPlaceholder
+                    label={`${topic} editorial imagery`}
+                    image={
+                      topic === "Accessibility"
+                        ? "headphones"
+                        : topic === "Learning strategy"
+                          ? "ribbon"
+                          : "workshop"
+                    }
+                    className="insight-image"
+                  />
+                  <Eyebrow>{topic}</Eyebrow>
+                  <h3>Editorial content in preparation</h3>
+                  <p className="approval-note">
+                    No article published. Author, copy and sources require
+                    approval.
+                  </p>
+                </div>
+              ),
+            )}
+          </div>
+        )}
       </section>
       <BottomCTA />
     </main>

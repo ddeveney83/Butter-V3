@@ -1,0 +1,299 @@
+/* Extends the homepage's editorial article cards and existing Butter tokens. */
+.insights-page,
+.insight-article {
+  padding: 0;
+}
+.insights-hero {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 3rem;
+  padding-block: 3.5rem;
+}
+.insights-hero h1 {
+  font-size: clamp(3.3rem, 6.2vw, 6.4rem);
+  line-height: 0.97;
+}
+.insights-hero > div > p:not(.eyebrow) {
+  max-width: 36rem;
+  font-size: 1.15rem;
+  margin-block: 1.75rem;
+}
+.insights-hero .image-placeholder {
+  min-height: 330px;
+  border-radius: 0;
+}
+.insights-gallery {
+  border-top: 1px solid var(--color-border);
+  padding-block: 2rem 4rem;
+}
+.insight-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+.insight-filters button {
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  min-height: 44px;
+  padding: 0.65rem 1.1rem;
+  color: var(--color-ink);
+}
+.insight-filters button[aria-pressed="true"] {
+  background: var(--color-butter);
+  border-color: var(--color-ink);
+  font-weight: 650;
+}
+.insight-result-count {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-block: 1.25rem 2rem;
+}
+.insight-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+.insight-card {
+  min-width: 0;
+}
+.insight-card > img,
+.insight-card > .image-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  margin: 0 0 1.1rem;
+}
+.insight-card > .eyebrow {
+  margin-bottom: 0.5rem;
+}
+.insight-card h2,
+.insight-card h3 {
+  font-size: 1.65rem;
+  line-height: 1.08;
+  margin-block: 0.5rem 0.75rem;
+}
+.insight-card > p:not(.eyebrow) {
+  margin-bottom: 0.75rem;
+}
+.insight-date {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+.insights-empty {
+  padding-block: 2rem 1rem;
+  max-width: 45rem;
+}
+.insights-empty h2 {
+  font-size: clamp(2rem, 3.6vw, 3.4rem);
+  margin-bottom: 1.5rem;
+}
+.insights-empty > .text-link {
+  margin-right: 1.5rem;
+}
+.insights-context {
+  border-top: 1px solid var(--color-border);
+  padding-block: 3rem 4rem;
+}
+.insights-context h2 {
+  margin-bottom: 1.5rem;
+}
+.insights-context > p:not(.eyebrow) {
+  max-width: 42rem;
+}
+.insight-review-notice {
+  background: var(--color-paper);
+  border-block: 1px solid var(--color-border);
+  padding-block: 1.25rem;
+  margin-block: 1.5rem;
+  font-size: 0.95rem;
+}
+.insight-review-notice p {
+  max-width: 60rem;
+  margin: 0.5rem 0 0;
+}
+.article-header {
+  padding-block: 2.5rem 0;
+}
+.article-header > .eyebrow {
+  margin-top: 2rem;
+}
+.article-header h1 {
+  font-size: clamp(3rem, 5.8vw, 6rem);
+  max-width: 65rem;
+}
+.article-standfirst {
+  font-size: 1.3rem;
+  max-width: 48rem;
+  margin-block: 1.75rem;
+}
+.article-byline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  font-size: 0.9rem;
+  margin-block: 1.5rem 2rem;
+}
+.article-byline p {
+  margin: 0;
+}
+.article-byline a {
+  text-decoration: underline;
+}
+.article-header > .image-placeholder,
+.article-hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+.article-reading-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr);
+  gap: 4rem;
+  padding-block: 3.5rem;
+}
+.article-contents {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.article-contents ol {
+  margin: 0 0 1.5rem;
+  padding-left: 1.2rem;
+}
+.article-contents li {
+  margin-bottom: 0.8rem;
+  padding-left: 0.3rem;
+}
+.article-contents a {
+  display: inline-block;
+  padding-block: 0.35rem;
+  text-decoration: underline;
+}
+.article-body {
+  max-width: 46rem;
+  min-width: 0;
+}
+.article-body > section,
+.article-author {
+  scroll-margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.article-body h2 {
+  font-size: clamp(1.9rem, 2.6vw, 2.6rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.07;
+}
+.article-body p,
+.article-body li {
+  line-height: 1.65;
+}
+.article-body p {
+  margin-bottom: 1.25rem;
+}
+.article-body ul {
+  padding-left: 1.25rem;
+}
+.article-body li {
+  margin-bottom: 0.75rem;
+}
+.article-answer {
+  border-left: 3px solid var(--color-butter);
+  padding-left: 1.5rem;
+}
+.article-answer p {
+  font-size: 1.15rem;
+}
+.article-citations,
+.article-sources {
+  font-size: 0.9rem;
+}
+.article-body a {
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+.article-sources {
+  padding-left: 1.25rem;
+}
+.article-sources li {
+  scroll-margin-top: 2rem;
+  padding-left: 0.5rem;
+}
+.article-sources p {
+  margin-top: 0.5rem;
+  color: var(--color-muted);
+}
+.article-author {
+  background: var(--color-paper);
+  padding: 2rem;
+}
+.article-author h2 {
+  font-size: 1.6rem;
+}
+.article-services,
+.article-related {
+  border-top: 1px solid var(--color-border);
+  padding-block: 3rem;
+}
+.article-services h2,
+.article-related > h2 {
+  margin-bottom: 2rem;
+}
+.article-services nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+}
+@media (max-width: 1023px) {
+  .insights-hero {
+    gap: 2rem;
+    grid-template-columns: 1.4fr 1fr;
+  }
+  .insights-hero h1 {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+  }
+  .insight-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .article-reading-layout {
+    gap: 2.5rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}
+@media (max-width: 767px) {
+  .insights-hero {
+    grid-template-columns: 1fr;
+    padding-block: 2.5rem;
+  }
+  .insights-hero h1 {
+    font-size: clamp(3.1rem, 10vw, 4.7rem);
+  }
+  .insights-hero .image-placeholder {
+    min-height: 240px;
+  }
+  .insight-card-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .article-header h1 {
+    font-size: clamp(2.7rem, 10vw, 4.5rem);
+  }
+  .article-standfirst {
+    font-size: 1.15rem;
+  }
+  .article-reading-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-block: 2.5rem;
+  }
+  .article-contents {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 1.5rem;
+  }
+  .article-author {
+    padding: 1.5rem;
+  }
+}

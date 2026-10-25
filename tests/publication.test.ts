@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { canonicalOrigin } from "../lib/site-config";
 import { publishedRoutes, routes } from "../content/routes";
 import { caseStudies, insights } from "../content/editorial";
+import { publishedInsights } from "../lib/insights";
 
 test("approval alone does not publish content or expose it to a sitemap", () => {
   const draft = routes[0];
@@ -15,7 +16,7 @@ test("approval alone does not publish content or expose it to a sitemap", () => 
   );
   assert.equal(publishedRoutes([{ ...draft, status: "published" }]).length, 1);
   assert.equal(publishedRoutes().length, 0);
-  assert.equal(caseStudies.length + insights.length, 0);
+  assert.equal(caseStudies.length + publishedInsights(insights).length, 0);
 });
 test("canonical origin cannot silently invent a domain or accept unsafe configuration", () => {
   assert.equal(canonicalOrigin(""), undefined);
