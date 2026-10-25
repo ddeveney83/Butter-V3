@@ -1,0 +1,26 @@
+# BUTTER — PERMANENT CODEX INSTRUCTIONS
+
+**ALWAYS READ `BUTTER_MASTER_SPEC.md` IN FULL and `BUILD_ROADMAP.md` at the START of every task, before editing code, design, components, copy, dependencies, or project files.** The master specification is the authoritative contract; the roadmap translates §12 into execution gates. This short file exists because Codex auto-discovers root `AGENTS.md`, while the much longer specification would exceed Codex's default auto-loaded instruction-size budget. Do not treat the shorter file as a substitute for the full spec.
+
+## Absolute priorities
+
+1. **Visual truth:** Inspect `reference/01-home-desktop.png`, `02-services-desktop.png`, `03-work-and-case-study-desktop.png` (two page designs in one image), and `04-elearning-service-desktop.png` whenever working on the corresponding layout. Reproduce the Butter references as faithfully as possible, not just "inspired by" them.
+2. **No design hallucinations:** Keep the warm off-white, butter-yellow, near-black, huge editorial typography, fine dividers, specific layout proportions, ribbon art motif, black pill buttons and restrained playful CTA mascot. Never introduce unrelated palettes, fonts or generic component styling.
+3. **No business hallucinations:** Never invent original fonts, branded artwork, project images, client relationships, agency delivery claims, testimonials, qualifications, metrics, legal approvals or working integrations. Mark missing inputs and distinguish approved facts from provisional choices.
+4. **Devon-first search from day one:** Butter is based in Devon and initially targets Devon and South West organisations while welcoming UK-wide commissions. Read master §§3, 10 and 12. Integrate technical SEO, trustworthy answer-first content (AEO), and evidence-led generative-search discoverability (GEO) in **every phase**, not only launch. Never invent an Exeter office/address or local proof, add spammy city pages, promise AI citations or imply Google Business Profile eligibility for online-only services.
+5. **Phase gate discipline:** Use phases 0–8 in `BUILD_ROADMAP.md`; explicitly account for the Home, Services + four detail pages, Work + case studies, About, Insights + articles, Contact and legal footer. At each phase verify metadata/canonicals/indexing, Devon positioning, internal links and measurement readiness. Do not launch with any of the four nav routes or Contact unfinished.
+6. **Tech baseline:** Fresh maintainable Next.js App Router + TypeScript strict + Tailwind design tokens; reusable React components; typed content; real server-side lead form via configured provider; accessible responsive semantic UI. Read precise requirements in the full spec.
+7. **Real functionality:** Every visible navigation item and CTA works. Case filters, FAQ accordions, mobile navigation and enquiry form have real implementation and tests. Never display a form success message when an email was not actually accepted by the backend/provider.
+8. **Accessibility and quality:** Aim WCAG 2.2 AA. Test desktop and mobile, run lint/typecheck/build and relevant browser tests. Check design regressions after shared UI changes.
+9. **Record gaps and progress:** Maintain `docs/decisions-and-gaps.md`, `docs/visual-audit.md`, `docs/content-approvals.md`, `docs/search-and-content-plan.md`, `docs/phase-status.md` and `docs/launch-checklist.md` as specified. Keep them factual and clear.
+10. **Change control:** Do not carry over the old Butter site styling, redesign approved layouts, create random new dependencies, or publish placeholder case studies/articles as genuine. Document and seek approval for significant visual deviations or external commercial services.
+
+## Mandatory workflow for EVERY task
+
+1. Read the **entire** `BUTTER_MASTER_SPEC.md`, `BUILD_ROADMAP.md` and relevant reference images; inspect current repository implementation.
+2. State the exact relevant requirements and flag blockers/assumptions, distinguishing confirmed facts from visually measured approximations and source-asset gaps.
+3. Implement the smallest coherent solution that stays within Butter's design system, using shared components.
+4. Run relevant checks, including a per-route SEO/AEO/GEO/Devon audit. Capture and compare screenshots when changing UI; never call something pixel-perfect without comparing it.
+5. Report what changed, what ran, phase PASS/CONDITIONAL/BLOCKED status, indexed/public route and search gates, outstanding visual/content/asset/integration gaps, and the next recommended action.
+
+**If any brief or follow-up conflicts with `BUTTER_MASTER_SPEC.md`, do not silently replace brand foundations. Identify the conflict and ask for a decision before making a substantial aesthetic/architectural change.**

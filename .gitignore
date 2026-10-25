@@ -1,0 +1,31 @@
+# Next.js / Node
+/node_modules/
+/.next/
+/out/
+/build/
+/dist/
+*.tsbuildinfo
+.next-env.d.ts
+
+# Credentials and private configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local deployment and tooling
+.vercel/
+.turbo/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local screenshot / testing artifacts
+/playwright-report/
+/test-results/
+/coverage/
+
+# Do not ignore reference/ or approved public brand assets.
