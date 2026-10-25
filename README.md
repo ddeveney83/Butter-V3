@@ -52,17 +52,14 @@ npm run dev
 
 Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, then `npm run test:e2e` (starts its own production server). Playwright automatically uses system Chromium in this cloud environment. See [architecture](docs/architecture.md), [phase status](docs/phase-status.md), [asset gaps](docs/decisions-and-gaps.md) and [search plan](docs/search-and-content-plan.md).
 
-Home, About, Services overview and all four service detail pages are implemented for development review; Work includes filters and a case template, with no approved real cases yet; remaining destinations are labelled draft scaffolds. Indexing is disabled throughout. Case/article detail routes and the optional Devon page remain unavailable until approved content exists. Do not deploy this as the finished website or begin a new phase without instruction. No contact form/provider is configured.
+Home, About, Services overview and all four details, Work, Insights, Contact, Privacy and Terms now have implemented pages. The owner accepted the founder biography/CV portrait and two substantive Insights articles; these appear in normal page lists and detail routes. Work still awaits the first genuine approved case. Temporary AI illustrations retain visible labels.
 
-## Work design review (optional, local only)
+Contact has a finished form and server-side Resend adapter, but **email delivery is disabled at the owner's request** until account/inbox/domain configuration is supplied. Privacy and Terms are substantial drafts pending the trading identity, hosting and retention decisions. No real inbox receipt or legal approval is claimed. See [contact setup](docs/contact-setup.md).
 
-`ENABLE_DESIGN_REVIEW=true npm run dev` enables `/review/work` for local inspection of labelled layout examples and the case template. The route returns 404 by default, has no public navigation link and never publishes a project. Do not enable it on a public host. Real cases require owner/client approval, exact role attribution, cleared media and evidence; see `docs/content-approvals.md`.
+All pages remain noindex, SITE_URL is unset and sitemap empty. No deployment or analytics activation. Work directly on main as requested; do not begin Phase 7 without instruction.
 
-Temporary AI-generated images have been added at the owner’s request for layout visualisation. They remain labelled and separate from real case evidence; see [temporary imagery](docs/temporary-imagery.md). Phase 4 About is implemented for review; founder details and final assets await approval.
+## Optional local design review
 
-About now has a dedicated studio/approach page with truthful Devon positioning. The optional Devon landing page remains omitted pending differentiated original content. Founder details are not inferred; see [phase status](docs/phase-status.md).
+`ENABLE_DESIGN_REVIEW=true npm run dev` enables `/review/work` for labelled fictional layout examples, never genuine portfolio proof. Keep it false on public hosts; it is not authentication. Insights review routes now return 404 because both prepared drafts have been accepted and moved to their normal article URLs.
 
-## Phase 5 Insights and founder source review
-Insights now has a finished development hub, topic filters and structured article layouts. Two substantive draft guides are available for editorial review, with no published article yet. Public draft detail URLs return 404. With the local-only review flag enabled, `/review/insights` opens both complete draft articles. Keep this flag false on public hosts; it is not authentication.
-
-Review the [CV-derived biography](docs/founder-biography-draft.md), [LMS guide](docs/editorial-review/choosing-an-lms-for-your-organisation.md) and [accessibility guide](docs/editorial-review/practical-accessibility-for-digital-learning.md). Copy/byline/image approval remains required; the CV contains a candidate founder portrait awaiting website selection. The CV itself and personal contact details are not published. Only Contact and legal routes remain scaffolds; Phase 6 needs separate instruction.
+Review the [accepted biography](docs/founder-biography-draft.md), [LMS guide](docs/editorial-review/choosing-an-lms-for-your-organisation.md) and [accessibility guide](docs/editorial-review/practical-accessibility-for-digital-learning.md). The full CV and private contact fields are not committed or served. Original brand/editorial assets, real case evidence, email activation, final legal text and launch approval remain outstanding.

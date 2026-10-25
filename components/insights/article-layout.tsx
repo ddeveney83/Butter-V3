@@ -84,7 +84,7 @@ export function ArticleLayout({
               </a>
             )}
           </div>
-          {entry.image ? (
+          {entry.image && !entry.image.temporary ? (
             <Image
               className="article-hero-image"
               src={entry.image.src}
@@ -96,7 +96,7 @@ export function ArticleLayout({
             />
           ) : (
             <AssetPlaceholder
-              image={entry.reviewImage}
+              image={entry.image?.temporary ?? entry.reviewImage}
               label="Article thumbnail concept; approved editorial image required"
               preload
             />

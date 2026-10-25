@@ -14,7 +14,7 @@ export const routes: RouteRecord[] = [
     title: "Home",
     phase: 1,
     intent: "Understand the studio and overall fit",
-    status: "draft",
+    status: "approved",
     description:
       "Understand the studio and overall fit. Content and publication approval pending.",
   },
@@ -23,7 +23,7 @@ export const routes: RouteRecord[] = [
     title: "Services",
     phase: 2,
     intent: "Compare the four service offerings",
-    status: "draft",
+    status: "approved",
     description:
       "Compare the four service offerings. Content and publication approval pending.",
   },
@@ -32,7 +32,7 @@ export const routes: RouteRecord[] = [
     title: "eLearning Design & Development",
     phase: 2,
     intent: "Commission bespoke accessible eLearning",
-    status: "draft",
+    status: "approved",
     description:
       "Commission bespoke accessible eLearning. Content and publication approval pending.",
   },
@@ -41,7 +41,7 @@ export const routes: RouteRecord[] = [
     title: "Learning Platforms & LMS",
     phase: 2,
     intent: "Select, implement or improve an LMS",
-    status: "draft",
+    status: "approved",
     description:
       "Select, implement or improve an LMS. Content and publication approval pending.",
   },
@@ -50,7 +50,7 @@ export const routes: RouteRecord[] = [
     title: "Learning Strategy & Consultancy",
     phase: 2,
     intent: "Diagnose learning needs and plan outcomes",
-    status: "draft",
+    status: "approved",
     description:
       "Diagnose learning needs and plan outcomes. Content and publication approval pending.",
   },
@@ -59,7 +59,7 @@ export const routes: RouteRecord[] = [
     title: "Ongoing Learning Support",
     phase: 2,
     intent: "Find ongoing learning and platform support",
-    status: "draft",
+    status: "approved",
     description:
       "Find ongoing learning and platform support. Content and publication approval pending.",
   },
@@ -68,7 +68,7 @@ export const routes: RouteRecord[] = [
     title: "Work",
     phase: 3,
     intent: "Assess approved project evidence",
-    status: "draft",
+    status: "approved",
     description:
       "Assess approved project evidence. Content and publication approval pending.",
   },
@@ -77,7 +77,7 @@ export const routes: RouteRecord[] = [
     title: "About",
     phase: 4,
     intent: "Understand studio identity and credibility",
-    status: "draft",
+    status: "published",
     description:
       "Understand studio identity and credibility. Content and publication approval pending.",
   },
@@ -86,7 +86,7 @@ export const routes: RouteRecord[] = [
     title: "Insights",
     phase: 5,
     intent: "Find practical learning expertise",
-    status: "draft",
+    status: "published",
     description:
       "Find practical learning expertise. Content and publication approval pending.",
   },

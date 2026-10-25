@@ -8,5 +8,7 @@ export const metadata = {
 };
 export default function InsightsReview() {
   if (process.env.ENABLE_DESIGN_REVIEW !== "true") notFound();
-  return <InsightsHub entries={insights} review />;
+  const drafts = insights.filter((entry) => entry.status === "draft");
+  if (!drafts.length) notFound();
+  return <InsightsHub entries={drafts} review />;
 }

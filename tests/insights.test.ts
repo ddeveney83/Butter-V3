@@ -30,9 +30,18 @@ function fixture(): Insight {
   };
 }
 test("articles fail closed without publication, author, dates, sources and cleared imagery", () => {
-  assert.equal(publishedInsights().length, 0);
-  assert.equal(findPublishedInsight(insights[0].slug), undefined);
+  assert.equal(publishedInsights().length, 2);
+  assert.equal(
+    findPublishedInsight(insights[0].slug)?.title,
+    insights[0].title,
+  );
   assert.equal(isPublishableInsight(fixture()), true);
+  const labelled = structuredClone(insights[0]);
+  assert.equal(isPublishableInsight(labelled), true);
+  labelled.image!.src = "/assets/placeholders/unapproved.png";
+  assert.equal(isPublishableInsight(labelled), false);
+  labelled.image = { ...insights[0].image!, temporary: undefined };
+  assert.equal(isPublishableInsight(labelled), false);
   const mutations: ((entry: Insight) => void)[] = [
     (entry) => {
       entry.status = "draft";
@@ -106,12 +115,15 @@ test("articles fail closed without publication, author, dates, sources and clear
     mutate(entry);
     assert.equal(isPublishableInsight(entry), false);
   }
-  assert.equal(publishedInsights([fixture(), ...insights]).length, 1);
+  assert.equal(publishedInsights([fixture(), ...insights]).length, 3);
   assert.equal(safeSourceUrl("https://user:secret@example.org"), false);
 });
 test("Article and breadcrumbs match visible approved content and never mark up drafts", () => {
   assert.deepEqual(
-    insightStructuredData(insights[0], "https://example.org"),
+    insightStructuredData(
+      { ...insights[0], status: "draft" },
+      "https://example.org",
+    ),
     [],
   );
   assert.deepEqual(insightStructuredData(fixture(), ""), []);

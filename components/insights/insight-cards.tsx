@@ -22,7 +22,7 @@ export function InsightCards({
     <div className="insight-card-grid">
       {entries.map((entry) => (
         <article className="insight-card" key={entry.slug}>
-          {entry.image ? (
+          {entry.image && !entry.image.temporary ? (
             <Image
               src={entry.image.src}
               alt={entry.image.alt}
@@ -32,7 +32,7 @@ export function InsightCards({
             />
           ) : (
             <AssetPlaceholder
-              image={entry.reviewImage}
+              image={entry.image?.temporary ?? entry.reviewImage}
               label="Temporary editorial illustration for review"
             />
           )}

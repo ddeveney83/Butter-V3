@@ -18,7 +18,28 @@ export const aboutContent: {
   principles: { title: string; description: string }[];
   workingStyle: { title: string; description: string }[];
 } = {
-  founder: null,
+  founder: {
+    name: founderIdentity.name,
+    role: founderIdentity.role,
+    biography: [
+      "Daniel Deveney is the founder of Butter. He brings more than 20 years of experience across vocational education, learning and development, digital learning and platform ownership.",
+      "His career spans frontline team leadership, apprenticeship teaching and assessment, instructional design and the development of organisation-wide learning platforms. He combines practical teaching experience with learning needs analysis, accessible design and product ownership, helping connect the needs of learners with the decisions behind the technology.",
+      "Daniel’s background includes interactive eLearning, curriculum design, LMS implementation, reporting and ongoing improvement across charity, commercial and technology settings. That experience informs Butter’s focus on clear learning design, thoughtful technology and practical support.",
+    ],
+    credentials: [
+      "Level 4 Certificate in Education and Training",
+      "Level 4 IQA Assessment Processes and Practice",
+      "CIEH Professional Trainer Certificate",
+    ],
+    approval:
+      "Owner accepted all prepared review content on 25 October 2026; CV-derived copy and supplied portrait.",
+    portrait: {
+      src: "/assets/people/daniel-deveney-cv-portrait.jpg",
+      alt: "Daniel Deveney, founder of Butter",
+      rights:
+        "Portrait supplied in the owner's CV; website use accepted with the review content on 25 October 2026.",
+    },
+  },
   principles: [
     {
       title: "Pedagogy first",

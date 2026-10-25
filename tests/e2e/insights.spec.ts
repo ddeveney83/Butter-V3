@@ -14,17 +14,17 @@ test("Insights has real HTML, honest publication state and working public naviga
   );
   await expect(page.locator("h1")).toHaveCount(1);
   await expect(page.locator("h1")).toContainText("practical advice.");
-  await expect(page.getByRole("status")).toHaveText("0 published articles");
+  await expect(page.getByRole("status")).toHaveText("2 published articles");
   await expect(page.locator(".insights-context")).toContainText("Devon");
   await expect(page.locator(".insights-context")).toContainText(
     "South West and UK-wide",
   );
   const html = await (await request.get("/insights")).text();
-  expect(html).toContain("Good questions deserve considered answers.");
+  expect(html).toContain(insights[0].title);
   expect(html).not.toContain("This is a route scaffold");
   for (const entry of insights) {
-    expect(html).not.toContain(entry.title);
-    expect((await request.get(`/insights/${entry.slug}`)).status()).toBe(404);
+    expect(html).toContain(entry.title);
+    expect((await request.get(`/insights/${entry.slug}`)).status()).toBe(200);
   }
   expect((await request.get("/insights/unknown")).status()).toBe(404);
   const sitemap = await (await request.get("/sitemap.xml")).text();
@@ -41,8 +41,11 @@ test("Insights has real HTML, honest publication state and working public naviga
   await page.keyboard.press("Enter");
   await expect(topic).toHaveAttribute("aria-pressed", "true");
   await expect(page.getByRole("status")).toHaveText(
-    "0 published articles in Accessibility",
+    "1 published article in Accessibility",
   );
+  await page
+    .getByRole("button", { name: "Learning design", exact: true })
+    .click();
   await page.getByRole("button", { name: "Show all insights" }).click();
   await expect(
     page.getByRole("button", { name: "All", exact: true }),
@@ -84,14 +87,12 @@ test("Insights has real HTML, honest publication state and working public naviga
   ).toHaveAttribute("aria-current", "page");
 });
 
-test("Editorial review filters genuine drafts and opens their full articles", async ({
+test("Approved articles filter by topic and open from their cards", async ({
   page,
 }, testInfo) => {
-  await page.goto("/review/insights");
-  await expect(
-    page.getByText("Editorial review only", { exact: true }),
-  ).toBeVisible();
-  await expect(page.getByRole("status")).toHaveText("2 draft articles");
+  await page.goto("/insights");
+  await expect(page.locator(".insight-card")).toHaveCount(2);
+  await expect(page.getByRole("status")).toHaveText("2 published articles");
   await expect(page.locator(".insight-card")).toHaveCount(2);
   const platform = page.getByRole("button", {
     name: "Learning platforms",
@@ -110,7 +111,7 @@ test("Editorial review filters genuine drafts and opens their full articles", as
     .getByRole("button", { name: "Learning design", exact: true })
     .click();
   await expect(page.getByRole("status")).toHaveText(
-    "0 draft articles in Learning design",
+    "0 published articles in Learning design",
   );
   await page.getByRole("button", { name: "Show all insights" }).click();
   for (const width of [1440, 1280, 1024, 768, 390, 375]) {
@@ -129,34 +130,34 @@ test("Editorial review filters genuine drafts and opens their full articles", as
   );
   await loadVisualImages(page);
   await page.screenshot({
-    path: testInfo.outputPath("insights-review.png"),
+    path: testInfo.outputPath("insights-filtered.png"),
     fullPage: true,
   });
   const draftLink = page
     .locator(".insight-card")
     .first()
-    .getByRole("link", { name: /Review draft/ });
+    .getByRole("link", { name: /Read article/ });
   await expect(draftLink).toHaveAttribute(
     "href",
-    `/review/insights/${insights[0].slug}`,
+    `/insights/${insights[0].slug}`,
   );
   await draftLink.focus();
   await page.keyboard.press("Enter");
-  await expect(page).toHaveURL(`/review/insights/${insights[0].slug}`);
+  await expect(page).toHaveURL(`/insights/${insights[0].slug}`);
   await expect(page.locator("h1")).toHaveText(insights[0].title);
 });
 
-test("Substantive article drafts have accessible reading, sources, accurate dates and internal links", async ({
+test("Approved articles have accessible reading, sources, author and internal links", async ({
   page,
   request,
 }, testInfo) => {
   for (const [index, entry] of insights.entries()) {
-    const path = `/review/insights/${entry.slug}`;
+    const path = `/insights/${entry.slug}`;
     const response = await page.goto(path);
     expect(response?.status()).toBe(200);
     expect(response?.headers()["x-robots-tag"]).toContain("noindex");
     await expect(page.locator("h1")).toHaveCount(1);
-    await expect(page).toHaveTitle(`${entry.title} | Draft review | Butter`);
+    await expect(page).toHaveTitle(`${entry.title} | Butter Insights`);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
       "content",
       /noindex/,
@@ -167,12 +168,12 @@ test("Substantive article drafts have accessible reading, sources, accurate date
     ).toHaveCount(0);
     await expect(
       page.getByText("Draft for review · Not published", { exact: true }),
-    ).toBeVisible();
+    ).toHaveCount(0);
     await expect(page.locator(".article-byline")).toContainText(
-      "Proposed author: Daniel Deveney · approval pending",
+      "By Daniel Deveney",
     );
     await expect(page.locator(".article-byline")).toContainText(
-      "Draft prepared 25 October 2026",
+      "Published 25 October 2026",
     );
     await expect(page.locator(".article-byline time")).toHaveAttribute(
       "datetime",
@@ -215,7 +216,7 @@ test("Substantive article drafts have accessible reading, sources, accurate date
     const related = page.locator(".article-related a").first();
     await expect(related).toHaveAttribute(
       "href",
-      `/review/insights/${entry.relatedSlugs[0]}`,
+      `/insights/${entry.relatedSlugs[0]}`,
     );
     for (const width of [1440, 1280, 1024, 768, 390, 375]) {
       await page.setViewportSize({ width, height: 900 });

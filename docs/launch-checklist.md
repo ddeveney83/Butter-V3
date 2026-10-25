@@ -44,3 +44,15 @@ About design and engineering ready for review. Remaining sign-off: expanded stud
 - [ ] Publish eligible articles/hub only on instruction, then review canonical/OG/schema/sitemap against the approved domain. Global noindex/robots and preview exclusions remain until separate launch approval.
 - [ ] Keep ENABLE_DESIGN_REVIEW false on any public host. This flag is not access control.
 - [ ] Resolve earlier genuine case, final brand/media, contact inbox/provider, legal, QA and deployment gates. Phase 6 has not begun.
+
+## Phase 6 acceptance update
+- [x] Owner accepted prepared biography/CV portrait, qualifications, two article drafts, author summary/bylines and prior page copy.
+- [x] Approved prose now appears on About/Insights/Home/related routes; temporary article images retain visible labels.
+- [x] Contact form and server adapter implemented with validation, safe errors, spam/attempt/size/origin protections and provider acknowledgement only.
+- [x] Privacy/Terms have substantial clearly labelled draft pages; no scaffold destinations remain.
+- [ ] Owner-deferred inbox, verified sending domain/provider/account/secrets and optional public email.
+- [ ] Actual controlled provider submission and confirmed inbox receipt; current automated tests are synthetic.
+- [ ] Confirm legal trading identity, privacy contact, hosting, processing/transfer arrangements, lawful bases and retention; review/approve final legal text.
+- [ ] Verify canonical/origin behaviour and host-level edge/shared abuse protection on the actual deployment; per-process memory limits alone do not establish global enforcement.
+- [ ] Final original identity/illustration/editorial assets and first approved genuine case with rights/evidence.
+- [ ] Phase 7 QA and Phase 8 launch authorisation. No deployment/indexing or analytics activation by Phase 6 work.

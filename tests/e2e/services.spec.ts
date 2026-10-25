@@ -125,7 +125,7 @@ test("four overview destinations and distinct service structures are complete", 
       new RegExp(`/contact\\?interest=${service.slug}$`),
     );
     await expect(
-      page.getByText("Enquiries cannot be submitted here yet.", {
+      page.getByText("Online enquiries are not available yet.", {
         exact: false,
       }),
     ).toBeVisible();

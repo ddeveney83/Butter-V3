@@ -1,5 +1,5 @@
 import type { PublicationStatus } from "./routes";
-import type { PlaceholderImage } from "./placeholder-images";
+import { placeholderImages, type PlaceholderImage } from "./placeholder-images";
 
 export const insightCategories = [
   "All",
@@ -22,7 +22,12 @@ export interface Insight {
   updatedOn?: string;
   approval: { owner: string; author: string };
   author: { name: string; biography: string; approval: string };
-  image: { src: string; alt: string; rights: string } | null;
+  image: {
+    src: string;
+    alt: string;
+    rights: string;
+    temporary?: PlaceholderImage;
+  } | null;
   reviewImage: PlaceholderImage;
   answer: string;
   sections: {
@@ -40,9 +45,10 @@ const proposedAuthor = {
   name: "Daniel Deveney",
   biography:
     "Butter founder with a background in learning design, vocational education and learning platform ownership.",
-  approval: "",
+  approval:
+    "Owner accepted the reviewed author summary and byline on 25 October 2026.",
 };
-// AI-assisted editorial drafts for owner review, not Daniel's approved writing.
+// Owner accepted both AI-assisted review drafts, author summary, byline and temporary imagery on 25 October 2026.
 // The CV informs topic selection only; employer outcomes and private contact data are excluded.
 export const insights: Insight[] = [
   {
@@ -51,11 +57,22 @@ export const insights: Insight[] = [
     summary:
       "Start with learner journeys, test the work that matters and plan who will own the platform after launch.",
     category: "Learning platforms",
-    status: "draft",
+    status: "published",
+    publishedOn: "2026-10-25",
     preparedOn: "2026-10-25",
-    approval: { owner: "", author: "" },
+    approval: {
+      owner: "Owner accepted prepared review content on 25 October 2026.",
+      author:
+        "Daniel Deveney accepted the reviewed copy and byline on 25 October 2026.",
+    },
     author: { ...proposedAuthor },
-    image: null,
+    image: {
+      ...placeholderImages.laptop,
+      alt: "Temporary illustration of a learning interface on a laptop",
+      rights:
+        "Owner accepted temporary review imagery on 25 October 2026; retain the AI-generated placeholder label.",
+      temporary: "laptop",
+    },
     reviewImage: "laptop",
     answer:
       "Choose a learning management system by testing the tasks your learners and administrators actually need to complete. Agree the audience, access requirements, reporting questions and operating responsibilities before comparing features. Then use the same practical pilot for every shortlisted platform. A convincing demonstration should show a complete learning journey, including support and reporting, rather than a tour of menus.",
@@ -144,11 +161,22 @@ export const insights: Insight[] = [
     summary:
       "Review a complete learning journey: keyboard access, structure, media alternatives and usable assessment.",
     category: "Accessibility",
-    status: "draft",
+    status: "published",
+    publishedOn: "2026-10-25",
     preparedOn: "2026-10-25",
-    approval: { owner: "", author: "" },
+    approval: {
+      owner: "Owner accepted prepared review content on 25 October 2026.",
+      author:
+        "Daniel Deveney accepted the reviewed copy and byline on 25 October 2026.",
+    },
     author: { ...proposedAuthor },
-    image: null,
+    image: {
+      ...placeholderImages.headphones,
+      alt: "Temporary headphones and notebook illustration",
+      rights:
+        "Owner accepted temporary review imagery on 25 October 2026; retain the AI-generated placeholder label.",
+      temporary: "headphones",
+    },
     reviewImage: "headphones",
     answer:
       "Start accessibility review with a complete learning task, from finding the activity to receiving feedback. Check that people can navigate by keyboard, understand the structure, access meaningful media alternatives and complete assessment without avoidable barriers. Use WCAG criteria alongside testing with people and assistive technology. A checklist can reveal problems, but passing a few checks does not establish that a course conforms to WCAG.",

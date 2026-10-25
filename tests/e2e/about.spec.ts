@@ -31,7 +31,18 @@ test("About has crawlable studio content, honest identity and complete internal 
   await expect(region).toContainText("Devon is Butter’s base");
   await expect(region).toContainText("South West");
   await expect(region).toContainText("UK-wide remote commissions");
-  await expect(page.getByLabel("Founder portrait pending")).toBeVisible();
+  await expect(
+    page.getByRole("img", {
+      name: "Daniel Deveney, founder of Butter",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await expect(page.locator(".about-founder")).toContainText(
+    "more than 20 years of experience",
+  );
+  await expect(page.locator(".about-founder")).toContainText(
+    "CIEH Professional Trainer Certificate",
+  );
   await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(
     0,
   );
@@ -103,6 +114,6 @@ test("About navigation and CTA work with keyboard and mobile menu", async ({
   await page.keyboard.press("Enter");
   await expect(page).toHaveURL(/\/contact$/);
   await expect(
-    page.getByText("Enquiries cannot be submitted here yet.", { exact: false }),
+    page.getByText("Online enquiries are not available yet.", { exact: false }),
   ).toBeVisible();
 });

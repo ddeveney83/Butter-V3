@@ -51,9 +51,9 @@ test("navigation works, content is real HTML, and skip link supports keyboard", 
     .getByRole("link", { name: "Let’s talk", exact: false })
     .click();
   await expect(
-    page.getByText("Enquiries cannot be submitted here yet.", { exact: false }),
+    page.getByText("Online enquiries are not available yet.", { exact: false }),
   ).toBeVisible();
-  await expect(page.locator("form")).toHaveCount(0);
+  await expect(page.locator("form")).toHaveCount(1);
 });
 test("draft details, optional locality and source references are not served", async ({
   request,

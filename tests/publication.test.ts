@@ -15,8 +15,12 @@ test("approval alone does not publish content or expose it to a sitemap", () => 
     [],
   );
   assert.equal(publishedRoutes([{ ...draft, status: "published" }]).length, 1);
-  assert.equal(publishedRoutes().length, 0);
-  assert.equal(caseStudies.length + publishedInsights(insights).length, 0);
+  assert.deepEqual(
+    publishedRoutes().map((route) => route.path),
+    ["/about", "/insights"],
+  );
+  assert.equal(caseStudies.length, 0);
+  assert.equal(publishedInsights(insights).length, 2);
 });
 test("canonical origin cannot silently invent a domain or accept unsafe configuration", () => {
   assert.equal(canonicalOrigin(""), undefined);

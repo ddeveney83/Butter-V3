@@ -1,0 +1,229 @@
+.contact-page {
+  padding: 0;
+}
+.contact-hero {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  padding-block: 3.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.contact-hero h1 {
+  font-size: clamp(3.3rem, 6.1vw, 6.5rem);
+}
+.contact-hero > div:last-child {
+  align-self: end;
+  max-width: 33rem;
+}
+.contact-hero > div:last-child > p {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+  gap: 4rem;
+  padding-block: 3.5rem;
+  align-items: start;
+}
+.contact-content > div > h2 {
+  margin-bottom: 2rem;
+}
+.contact-brief {
+  background: var(--color-butter);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+}
+.contact-brief h2 {
+  font-size: clamp(2rem, 2.7vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+.contact-brief ul {
+  padding-left: 1.25rem;
+  margin-block: 1.5rem;
+}
+.contact-brief li {
+  margin-bottom: 0.8rem;
+}
+.contact-unavailable,
+.enquiry-result,
+.legal-draft {
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-card);
+}
+.contact-unavailable p,
+.enquiry-result p,
+.legal-draft p {
+  margin: 0.6rem 0 0;
+}
+.form-instructions,
+.field-help {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.enquiry-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.enquiry-field {
+  margin-bottom: 1.5rem;
+  min-width: 0;
+}
+.enquiry-field > label {
+  display: block;
+  font-weight: 650;
+  margin-bottom: 0.65rem;
+}
+.enquiry-field > label span {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.enquiry-field input,
+.enquiry-field select,
+.enquiry-field textarea {
+  display: block;
+  border: 1px solid var(--color-muted);
+  background: var(--color-canvas);
+  border-radius: 6px;
+  width: 100%;
+  min-height: 48px;
+  padding: 0.85rem;
+  color: var(--color-ink);
+  font: inherit;
+}
+.enquiry-field textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+.enquiry-field .field-help {
+  margin-top: 0.75rem;
+}
+.field-error {
+  font-size: 0.875rem;
+  font-weight: 650;
+  border-left: 3px solid var(--color-ink);
+  padding-left: 0.65rem;
+  margin: 0.75rem 0 0;
+}
+.enquiry-form [aria-invalid="true"] {
+  border: 2px solid var(--color-ink);
+}
+.enquiry-options {
+  margin-bottom: 1.5rem;
+  border-block: 1px solid var(--color-border);
+}
+.enquiry-options summary {
+  cursor: pointer;
+  padding-block: 1rem;
+  min-height: 48px;
+}
+.enquiry-options > .enquiry-pair {
+  padding-top: 1rem;
+}
+.enquiry-honeypot {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.enquiry-privacy label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  line-height: 1.5;
+  min-height: 44px;
+}
+.enquiry-privacy input {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  accent-color: var(--color-ink);
+}
+.enquiry-privacy a {
+  text-decoration: underline;
+}
+.enquiry-form > .field-help {
+  margin-block: 0.75rem 1.5rem;
+}
+.enquiry-form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+.enquiry-result {
+  margin-top: 1.5rem;
+}
+.enquiry-success {
+  border-color: var(--color-ink);
+  border-left: 4px solid var(--color-butter);
+}
+.contact-explore {
+  border-top: 1px solid var(--color-border);
+  padding-block: 3rem 4rem;
+}
+.contact-explore h2 {
+  margin-bottom: 1.5rem;
+}
+.legal-page {
+  padding-block: 3rem 4rem;
+}
+.legal-reading {
+  max-width: 50rem;
+}
+.legal-reading h1 {
+  font-size: clamp(3rem, 5.5vw, 5.5rem);
+  margin-bottom: 2rem;
+}
+.legal-reading section {
+  border-top: 1px solid var(--color-border);
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+.legal-reading h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+  margin-bottom: 1.25rem;
+}
+.legal-reading section p {
+  line-height: 1.65;
+}
+.legal-reading .hero-actions {
+  margin-top: 2.5rem;
+}
+@media (max-width: 1023px) {
+  .contact-hero {
+    gap: 2rem;
+  }
+  .contact-content {
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  }
+  .contact-brief {
+    padding: 1.5rem;
+  }
+  .enquiry-pair {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+@media (max-width: 767px) {
+  .contact-hero,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 2.5rem;
+  }
+  .contact-hero h1 {
+    font-size: clamp(2.9rem, 10vw, 4.5rem);
+  }
+  .contact-hero > div:last-child > svg {
+    width: 35px;
+    height: 35px;
+  }
+}

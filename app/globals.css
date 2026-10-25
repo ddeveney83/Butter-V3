@@ -4,6 +4,7 @@
 @import "../styles/work.css";
 @import "../styles/about.css";
 @import "../styles/insights.css";
+@import "../styles/contact.css";
 * {
   box-sizing: border-box;
 }

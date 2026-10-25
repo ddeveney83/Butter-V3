@@ -1,8 +1,8 @@
 # How to choose an LMS for your organisation
 
-**AI-assisted editorial draft for Daniel Deveney to review. Not approved or published.**
+**AI-assisted editorial copy accepted by Daniel Deveney on 25 October 2026 and included on the website preview.**
 
-Draft prepared: 2026-10-25. Proposed author: Daniel Deveney; byline approval pending.
+Draft prepared: 2026-10-25. Author: Daniel Deveney; copy, author summary and byline accepted by the owner on 25 October 2026.
 
 Start with learner journeys, test the work that matters and plan who will own the platform after launch.
 
@@ -70,6 +70,6 @@ External references support the points identified above. Practical recommendatio
 
 - [Moodle: official project overview and hosting options](https://github.com/moodle/moodle/blob/main/README.md) — Supports the distinction between self-hosting and hosted options, not a universal product recommendation.
 
-## Review requirements
+## Acceptance record
 
-Approve or edit the copy and author summary, confirm the byline, and provide cleared editorial imagery before publication. This review copy mirrors content/insights.ts; keep it in sync if the source changes. Receipt of the CV does not establish article authorship.
+The owner instructed adding all prepared review content on 25 October 2026, including this copy, author summary, byline and labelled temporary editorial illustration. The article now resolves at its normal /insights/ URL and appears in Home/hub/related lists. Temporary image labels stay visible, and final imagery remains a production gap. This readable copy mirrors content/insights.ts; keep it in sync if source prose changes. The site remains noindex and has not been deployed by this work.

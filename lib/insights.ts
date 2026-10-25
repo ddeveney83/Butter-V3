@@ -1,6 +1,7 @@
 import { insights, type Insight } from "../content/insights";
 import { services } from "../content/services";
 import { canonicalOrigin } from "./site-config";
+import { placeholderImages } from "../content/placeholder-images";
 
 const nonempty = (value: string) => Boolean(value.trim());
 function validDate(value: string | undefined, today: string) {
@@ -35,7 +36,9 @@ export function isPublishableInsight(
         entry.updatedOn >= entry.publishedOn!)) &&
     Boolean(
       entry.image &&
-      entry.image.src.startsWith("/assets/insights/") &&
+      (entry.image.temporary
+        ? entry.image.src === placeholderImages[entry.image.temporary]?.src
+        : entry.image.src.startsWith("/assets/insights/")) &&
       !entry.image.src.includes("..") &&
       !/[?#%\\]/.test(entry.image.src) &&
       nonempty(entry.image.alt) &&

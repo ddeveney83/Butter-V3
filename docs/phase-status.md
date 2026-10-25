@@ -202,3 +202,39 @@ Unique hub and article metadata/H1 and crawlable body/source/author structure im
 Phase 5 is CONDITIONAL until the owner reviews the two actual drafts, author summary/byline and supplies cleared editorial imagery before publication. Draft preparation is not owner approval. CV biography wording/qualification titles and portrait selection also remain for review. Prior Phase 3 real-case permission/evidence/media blocker and final brand assets/contact/legal/release gates persist. The master requires only approved publishable articles in public lists; the implemented empty state and 404s enforce that rule while review proceeds.
 
 Next: review the biography and two complete guides, choose the CV portrait or preferred alternative, and authorise Phase 6 separately when ready.
+
+## Review acceptance and Phase 6 — CONDITIONAL; live delivery deferred by owner
+Owner accepted all prepared review material and authorised Phase 6 directly on main. When asked for inbox/provider and legal operating facts, owner explicitly deferred email setup and stated identity/hosting/retention are not known. This phase completes the safe implementation without pretending those integrations or legal decisions exist. Phase 7 NOT STARTED.
+
+### Accepted content included
+- About now has Daniel Deveney's accepted CV-derived biography, selected qualifications and unchanged supplied portrait, with explicit source/approval references.
+- Both prepared substantive guides and Daniel's author summary/bylines are accepted. Normal `/insights/[slug]` routes now resolve and appear in Home, hub and related lists with 25 October 2026 inclusion dates. Typed manifest-matched temporary article illustrations retain their AI-generated labels under the owner's approval. Final imagery remains outstanding.
+- Previous completed page prose is accepted. No fictional Work example, employer/client permission, logo, testimonial, unverified award or metric is promoted to genuine proof. Zero real cases remain published. No full CV/private contact fields included.
+
+### Phase 6 delivered
+- `/contact`: unique metadata/H1, accurate Devon/South West/UK scope, short accessible form, optional organisation/support/budget/timing, privacy acknowledgement, native optional disclosure and meaningful related links. All prior CTAs reach this implemented destination.
+- `/api/contact`: shared strict Zod validation, same-origin JSON, streamed size bound, honeypot, bounded keyed per-process attempt limit, fixed recipient/provider, plaintext message, server-only secrets, provider/browser timeouts, idempotency, no PII logging/database, generic failures and provider-acceptance-only success.
+- Client form: field errors and focus, busy/duplicate protection, preserved values on failure, reset on accepted delivery, focused announced result, accurate unconfigured status. Optional public email is independent from the receiving inbox and remains unset.
+- Privacy and Terms: substantial server-rendered draft documents reflecting implemented data flow/cookies/spam controls and the precise unknown legal/provider/hosting/retention decisions. Clearly labelled LEGAL COPY REQUIRED; no legal approval invented. Last scaffold/catch-all removed.
+- Consent-gated measurement adapter with only named contact events and fixed aggregate path; no analytics provider, tags, cookies or conversion claims activated.
+- `.env.example` and `docs/contact-setup.md` provide the deferred provider/DNS/secrets/legal/host-limiter setup and actual inbox-receipt checks. No external service account, payment, deployment or test email created.
+
+### Executed checks
+| Check | Result |
+| --- | --- |
+| Lint | PASS |
+| Strict types / Next route types | PASS |
+| Unit tests | 16 passed; 0 failed/skipped |
+| Production build | PASS |
+| Full desktop/mobile browser suite | 39 passed; 0 failed; 1 intentional desktop duplicate of mobile-only menu test skipped |
+| Format / whitespace | PASS |
+
+Unit tests cover validation/header injection/unknown recipients, malformed/oversized/cross-site/type requests, honeypot, unconfigured non-success without sending/logging PII, synthetic provider acceptance/failure/missing ID/network errors, controlled recipients/headers, rate expiry/capacity/trusted header rules, consent/no-PII measurement and accepted-content publication/schema gates. Browser tests cover all routes and six widths, real input/acknowledgement errors, focus/busy/status/error-preservation/reset, mocked provider UI, actual unconfigured API responses, accepted article/byline/portrait links and existing navigation/FAQs/Work filters. Provider acceptance tests are synthetic, not live inbox evidence.
+
+A stale generated dev route type after scaffold removal was regenerated; initial browser testing caught Next's internal-host origin normalisation, an ambiguous framework alert selector and a fast-response result focus race. Corrected the handler/selector/post-commit focus, then reran all checks successfully. Screenshot helper now verifies the new portrait loads before full-page capture. No checks were disabled to resolve those failures.
+
+### Search / regional / release gate
+Accepted article pages and author/portrait facts are real server HTML and share qualified Home/hub/detail/related/schema lookups. Contact/legal have unique metadata/H1 and complete links. Canonical origin remains unset, sitemap empty, all responses noindex and robots disallows crawling. No fake LocalBusiness, street/city, client endorsement, office, ranking or AI-citation claim. Devon relevance remains proportionate; optional regional page is still omitted. Measurement is inactive without consent/provider, and no enquiry delivery or lead has been counted.
+
+### Remaining gate
+Safe engineering acceptance is CONDITIONAL. **Actual inbox receipt is BLOCKED by the owner's deferred provider/inbox/domain setup**, and legal finalisation by unknown trading identity/hosting/retention plus future review. Per-instance memory protection needs host-level edge/shared enforcement and origin verification on the actual deployment. Prior real-case/evidence and final brand/editorial assets remain release gaps. The owner has been informed; no repeated request for those deferred facts is needed now. Next phase requires separate instruction.

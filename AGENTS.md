@@ -32,3 +32,8 @@ The owner explicitly requested working and pushing directly on `main` after Phas
 ## Owner-authorised temporary image review
 
 Before Phase 4, the owner requested temporary images to visualise the layouts. AI-generated concept images in `public/assets/placeholders/` are permitted for this review, with visible “AI-generated placeholder” labels. They are not original brand artwork, real people/client projects, testimonials or publication evidence. Preserve these labels and the separate empty approved-case collection; final source-asset and approval gates still apply. Phase work remains subject to the owner’s explicit per-phase instructions.
+
+## Owner acceptance and Phase 6 deferrals
+On 25 October 2026 the owner instructed adding everything prepared for review, then Phase 6. The CV-derived biography/qualifications, supplied portrait, two prepared articles, Daniel's author summary/bylines and existing page copy are accepted for inclusion. Temporary editorial illustrations may accompany the accepted articles in the development preview **with their AI-generated placeholder labels**; they remain provisional assets. Do not turn fictional Work layout examples into genuine cases or invent missing client permission/evidence. This acceptance does not authorise deployment or public indexing.
+
+The owner explicitly deferred the enquiry inbox/provider setup and stated legal identity/hosting/retention are not yet known. Keep delivery disabled and new legal documents clearly draft pending those facts. Do not request the same details again during this phase or infer business contact details from the CV. Finish/test the safe implementation and document the remaining activation/receipt checks. Phase 7 still requires separate instruction.

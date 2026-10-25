@@ -30,3 +30,6 @@ Original generated PNGs remain in `/workspace/generated_images`; repository copi
 
 ## Phase 5 reuse
 The existing ribbon concept is reused in the Insights hero; laptop and headphones concepts illustrate the two local review drafts and related cards. All retain the visible AI-generated placeholder badge. No new image generation or source editing in Phase 5. These paths are rejected by article publication validation and do not supply author portraits, original artwork or publishable editorial image rights.
+
+## Owner acceptance before Phase 6
+The owner accepted all prepared review content on 25 October 2026. The two accepted articles now use their existing laptop/headphones illustrations in normal page routes with visible labels. This explicitly supersedes the earlier article-only rejection: a temporary article image must match its typed manifest key/source and have recorded owner acceptance, while arbitrary placeholder paths still fail. Final production editorial images remain required. The real case gate continues rejecting every placeholder image; no temporary asset becomes client evidence.
