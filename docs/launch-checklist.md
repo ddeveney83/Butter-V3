@@ -26,3 +26,6 @@ Home and shared navigation engineering implemented. Final visual acceptance rema
 - Services overview and four detail implementations available for owner review, including FAQs and links.
 - Still required: approval of expanded offerings/scope/FAQs; official brand assets; licensed service/partnership media; testimonial/case permissions and evidence; approved canonical domain/publication.
 - Indexing lock remains; Work, About, Insights, Contact and legal routes still require their own phases. No public release or contact-delivery readiness is implied.
+
+## Phase 3 — BLOCKED for portfolio publication
+Work index/filter engineering and case template implemented. Public case count remains zero. Before clearing the portfolio gate, supply at least one owner-approved publishable real case with delivery-role attribution, client permission, original cleared imagery and genuine outcome evidence. Do not enable design-review mode on a public host. Final ribbon/identity/media fidelity and all earlier launch gates remain unresolved.

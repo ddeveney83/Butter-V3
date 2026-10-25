@@ -22,3 +22,10 @@ Homepage display copy and offering descriptions follow the brief/reference and r
 Service names and broad offering categories follow the master; expanded service descriptions, benefits, deliverables, scope and FAQs need owner review. The LMS page makes no vendor-specific or universal compatibility claim. Strategy does not promise ROI or behaviour change. Ongoing support explicitly requires agreed availability and excludes assumed 24/7 coverage. Accessibility is an agreed design/testing responsibility, not a blanket compliance certification.
 
 All five service pages remain development-only and noindex. Image/testimonial/project areas remain labelled placeholders. Real project details, logo permissions and approved outcomes have not been supplied. Contact links reach the truthful unconfigured contact scaffold; no delivery success is claimed.
+
+## Phase 3 — first real case required
+No project is approved or published. Provide an owner-approved case with: title/slug/category; approved narrative and audience/constraints; exact delivery role (Butter engagement or work undertaken in employment); requirements, approach/design decisions, actual deliverables; qualitative outcome evidence and sources; separately supported metrics if used; permission to identify the organisation; cleared hero and gallery media with descriptive alt text/source rights; and the relevant service relationships.
+
+British Red Cross, Places for People, PSA, flooding/LearnDash, Nansen.ai and Strategic Skills Mapping remain unapproved reference suggestions. No such case, client logo or metric was copied into public content. Store only publication-safe approval references in the source, not private permission documents or restricted deliverables. A record needs both evidence/rights and explicit published status to appear. Approval alone never publishes it.
+
+The optional review examples are layout labels and instructions, not draft commercial project stories. They remain outside public collections and are never a substitute for approved proof.

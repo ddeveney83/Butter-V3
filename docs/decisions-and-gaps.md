@@ -66,3 +66,12 @@ ESLint 9.39.5 is a documented temporary compatibility pin: current Next preset p
 - FAQ buttons have real expand/collapse state, aria-expanded/controls, labelled answer regions and keyboard/pointer support. All answers are in server HTML; no FAQ rich-result claim or markup.
 - Service/Breadcrumb JSON-LD builder implemented but emits nothing for draft/approved-only content or absent canonical identity. All current services remain draft; no fake schema endorsements, price or results are emitted.
 - Approved ribbon/laptop/platform imagery, workshop/support/partnership photographs, testimonial quotes/attribution, service proof/case media and official identity remain ASSET REQUIRED. Layout reservations are visibly labelled; Information Security Awareness is not fabricated as a publishable case.
+
+## Phase 3 — portfolio evidence gate
+- Owner authorised Phase 3 on main. Reference 03's left Work index and right case-study template inspected separately.
+- No approved real project record, cleared project image, quote, metric or precise role attribution exists in the repository. The supplied mockups remain concepts; client names and figures in them are not authorisation.
+- Work index implemented with functional categories and an honest empty state rather than fabricated portfolio cards. All real detail URLs return 404 until their record passes publication/permission/evidence/rights checks.
+- Case-study template, typed evidence/role contracts, shared publication gate, real card links and contextual services implemented. Explicit employment-versus-Butter labels prevent role ambiguity once owner supplies the actual record.
+- Disabled-by-default `/review/work` provides labelled layout-only examples and template placeholders for visual/interaction review. No real client identity, invented engagement, outcome statistic or purported project screen is used. These examples are not part of caseStudies and cannot resolve under `/work/[slug]`.
+- Owner asked asynchronously for the first approved project, scope, actual role, outcome evidence and permissions. If not supplied in this turn, this remains a concrete Phase 3 publication/launch blocker, not a reason to invent data.
+- Asset gaps: original ribbon; official font/logo/mascot; cleared case hero/card/gallery screenshots/device images; partnership photography; approved outcome evidence and client publication permission.

@@ -7,7 +7,10 @@ export const dynamicParams = false;
 export function generateStaticParams() {
   return routes
     .filter(
-      (route) => route.path !== "/" && !route.path.startsWith("/services"),
+      (route) =>
+        route.path !== "/" &&
+        route.path !== "/work" &&
+        !route.path.startsWith("/services"),
     )
     .map((route) => ({ segments: route.path.slice(1).split("/") }));
 }

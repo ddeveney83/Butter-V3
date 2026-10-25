@@ -33,6 +33,7 @@ export default defineConfig({
   ],
   webServer: {
     command: "npm run start -- --hostname 127.0.0.1",
+    env: { ENABLE_DESIGN_REVIEW: "true" },
     url: "http://127.0.0.1:3000",
     reuseExistingServer: false,
   },

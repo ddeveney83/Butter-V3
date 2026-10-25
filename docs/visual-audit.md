@@ -61,3 +61,16 @@ Other three service details follow reference 04's grammar with their own benefit
 Mobile uses stacked hero/content, single-column catalogue/benefits/solutions, vertical process steps and full-width answer controls. The catalogue is 2×2 on tablet. Automated overflow checks pass at 1440/1280/1024/768/390/375. At 1440px the index four-column structure and detail four-step strip are preserved. Body/heading/font fidelity remains provisional, and breadcrumbs/scope/related links add useful content beyond the static art. No pixel-perfect or final-image/crop acceptance claim is made.
 
 Decision: engineering and responsive structure accepted by executed checks; final visual/commercial sign-off CONDITIONAL on approved source assets and copy/evidence. Shared Home screenshot regression capture remains unchanged in layout; CTA's new heading prop preserves its original default.
+
+## Phase 3 — Work and case template comparison
+Reference 03 inspected as two separate designs: left Work index and right British Red Cross concept detail. No client content was approved by that inspection.
+
+Captured and inspected 1440px desktop / 390px mobile evidence:
+- `test-results/work-public-Work-renders-g-40700--examples-or-mockup-clients-{desktop,mobile}/work-index.png`
+- `test-results/work-opt-in-review-exercis-0cee7-without-publishing-examples-{desktop,mobile}/work-design-review.png` and `case-template.png`
+
+Work preserves the split hero, exact headline/highlight, cropped-ribbon reservation, filter pills with yellow active state, partnership band and yellow CTA. Because there are no cleared cases, the actual index shows an honest empty state in place of the reference's six real project cards. The optional review page demonstrates the 3-column/2-row card geometry using labelled non-project examples; mobile stacks cards and tablet uses two columns. Each arrow/title links to its real detail destination when published, or the explicit template anchor in review mode.
+
+The right-half template preserves the large text/image hero split, four-position evidence row, Challenge/requirements and Approach/deliverables columns, asymmetric gallery and yellow discussion CTA. Role attribution, audience/constraints, design rationale, outcome narrative and related-service links are explicit. In review mode these are instructions/placeholders, not a client story. Real metrics are never seeded: evidence positions show “Evidence required”. Original image-backed hero treatment, device/interface crops, authentic narrative length and exact wordmark/font/ribbon/mascot fidelity remain unassessable without source assets.
+
+Six-width overflow checks passed at 1440/1280/1024/768/390/375 for the index and populated review/template. Mobile visual inspection confirms wrapped filters, retained highlighted headline, stacked proof/narrative/gallery and reachable CTAs. No global token or existing-template layout changes were made. Full existing Home/Services browser checks still pass. Not pixel-perfect or ready for client publication; final comparison must be repeated with approved source content/images.

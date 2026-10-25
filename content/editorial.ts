@@ -9,5 +9,5 @@ export interface EditorialEntry {
   assetRights: string[];
 }
 // Populate only from owner-approved source material; never seed fake proof.
-export const caseStudies: EditorialEntry[] = [];
+export { caseStudies } from "./case-studies";
 export const insights: EditorialEntry[] = [];

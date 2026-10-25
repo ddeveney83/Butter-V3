@@ -101,3 +101,33 @@ Browser checks exercise every FAQ via Enter, Space and pointer, verifying aria-e
 Unique titles/descriptions/H1s and helpful service-specific answers in server HTML. Internal service, Work, Insights and Contact connections verified. Quiet truthful Devon/South West/UK coverage retained without town spam. All current pages remain draft/noindex; sitemap empty; canonical domain missing, so no invented canonical emitted. Service/Breadcrumb schema builder tested with publication and canonical prerequisites; no draft JSON-LD emitted. Analytics/conversion instrumentation remains unconfigured. Search demand and AI citations unpromised.
 
 Phase 2 engineering delivered for review. Final visual/content/publication acceptance is CONDITIONAL. Owner can review the service copy and supply source assets; begin Phase 3 only when instructed.
+
+## Phase 3 — engineering delivered; BLOCKED for first publishable case
+Owner authorised Phase 3 on main. Work index, filtering, case-study template and evidence/approval controls are implemented; Phase 4 NOT STARTED. No deployment or indexing enabled.
+
+### Implemented
+- `/work`: reference 03 left-half hero, all seven filter options, yellow selected state, keyboard/pointer selection, live counts, reset and honest empty state, partnership panel and CTA.
+- `/work/[slug]`: reference 03 right-half template with project hero, explicit Butter-versus-employment attribution, supported proof only, Challenge/audience/constraints/requirements, Approach/design decision/deliverables, cleared gallery, outcome evidence, service links and CTA. Unknown/unapproved entries remain true 404s.
+- Shared publication predicate requires published status plus recorded owner/client permissions, role, context, source evidence, cleared media and known service links. Public list and detail lookup use the same predicate; card props exclude private approval fields. Real collection is empty.
+- `/review/work`: disabled-by-default local design mode with six labelled layout examples and the case template. No genuine organisation name, case engagement or result asserted. Not linked in public navigation/Work or included in sitemap. Explicit environment flag required; not an authentication mechanism or a public preview service.
+
+### Executed checks
+| Check | Result |
+| --- | --- |
+| Lint | PASS |
+| Strict typecheck / Next route types | PASS |
+| Unit tests | 6 passed; 0 failed/skipped |
+| Production build | PASS |
+| Browser suite | 21 passed; 0 failed; 1 intentionally skipped desktop duplicate of mobile-only menu test |
+| Default production configuration | /work 200; /review/work 404; /work/layout-only 404 |
+| Format/whitespace | PASS |
+
+Publication tests reject drafts/approval-only records, missing owner/client/role/evidence/rights, traversal image paths, unsupported metrics and invalid service references. Filter tests cover All, individual categories, overlapping tags, empty results and nonmutation. Browser checks exercise actual empty and populated review UI, keyboard/pointer selection, focus/aria-pressed/live counts, card links, template sections, related routes, no mockup clients/figures in public HTML, no public review/case URLs or sitemap leakage, active navigation and responsive overflow at all six required widths. Screenshots captured and inspected; see visual-audit.md. An initial missing type import and an ambiguous eyebrow selector were corrected; checks rerun without disabling assertions.
+
+### Search / geographic / measurement audit
+Work title/description/H1 and real server HTML implemented. Future case metadata and canonical derive from published source records and configured SITE_URL; breadcrumb data shares the approval gate. Zero publishable cases; no case schema currently emitted. All responses remain noindex, robots disallows crawling and sitemap is empty. Devon/South West/UK positioning stays truthful via existing footer, with no invented local project proof or office. No analytics/conversion/AI-citation claim added; no contact delivery represented.
+
+### Required input / acceptance blocker
+Phase 3's approved-case gate is BLOCKED: at least one real owner-approved case, exact role/scope, client permission, cleared images and genuine outcome evidence must be provided. The owner was asked for that information asynchronously. No reply or general phase instruction is treated as approval of the mockup's names/figures. Official identity/ribbon/mascot/font and project/partnership assets remain visual gaps.
+
+Safe engineering work is ready for review on main; this does not make the portfolio or website launch-ready. Next: supply the first approved case record and assets to complete the publication gate. Do not begin Phase 4 until instructed.
