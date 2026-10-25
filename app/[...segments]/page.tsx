@@ -6,7 +6,9 @@ type Props = { params: Promise<{ segments: string[] }> };
 export const dynamicParams = false;
 export function generateStaticParams() {
   return routes
-    .filter((route) => route.path !== "/")
+    .filter(
+      (route) => route.path !== "/" && !route.path.startsWith("/services"),
+    )
     .map((route) => ({ segments: route.path.slice(1).split("/") }));
 }
 export async function generateMetadata({ params }: Props) {

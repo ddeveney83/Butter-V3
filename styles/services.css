@@ -1,0 +1,537 @@
+/* Phase 2 styles scoped to services; shared Home geometry remains unchanged. */
+.services-page,
+.service-detail {
+  padding: 0;
+}
+.services-hero {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 0.7fr;
+  gap: 2rem;
+  align-items: center;
+  padding-block: 3.5rem 2.5rem;
+}
+.services-hero h1 {
+  font-size: clamp(3.5rem, 5.5vw, 5.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+.overview-intro {
+  align-self: end;
+  padding-bottom: 1rem;
+}
+.overview-intro > p:first-child {
+  font-size: 1.1rem;
+}
+.overview-art {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+}
+.overview-art > svg {
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+}
+.overview-art .asset-placeholder {
+  min-height: 360px;
+  background: transparent;
+  padding: 1rem;
+}
+.services-catalog {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+.catalog-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.catalog-copy {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+}
+.icon-tile {
+  display: inline-grid;
+  place-items: center;
+  background: var(--color-butter);
+  width: 60px;
+  height: 60px;
+  border-radius: 0.6rem;
+  margin-bottom: 1.3rem;
+}
+.catalog-copy h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.catalog-copy p {
+  margin-bottom: 1rem;
+}
+.catalog-copy .text-link {
+  margin-top: auto;
+}
+.catalog-card .asset-placeholder {
+  min-height: 235px;
+  border-radius: 0;
+}
+.partnership {
+  margin-block: 2.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.4fr;
+  background: var(--color-paper);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+.partnership-copy {
+  padding: 2.5rem;
+}
+.partnership-copy p:not(.eyebrow) {
+  max-width: 40rem;
+  margin-block: 1rem;
+}
+.partnership .asset-placeholder {
+  border-radius: 0;
+}
+.keyword-rail {
+  background: var(--color-butter);
+  padding: 3rem 2rem;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  line-height: 2;
+}
+.keyword-rail hr {
+  width: 2rem;
+  margin-block: 2rem;
+  border: 0;
+  border-top: 1px solid var(--color-ink);
+}
+.service-faq {
+  padding-block: 3rem;
+  border-top: 1px solid var(--color-border);
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+.service-faq .section-intro {
+  margin-top: 1rem;
+  max-width: 22rem;
+}
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+.faq-item h3 {
+  font: inherit;
+  letter-spacing: normal;
+}
+.faq-item button {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  min-height: 58px;
+  text-align: left;
+  padding: 1rem 0;
+  background: transparent;
+  border: 0;
+  color: var(--color-ink);
+  line-height: 1.4;
+}
+.faq-item button svg {
+  flex-shrink: 0;
+}
+.faq-item [role="region"] p {
+  color: var(--color-muted);
+  padding: 0.25rem 2rem 1.2rem 0;
+  line-height: 1.6;
+  margin: 0;
+}
+.detail-hero {
+  padding-block: 2rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+}
+.breadcrumbs a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+}
+.detail-hero h1 {
+  font-size: clamp(3.2rem, 5.4vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  overflow-wrap: anywhere;
+}
+.heading-line {
+  display: block;
+}
+.detail-description {
+  margin-block: 1.4rem;
+  font-size: 1.2rem;
+  max-width: 35rem;
+}
+.detail-art {
+  display: flex;
+  position: relative;
+  align-items: stretch;
+  min-width: 0;
+  padding-top: 3rem;
+}
+.detail-art > svg {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+.detail-art .asset-placeholder {
+  width: 100%;
+  min-height: 400px;
+  background: transparent;
+}
+.benefit-band {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+.benefit-band > div {
+  border-left: 1px solid var(--color-border);
+  padding-inline: 1.75rem;
+}
+.benefit-band > div:first-child {
+  border-left: 0;
+  padding-left: 0.5rem;
+}
+.benefit-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--color-butter);
+  margin-bottom: 1rem;
+}
+.benefit-band h2 {
+  font-size: 1.45rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: -0.025em;
+}
+.benefit-band p {
+  margin: 0;
+}
+.detail-approach {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding-block: 3rem 1.5rem;
+  scroll-margin-top: 1.5rem;
+}
+.approach-intro p:not(.eyebrow) {
+  margin-block: 1rem;
+}
+.approach-main {
+  min-width: 0;
+}
+.service-detail .four-steps {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding-top: 0.5rem;
+}
+.service-detail .four-steps .step-number {
+  width: 64px;
+  height: 64px;
+}
+.service-detail .four-steps h3 {
+  font-size: 1.35rem;
+}
+.service-detail .four-steps p {
+  font-size: 0.95rem;
+}
+.service-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+  background: var(--color-paper);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+.service-feature > div:last-child {
+  padding: 1.5rem;
+}
+.service-feature p:not(.eyebrow) {
+  font-size: 0.9rem;
+  margin-block: 1rem;
+}
+.service-feature .asset-placeholder {
+  border-radius: 0;
+  min-height: 240px;
+}
+.solutions-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding-block: 1.5rem 2.5rem;
+}
+.solutions-section > div:first-child > p:not(.eyebrow) {
+  margin-top: 1rem;
+}
+.solutions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.5rem;
+  gap: 1.75rem;
+}
+.solutions-grid article {
+  display: flex;
+  gap: 1.2rem;
+}
+.solutions-grid svg {
+  flex-shrink: 0;
+}
+.solutions-grid h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.solutions-grid p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+.service-scope {
+  padding-block: 1.5rem 2.5rem;
+}
+.service-scope h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+.service-scope p {
+  max-width: 62rem;
+  color: var(--color-muted);
+}
+.detail-faq {
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+}
+.testimonial-reservation {
+  background: var(--color-paper);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+}
+.testimonial-reservation h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.testimonial-reservation .asset-placeholder {
+  min-height: 160px;
+}
+.related-services {
+  padding-block: 1rem 2.5rem;
+}
+.related-services ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.related-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+@media (max-width: 1100px) {
+  .services-hero {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .overview-art {
+    grid-column: 1 / -1;
+  }
+  .overview-art .asset-placeholder {
+    min-height: 150px;
+    width: 100%;
+  }
+  .catalog-copy {
+    padding: 1rem;
+  }
+  .catalog-copy h2 {
+    font-size: 1.4rem;
+  }
+  .detail-approach,
+  .solutions-section {
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+  .service-detail .four-steps {
+    gap: 1rem;
+  }
+  .service-detail .four-steps .step-number {
+    width: 50px;
+    height: 50px;
+  }
+  .service-detail .four-steps .step-top svg {
+    width: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .services-catalog {
+    grid-template-columns: 1fr 1fr;
+  }
+  .benefit-band {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .benefit-band > div:nth-child(3) {
+    border-left: 0;
+    padding-left: 0.5rem;
+  }
+  .detail-approach,
+  .solutions-section {
+    grid-template-columns: 1fr;
+  }
+  .approach-intro {
+    max-width: 42rem;
+  }
+  .service-faq {
+    gap: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .services-hero,
+  .detail-hero {
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+    gap: 1.5rem;
+  }
+  .services-hero h1 {
+    font-size: clamp(3rem, 8.5vw, 4.5rem);
+  }
+  .detail-hero h1 {
+    font-size: clamp(2.65rem, 8vw, 4rem);
+  }
+  .overview-intro {
+    padding: 0;
+  }
+  .overview-art .asset-placeholder {
+    min-height: 180px;
+  }
+  .overview-art > svg,
+  .detail-art > svg {
+    display: none;
+  }
+  .services-catalog {
+    grid-template-columns: 1fr 1fr;
+  }
+  .partnership {
+    grid-template-columns: 1fr 1fr;
+  }
+  .partnership-copy {
+    padding: 1.5rem;
+  }
+  .keyword-rail {
+    display: none;
+  }
+  .service-faq,
+  .detail-faq {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-block: 2.5rem;
+  }
+  .detail-art {
+    padding: 0;
+  }
+  .detail-art .asset-placeholder {
+    min-height: 230px;
+  }
+  .benefit-band {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .benefit-band > div,
+  .benefit-band > div:first-child {
+    border: 0;
+    padding: 0;
+  }
+  .detail-approach,
+  .solutions-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-block: 2.5rem 1rem;
+  }
+  .service-detail .four-steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .service-detail .four-steps p {
+    max-width: none;
+  }
+  .solutions-grid {
+    gap: 1.5rem;
+  }
+  .service-feature {
+    margin-top: 2rem;
+  }
+  .breadcrumbs {
+    margin-bottom: 1rem;
+  }
+  .detail-description {
+    font-size: 1.05rem;
+  }
+}
+@media (max-width: 540px) {
+  .services-catalog,
+  .partnership,
+  .benefit-band,
+  .solutions-grid,
+  .service-feature,
+  .service-detail .four-steps {
+    grid-template-columns: 1fr;
+  }
+  .catalog-copy {
+    padding: 1.5rem;
+  }
+  .catalog-copy h2 {
+    font-size: 1.75rem;
+  }
+  .catalog-card .asset-placeholder {
+    min-height: 220px;
+  }
+  .benefit-band > div {
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .benefit-band > div:last-child {
+    border: 0;
+    padding: 0;
+  }
+  .service-feature .asset-placeholder {
+    min-height: 190px;
+  }
+  .service-detail .four-steps .step-number {
+    width: 54px;
+    height: 54px;
+  }
+  .testimonial-reservation {
+    padding: 1.5rem;
+  }
+}

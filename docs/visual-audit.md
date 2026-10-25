@@ -40,3 +40,24 @@ Reference 01 compared against actual 1440px and 390px browser captures (`test-re
 Cream/black/yellow palette, hairlines, editorial hierarchy and restrained curves preserved. Colour tokens remain measured approximations. Local licensed Inter Tight/Inter remain provisional; exact font matching cannot be asserted. Photography/image crops cannot be accepted until approved originals exist. No screenshot/crop of supplied UI used as production content.
 
 Mobile retains hierarchy and highlighted heading, single-column services/work/insights/proof, usable touch targets and a real modal menu. Overflow is tested at 1440/1280/1024/768/390/375; desktop/mobile captures inspected visually. No pixel-perfect or final brand sign-off claim. Asset-dependent sections differ materially from the finished concept and are explicitly labelled development placeholders.
+
+## Phase 2 — Services overview and detail comparison
+
+Reference 02 and 04 re-inspected before implementation; no global brand token or homepage layout change. Desktop screenshots for all five service routes and mobile first folds inspected. Full mobile eLearning capture also inspected. Browser captures live under `test-results/services-all-service-pages-6fc35-a-and-useful-scoped-content-{desktop,mobile}/`; filenames are `services.png`, each service slug `.png`, and matching `-first-fold.png` files. These are ignored generated outputs.
+
+| Reference module | Implementation and comparison | Remaining gap |
+| --- | --- | --- |
+| 02 hero | Large split editorial heading, yellow last-line marker, supporting copy/black CTA and separate far-right ribbon reservation | Original ribbon missing; reservation cannot match art |
+| 02 service catalogue | Four equal desktop columns, yellow icon tiles, compact copy, real detail links and aligned image reservations | Approved photographs/screens absent; icons provisional Lucide |
+| 02 partnership | Left statement, middle photo reservation, narrow yellow editorial keyword rail | Actual partnership photography missing |
+| 02 process/FAQs/CTA | Three numbered steps, split accordion area and yellow closing invitation retained | Mascot missing; owner review of FAQ copy required |
+| 04 hero/benefits | Exact eLearning title/marker, two CTAs, large laptop-image reservation, four icon-led benefits | Original laptop/photo and exact font unavailable |
+| 04 process and proof | Discover/Design/Develop/Deliver across four columns; adjacent cleared-project reservation | No publishable Information Security Awareness proof supplied |
+| 04 six solutions | Six distinct eLearning items, two-column icon-led layout and fine divider | Detail copy provisional until owner review |
+| 04 testimonial/FAQ/CTA | Split evidence reservation and working FAQ list; yellow closing CTA | No quote, attribution, photograph or mascot approval |
+
+Other three service details follow reference 04's grammar with their own benefits, process, solutions and answers. Icons were adjusted to match each service's subject rather than copying game/media icons into platform/strategy/support content. Added scope section explains deliverables and limits; contextual links connect other services, Work, Insights and Contact without fabricated case/article destinations.
+
+Mobile uses stacked hero/content, single-column catalogue/benefits/solutions, vertical process steps and full-width answer controls. The catalogue is 2×2 on tablet. Automated overflow checks pass at 1440/1280/1024/768/390/375. At 1440px the index four-column structure and detail four-step strip are preserved. Body/heading/font fidelity remains provisional, and breadcrumbs/scope/related links add useful content beyond the static art. No pixel-perfect or final-image/crop acceptance claim is made.
+
+Decision: engineering and responsive structure accepted by executed checks; final visual/commercial sign-off CONDITIONAL on approved source assets and copy/evidence. Shared Home screenshot regression capture remains unchanged in layout; CTA's new heading prop preserves its original default.

@@ -45,7 +45,10 @@ test("navigation works, content is real HTML, and skip link supports keyboard", 
   await expect(page).toHaveURL(/\/services$/);
   if (test.info().project.name === "mobile")
     await page.getByRole("button", { name: "Open menu" }).click();
-  await page.getByRole("link", { name: "Let’s talk", exact: false }).click();
+  await page
+    .getByRole("banner")
+    .getByRole("link", { name: "Let’s talk", exact: false })
+    .click();
   await expect(
     page.getByText("Enquiries cannot be submitted here yet.", { exact: false }),
   ).toBeVisible();

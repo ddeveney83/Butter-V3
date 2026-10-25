@@ -69,3 +69,35 @@ Final visual fidelity cannot pass without the official ribbon, logo, mascot and 
 Reusable startup instructions updated in the cloud environment draft to reflect main, the new homepage readiness check and current phase boundary. Saving is separate from environment publication.
 
 Next: owner reviews Phase 1 and supplies/approves source assets as available. Begin Phase 2 only on explicit instruction.
+
+## Phase 2 — CONDITIONAL (five service pages implemented and validated)
+
+Owner authorised the next phase; work stays directly on main. Phase 3 NOT STARTED. No deployment or public indexing enabled.
+
+### Routes and features
+- `/services`: reference 02 overview, four real service detail links, partnership band, three-step process, five functioning FAQs and tailored yellow CTA.
+- `/services/elearning-design-development`: reference 04 structure, exact service title, four benefits, four-step process, six solution areas, explicit scope, project/testimonial reservations and five FAQs.
+- `/services/learning-platforms-lms`: distinct platform requirements/configuration/journey/support content, four benefits/steps, six solutions and four FAQs.
+- `/services/learning-strategy-consultancy`: distinct needs analysis/stakeholder/curriculum/skills/evaluation content, four benefits/steps, six solutions and four FAQs.
+- `/services/ongoing-learning-support`: distinct updates/administration/request handling/improvement content, four benefits/steps, six solutions and four FAQs.
+- Breadcrumbs, active Services navigation, related services/Work/Insights links and contact-interest query destinations work. Unknown service slugs return 404. Existing Home, mobile menu and draft protections remain operational.
+
+### Executed validation
+| Check | Outcome |
+| --- | --- |
+| Lint | PASS |
+| Typecheck | PASS; generated route types and strict tsc |
+| Production build | PASS; index + all four details prerendered |
+| Unit tests | 3 passed, 0 failed/skipped |
+| Browser tests | 17 passed, 0 failed; 1 intentionally skipped desktop copy of mobile-only menu test |
+| Format/whitespace | PASS |
+
+Browser checks exercise every FAQ via Enter, Space and pointer, verifying aria-expanded, answer visibility and valid control targets. They also verify unique metadata/server HTML, one H1, active navigation, all page links and on-page approach targets, four overview destinations, substantial detail sections, contact context and honest unconfigured delivery, true unknown-service 404, all six responsive widths and current screenshot output. An older broad Contact-link selector became ambiguous when the overview gained multiple valid CTAs; it was scoped to the header, preserving the original navigation assertion. No application behaviour or assertion was disabled.
+
+### Visual and content gate
+1440px/390px evidence captured for all five routes; desktop pages, mobile first folds and the full mobile eLearning layout visually inspected against references 02/04 and inherited Phase 1 system. See visual-audit.md. Official identity/fonts/ribbon/mascot, service/partnership/laptop imagery, authentic cleared project proof and testimonials remain missing. These are labelled development reservations. Expanded service/FAQ copy requires owner review. No vendor accreditation, outcome statistics, project endorsement, price or support SLA invented.
+
+### SEO/AEO/GEO/Devon gate
+Unique titles/descriptions/H1s and helpful service-specific answers in server HTML. Internal service, Work, Insights and Contact connections verified. Quiet truthful Devon/South West/UK coverage retained without town spam. All current pages remain draft/noindex; sitemap empty; canonical domain missing, so no invented canonical emitted. Service/Breadcrumb schema builder tested with publication and canonical prerequisites; no draft JSON-LD emitted. Analytics/conversion instrumentation remains unconfigured. Search demand and AI citations unpromised.
+
+Phase 2 engineering delivered for review. Final visual/content/publication acceptance is CONDITIONAL. Owner can review the service copy and supply source assets; begin Phase 3 only when instructed.

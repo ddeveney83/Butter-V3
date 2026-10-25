@@ -56,3 +56,18 @@ Published URLs: none. Draft static destinations: 12. Dynamic project/article pat
 Home now renders the real `Learning, designed to matter.` H1, descriptive service explanations and internal service/Work/Insights/Contact links in server HTML. Home metadata: `Butter | Digital learning design studio in Devon` and the brief's truthful Devon/South West/UK description. No geographic keyword added to navigation or repeated town pages.
 
 All responses remain noindex via metadata and response headers. Robots disallows crawling and sitemap remains empty: there are no approved publicly indexable routes. `SITE_URL` canonical derivation remains available, with emission pending the owner-confirmed HTTPS origin. Organization/WebSite JSON-LD intentionally withheld because canonical identity/assets remain unresolved. Service-specific schema, article schema and real proof belong to their later owning phases. No conversion tracker, personal-data collection or fake email submission exists. Search themes remain RESEARCH REQUIRED; AI citation and ranking outcomes unpromised.
+
+## Phase 2 route and search audit
+| Route | Distinct title / intent | Helpful content and next step |
+| --- | --- | --- |
+| /services | Digital learning services: compare four kinds of support | Differentiated cards, process, general FAQs, direct detail links |
+| /services/elearning-design-development | eLearning Design & Development: commission bespoke learning | Learner-centred benefits, Discover/Design/Develop/Deliver, six formats, accessibility/platform questions |
+| /services/learning-platforms-lms | Learning Platforms & LMS: plan/improve a platform | Requirements, learner journeys, configuration, integration assessment and ownership/licence boundaries |
+| /services/learning-strategy-consultancy | Learning Strategy & Consultancy: diagnose needs and plan | Performance problem, evidence, skills/curriculum mapping and realistic evaluation |
+| /services/ongoing-learning-support | Ongoing Learning Support: maintain and improve | Recurring work, request handling, availability and larger-change boundaries |
+
+Each route has a unique H1/title/description and real server-rendered content. Detail breadcrumb navigation links Home → Services → current page. Related services, Work, Insights and Contact links resolve; Work/Insights remain honest earlier-stage destinations, not invented case/article details. FAQs provide direct useful answers to different visitor questions with no keyword-town templates.
+
+Devon/South West/UK coverage appears quietly on the overview and existing footer, without changed navigation or unconfirmed town/office claims. Search themes remain RESEARCH REQUIRED; no volume/ranking/citation promises.
+
+Indexing remains disabled throughout via response header/meta, deny-all robots and an empty sitemap. Canonicals derive from SITE_URL only once an approved HTTPS origin exists; absent currently. Service and BreadcrumbList builder is publication-gated and tested; no draft data is emitted as public structured data. An approved origin alone does not publish copy. No FAQ schema, fake ratings, analytics or conversion recording. Domain, approved publication, real assets/evidence and measurement remain later gates.

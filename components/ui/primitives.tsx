@@ -52,13 +52,17 @@ export function Wordmark() {
     </Link>
   );
 }
-export function BottomCTA() {
+export function BottomCTA({
+  heading = "Let’s start a conversation.",
+}: {
+  heading?: string;
+}) {
   return (
     <section className="bottom-cta" aria-labelledby="conversation-heading">
       <div className="shell cta-grid">
         <div>
           <Eyebrow>Have a learning challenge?</Eyebrow>
-          <h2 id="conversation-heading">Let’s start a conversation.</h2>
+          <h2 id="conversation-heading">{heading}</h2>
         </div>
         <div>
           <p>

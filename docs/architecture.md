@@ -43,3 +43,8 @@ Next.js automatic agent-rule generation is disabled with `agentRules: false` so 
 Owner requested working directly on main; Phase 0 is now on main and Phase 1 is also delivered there. Do not require a branch or PR unless requested again. Review each phase before proceeding; public release remains separate.
 
 The development header/footer were replaced by SiteHeader/SiteFooter and reusable primitives. A native modal dialog handles mobile navigation; explicit first/last Tab wrapping, Escape, focus restoration and body scroll restoration are implemented. All noninteractive homepage content remains server-rendered. Asset placeholders reserve layout only, with visible status labels and no fictional source material. Routine icons use lucide-react.
+
+## Phase 2 service architecture
+Explicit static `/services` index and four generated `/services/[slug]` routes replace the matching catch-all scaffolds. The catch-all retains only the other planned destinations. `content/service-details.ts` keeps service-specific content separate from reusable layouts. Shared ProcessSteps, FAQSection, RelatedServices and FAQAccordion serve all service routes. The shared BottomCTA now accepts a heading prop with an unchanged Home default. `styles/services.css` scopes layout rules to services and preserves Home styling.
+
+Service JSON-LD generation in `lib/service-schema.ts` requires both published status and an approved canonical origin; current content remains draft. Browser tests cover all five destinations, FAQ keyboard/pointer states, related links, active navigation, distinct server HTML metadata, all six widths and screenshot evidence. No package additions or runtime secrets required.

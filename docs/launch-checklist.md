@@ -21,3 +21,8 @@ All route scaffolds remain development-only. No public deployment is authorised 
 
 ## Phase 1 review
 Home and shared navigation engineering implemented. Final visual acceptance remains conditional on official identity/artwork and cleared content; do not check off launch gates yet. Exact menu and all Home links lead to accessible development destinations. Mobile keyboard/scroll/focus behaviour tested. No public deployment performed.
+
+## Phase 2 review
+- Services overview and four detail implementations available for owner review, including FAQs and links.
+- Still required: approval of expanded offerings/scope/FAQs; official brand assets; licensed service/partnership media; testimonial/case permissions and evidence; approved canonical domain/publication.
+- Indexing lock remains; Work, About, Insights, Contact and legal routes still require their own phases. No public release or contact-delivery readiness is implied.

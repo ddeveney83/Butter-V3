@@ -56,3 +56,13 @@ ESLint 9.39.5 is a documented temporary compatibility pin: current Next preset p
 - Work images, trust marks, proof/testimonials, metrics, article imagery/content and mascot remain labelled development reservations. No unapproved client names, performance figures or fake articles rendered.
 - Canonical domain still missing: canonical omitted when SITE_URL empty; no invented production URL, email or social destination. Verified Organization/WebSite emission deferred until canonical identity is confirmed.
 - User-facing product copy remains concise UK English; geographic cue is a quiet secondary line, not a changed hero or Devon nav item.
+
+## Phase 2 — service offering implementation
+- Direct-main workflow retained per owner instruction. Only Services overview and four detail pages implemented; no Phase 3 portfolio or later page design started.
+- Explicit `/services` and `/services/[slug]` routes replace those catch-all scaffolds. Static generation restricts service slugs to the four canonical offerings; unknown slugs remain 404.
+- New typed service-detail data defines distinct fit, boundaries, benefits, process, six solution areas and FAQs for each service. This is PROVISIONAL owner-review service copy derived from master §5, not an approved client/capability credential claim.
+- Scope avoids invented platform vendors/certifications, pricing, turnaround, guaranteed outcomes or 24/7 support. Third-party platform/licence/integration obligations are explicitly scoped.
+- Routine service/benefit/solution icons reuse existing Lucide dependency. No new dependency, paid service, analytics or contact integration added.
+- FAQ buttons have real expand/collapse state, aria-expanded/controls, labelled answer regions and keyboard/pointer support. All answers are in server HTML; no FAQ rich-result claim or markup.
+- Service/Breadcrumb JSON-LD builder implemented but emits nothing for draft/approved-only content or absent canonical identity. All current services remain draft; no fake schema endorsements, price or results are emitted.
+- Approved ribbon/laptop/platform imagery, workshop/support/partnership photographs, testimonial quotes/attribution, service proof/case media and official identity remain ASSET REQUIRED. Layout reservations are visibly labelled; Information Security Awareness is not fabricated as a publishable case.

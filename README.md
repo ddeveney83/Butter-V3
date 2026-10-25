@@ -2,7 +2,7 @@
 
 Independent digital learning studio | Devon, South West England and UK-wide
 
-**Status:** Phase 0 foundations and Phase 1 homepage implemented on `main`: Next.js development shell, route inventory, design tokens, search safeguards and audit documents. This is **not a completed or publicly launchable website**. Phase 1 visual acceptance remains conditional on approved brand assets and content.
+**Status:** Phase 0 foundations, Phase 1 homepage and Phase 2 Services implemented on `main`: Next.js development shell, route inventory, design tokens, search safeguards and audit documents. This is **not a completed or publicly launchable website**. Phase 1 visual acceptance remains conditional on approved brand assets and content.
 
 ## Begin here
 
@@ -52,4 +52,4 @@ npm run dev
 
 Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, then `npm run test:e2e` (starts its own production server). Playwright automatically uses system Chromium in this cloud environment. See [architecture](docs/architecture.md), [phase status](docs/phase-status.md), [asset gaps](docs/decisions-and-gaps.md) and [search plan](docs/search-and-content-plan.md).
 
-Home is implemented as a development benchmark; other static destinations remain labelled draft scaffolds. Indexing is disabled throughout. Case/article detail routes and the optional Devon page remain unavailable until approved content exists. Do not deploy this as the finished website or begin a new phase without instruction. No contact form/provider is configured.
+Home, Services overview and all four service detail pages are implemented for development review; other static destinations remain labelled draft scaffolds. Indexing is disabled throughout. Case/article detail routes and the optional Devon page remain unavailable until approved content exists. Do not deploy this as the finished website or begin a new phase without instruction. No contact form/provider is configured.

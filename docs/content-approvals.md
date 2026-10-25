@@ -17,3 +17,8 @@ Store approval identity/date and source/rights with actual content when received
 
 ## Phase 1 update
 Homepage display copy and offering descriptions follow the brief/reference and remain subject to owner review. No trust-logo, testimonial, statistic, project detail or article was approved by this implementation. All editorial collections remain empty and no detail links are fabricated. Contact CTA reaches the truthful, unconfigured Phase 6 scaffold. Owner's direct-main request changes Git workflow only.
+
+## Phase 2 review queue
+Service names and broad offering categories follow the master; expanded service descriptions, benefits, deliverables, scope and FAQs need owner review. The LMS page makes no vendor-specific or universal compatibility claim. Strategy does not promise ROI or behaviour change. Ongoing support explicitly requires agreed availability and excludes assumed 24/7 coverage. Accessibility is an agreed design/testing responsibility, not a blanket compliance certification.
+
+All five service pages remain development-only and noindex. Image/testimonial/project areas remain labelled placeholders. Real project details, logo permissions and approved outcomes have not been supplied. Contact links reach the truthful unconfigured contact scaffold; no delivery success is claimed.
