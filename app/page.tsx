@@ -60,6 +60,8 @@ export default function Home() {
           </div>
           <AssetPlaceholder
             label="Original curled butter-yellow ribbon artwork"
+            image="ribbon"
+            preload
             className="ribbon-gap"
           />
         </div>
@@ -127,7 +129,12 @@ export default function Home() {
         <div className="three-grid" aria-label="Reserved work imagery">
           {[1, 2, 3].map((slot) => (
             <div key={slot}>
-              <AssetPlaceholder label={`Featured project image ${slot}`} />
+              <AssetPlaceholder
+                label={`Featured project image ${slot}`}
+                image={
+                  slot === 2 ? "workshop" : slot === 3 ? "headphones" : "laptop"
+                }
+              />
               <p className="approval-note">Project details awaiting approval</p>
             </div>
           ))}
@@ -178,7 +185,10 @@ export default function Home() {
             No testimonial is published yet.
           </span>
         </div>
-        <AssetPlaceholder label="Approved partnership photograph" />
+        <AssetPlaceholder
+          label="Approved partnership photograph"
+          image="workshop"
+        />
         <div className="proof-metrics">
           <Eyebrow>Verified outcomes</Eyebrow>
           <p>
@@ -209,6 +219,13 @@ export default function Home() {
               <div key={topic}>
                 <AssetPlaceholder
                   label={`${topic} editorial imagery`}
+                  image={
+                    topic === "Accessibility"
+                      ? "headphones"
+                      : topic === "Learning strategy"
+                        ? "ribbon"
+                        : "workshop"
+                  }
                   className="insight-image"
                 />
                 <Eyebrow>{topic}</Eyebrow>

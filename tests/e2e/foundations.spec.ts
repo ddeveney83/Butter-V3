@@ -1,3 +1,4 @@
+import { loadVisualImages } from "./visual-images";
 import { test, expect } from "@playwright/test";
 import { routes } from "../../content/routes";
 
@@ -74,9 +75,11 @@ test("draft details, optional locality and source references are not served", as
 });
 test("capture Phase 1 homepage evidence", async ({ page }, testInfo) => {
   await page.goto("/");
+  await loadVisualImages(page);
   await page.screenshot({
     path: testInfo.outputPath("phase-1-first-fold.png"),
   });
+  await loadVisualImages(page);
   await page.screenshot({
     path: testInfo.outputPath("phase-1-home.png"),
     fullPage: true,

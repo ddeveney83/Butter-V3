@@ -38,10 +38,36 @@ export default function Work() {
         </div>
         <div className="work-hero-art">
           <Plus size={50} strokeWidth={1} aria-hidden="true" />
-          <AssetPlaceholder label="Original cropped butter-yellow ribbon" />
+          <AssetPlaceholder
+            label="Original cropped butter-yellow ribbon"
+            image="ribbon"
+          />
         </div>
       </section>
       <WorkGallery entries={entries} />
+      {entries.length === 0 && (
+        <section
+          className="temporary-work-preview shell"
+          aria-labelledby="temporary-work-heading"
+        >
+          <Eyebrow>Temporary image preview</Eyebrow>
+          <h2 id="temporary-work-heading">A feel for the imagery.</h2>
+          <p>
+            Illustrative concepts to help review the layout. These are not
+            client projects or portfolio evidence.
+          </p>
+          <div className="three-grid">
+            {(["laptop", "workshop", "headphones"] as const).map((image) => (
+              <AssetPlaceholder
+                key={image}
+                label="Temporary portfolio composition study, not real work"
+                image={image}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="work-partnership wide-shell">
         <div>
           <Eyebrow>A partner throughout</Eyebrow>
@@ -56,7 +82,10 @@ export default function Work() {
           </p>
           <ActionLink href="/services">Explore our services</ActionLink>
         </div>
-        <AssetPlaceholder label="Approved collaboration photograph" />
+        <AssetPlaceholder
+          label="Approved collaboration photograph"
+          image="workshop"
+        />
       </section>
       <BottomCTA heading="Let’s make learning happen." />
     </main>

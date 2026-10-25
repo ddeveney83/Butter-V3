@@ -1,3 +1,8 @@
+import Image from "next/image";
+import {
+  placeholderImages,
+  type PlaceholderImage,
+} from "@/content/placeholder-images";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import type { ReactNode } from "react";
@@ -27,16 +32,35 @@ export function Eyebrow({ children }: { children: ReactNode }) {
 export function AssetPlaceholder({
   label,
   className = "",
+  image = "laptop",
+  preload = false,
 }: {
   label: string;
   className?: string;
+  image?: PlaceholderImage;
+  preload?: boolean;
 }) {
+  const asset = placeholderImages[image];
   return (
-    <div className={`asset-placeholder ${className}`}>
-      <span className="eyebrow">Development placeholder</span>
-      <p>{label}</p>
-      <small>Approved source asset required</small>
-    </div>
+    <figure
+      className={`asset-placeholder image-placeholder ${className}`}
+      data-placeholder-image={image}
+    >
+      <Image
+        src={asset.src}
+        alt=""
+        fill
+        sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 45vw"
+        preload={preload}
+      />
+      <figcaption>
+        <span className="placeholder-badge">AI-generated placeholder</span>
+        <span className="sr-only">
+          {asset.description}. {label}. Temporary illustration only; approved
+          source asset still required.
+        </span>
+      </figcaption>
+    </figure>
   );
 }
 export function Wordmark() {

@@ -57,3 +57,5 @@ Home, Services overview and all four service detail pages are implemented for de
 ## Work design review (optional, local only)
 
 `ENABLE_DESIGN_REVIEW=true npm run dev` enables `/review/work` for local inspection of labelled layout examples and the case template. The route returns 404 by default, has no public navigation link and never publishes a project. Do not enable it on a public host. Real cases require owner/client approval, exact role attribution, cleared media and evidence; see `docs/content-approvals.md`.
+
+Temporary AI-generated images have been added at the owner’s request for layout visualisation. They remain labelled and separate from real case evidence; see [temporary imagery](docs/temporary-imagery.md). Phase 4 has not started.

@@ -693,3 +693,72 @@ main.home {
     transition: none !important;
   }
 }
+
+/* User-authorised temporary concept imagery; keep labels and final-asset gaps visible. */
+.asset-placeholder.image-placeholder {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: var(--color-paper);
+}
+.image-placeholder > img {
+  object-fit: cover;
+}
+.image-placeholder > figcaption {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.6rem;
+  right: 0.6rem;
+  z-index: 1;
+  text-align: left;
+  line-height: 1;
+}
+.placeholder-badge {
+  display: inline-block;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+  padding: 0.35rem 0.45rem;
+  font-size: 0.6rem;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.hero-art .ribbon-gap.image-placeholder {
+  background: var(--color-canvas);
+  border-radius: 0;
+}
+.overview-art .image-placeholder > img {
+  object-position: 50% 45%;
+}
+.catalog-card .image-placeholder {
+  margin-block: 0;
+}
+.proof-panel .image-placeholder,
+.partnership .image-placeholder,
+.work-partnership .image-placeholder {
+  min-height: 260px;
+  margin-block: 0;
+}
+.temporary-work-preview {
+  padding-block: 0 3rem;
+}
+.temporary-work-preview h2 {
+  margin-bottom: 1rem;
+}
+.temporary-work-preview > p:not(.eyebrow) {
+  max-width: 42rem;
+}
+.temporary-work-preview .three-grid {
+  margin-top: 1.5rem;
+}
+.temporary-work-preview .image-placeholder {
+  aspect-ratio: 1.6;
+  min-height: 190px;
+}

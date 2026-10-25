@@ -55,7 +55,10 @@ export default function Services() {
         </div>
         <div className="overview-art">
           <Plus aria-hidden="true" strokeWidth={1} size={50} />
-          <AssetPlaceholder label="Original cropped yellow ribbon artwork" />
+          <AssetPlaceholder
+            label="Original cropped yellow ribbon artwork"
+            image="ribbon"
+          />
         </div>
       </section>
       <section
@@ -77,7 +80,14 @@ export default function Services() {
                   <span className="sr-only"> about {service.title}</span>
                 </ActionLink>
               </div>
-              <AssetPlaceholder label={`${service.title} photograph`} />
+              <AssetPlaceholder
+                label={`${service.title} photograph`}
+                image={
+                  service.icon === "strategy" || service.icon === "support"
+                    ? "workshop"
+                    : "laptop"
+                }
+              />
             </article>
           );
         })}
@@ -101,7 +111,10 @@ export default function Services() {
             Let’s talk about your goals
           </ActionLink>
         </div>
-        <AssetPlaceholder label="Approved photograph of a learning partnership" />
+        <AssetPlaceholder
+          label="Approved photograph of a learning partnership"
+          image="workshop"
+        />
         <div className="keyword-rail" aria-hidden="true">
           Strategy
           <br />

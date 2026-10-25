@@ -1,3 +1,4 @@
+import { loadVisualImages } from "./visual-images";
 import { test, expect } from "@playwright/test";
 import { workCategories } from "../../content/case-studies";
 
@@ -73,6 +74,7 @@ test("public Work renders genuine empty states and never exposes design examples
       ? { width: 390, height: 844 }
       : { width: 1440, height: 1000 },
   );
+  await loadVisualImages(page);
   await page.screenshot({
     path: testInfo.outputPath("work-index.png"),
     fullPage: true,
@@ -129,6 +131,7 @@ test("opt-in review exercises populated category filtering and case template wit
       ? { width: 390, height: 844 }
       : { width: 1440, height: 1000 },
   );
+  await loadVisualImages(page);
   await page.screenshot({
     path: testInfo.outputPath("work-design-review.png"),
     fullPage: true,

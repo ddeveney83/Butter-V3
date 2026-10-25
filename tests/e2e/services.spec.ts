@@ -1,3 +1,4 @@
+import { loadVisualImages } from "./visual-images";
 import { test, expect } from "@playwright/test";
 import { serviceDetails } from "../../content/service-details";
 
@@ -63,9 +64,11 @@ test("all service pages have distinct server HTML metadata and useful scoped con
         ? { width: 390, height: 844 }
         : { width: 1440, height: 1000 },
     );
+    await loadVisualImages(page);
     await page.screenshot({
       path: testInfo.outputPath(`${path.split("/").pop()}-first-fold.png`),
     });
+    await loadVisualImages(page);
     await page.screenshot({
       path: testInfo.outputPath(`${path.split("/").pop()}.png`),
       fullPage: true,

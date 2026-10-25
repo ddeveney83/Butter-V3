@@ -131,3 +131,10 @@ Work title/description/H1 and real server HTML implemented. Future case metadata
 Phase 3's approved-case gate is BLOCKED: at least one real owner-approved case, exact role/scope, client permission, cleared images and genuine outcome evidence must be provided. The owner was asked for that information asynchronously. No reply or general phase instruction is treated as approval of the mockup's names/figures. Official identity/ribbon/mascot/font and project/partnership assets remain visual gaps.
 
 Safe engineering work is ready for review on main; this does not make the portfolio or website launch-ready. Next: supply the first approved case record and assets to complete the publication gate. Do not begin Phase 4 until instructed.
+
+## Temporary image update — PASS for requested visualisation; Phase 4 not started
+Owner requested placeholder imagery before moving on. Added four locally retained AI-generated concepts and explicit image choices across Home, Services, Work and the optional case template. Work has a separate labelled composition preview, with zero real cases still published. Official logo/font/mascot/ribbon and real project evidence remain final-asset/publication gaps.
+
+Validation passed: lint, strict typecheck, production build, 6 unit tests and 21 browser tests (one intentional desktop duplicate of a mobile-only test skipped). Format and whitespace checks passed. Browser screenshot helpers verify placeholder images fully load; responsive tests pass at 1440/1280/1024/768/390/375. Desktop/mobile screenshot review confirmed that images fill their intended areas with visible placeholder labels. The new Work preview initially overflowed at a narrower width; figure width constraints fixed it and the full suite passed. A publication test also confirms that placeholder image paths cannot qualify as cleared project media.
+
+No deployment, indexing, genuine case publication or Phase 4 work performed. Phase 3's first-real-case blocker remains; temporary imagery does not supply client evidence. Review current screenshots before authorising the next phase. Detailed provenance and replacement instructions: temporary-imagery.md.

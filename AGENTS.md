@@ -28,3 +28,7 @@
 ## Owner-approved Git workflow
 
 The owner explicitly requested working and pushing directly on `main` after Phase 0 to simplify management. Use `main` for subsequent phases unless the owner changes this preference. Continue phase-by-phase review and stop before the next phase; this does not authorise website deployment or waive content/brand approval gates.
+
+## Owner-authorised temporary image review
+
+Before Phase 4, the owner requested temporary images to visualise the layouts. AI-generated concept images in `public/assets/placeholders/` are permitted for this review, with visible “AI-generated placeholder” labels. They are not original brand artwork, real people/client projects, testimonials or publication evidence. Preserve these labels and the separate empty approved-case collection; final source-asset and approval gates still apply. Phase 4 requires a separate instruction.

@@ -57,6 +57,9 @@ test("publication fails closed when status, role, rights or evidence are incompl
       entry.hero!.rights = "";
     },
     (entry) => {
+      entry.hero!.src = "/assets/placeholders/laptop-concept.png";
+    },
+    (entry) => {
       entry.hero!.src = "/assets/work/../private.png";
     },
     (entry) => {

@@ -83,7 +83,15 @@ export default async function ServicePage({ params }: Props) {
         </div>
         <div className="detail-art">
           <Plus aria-hidden="true" size={50} strokeWidth={1} />
-          <AssetPlaceholder label={service.heroAsset} />
+          <AssetPlaceholder
+            label={service.heroAsset}
+            image={
+              service.slug === "learning-strategy-consultancy" ||
+              service.slug === "ongoing-learning-support"
+                ? "workshop"
+                : "laptop"
+            }
+          />
         </div>
       </section>
       <section

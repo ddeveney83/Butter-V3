@@ -68,7 +68,16 @@ export function WorkGallery({
                     sizes="(max-width: 600px) 100vw, (max-width: 1023px) 50vw, 33vw"
                   />
                 ) : (
-                  <AssetPlaceholder label="Approved project image required" />
+                  <AssetPlaceholder
+                    label="Approved project image required"
+                    image={
+                      entry.category === "Strategy"
+                        ? "workshop"
+                        : entry.category === "Compliance"
+                          ? "headphones"
+                          : "laptop"
+                    }
+                  />
                 )}
                 <Eyebrow>{entry.category}</Eyebrow>
                 <h2>

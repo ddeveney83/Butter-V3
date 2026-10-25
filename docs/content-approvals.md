@@ -29,3 +29,6 @@ No project is approved or published. Provide an owner-approved case with: title/
 British Red Cross, Places for People, PSA, flooding/LearnDash, Nansen.ai and Strategic Skills Mapping remain unapproved reference suggestions. No such case, client logo or metric was copied into public content. Store only publication-safe approval references in the source, not private permission documents or restricted deliverables. A record needs both evidence/rights and explicit published status to appear. Approval alone never publishes it.
 
 The optional review examples are layout labels and instructions, not draft commercial project stories. They remain outside public collections and are never a substitute for approved proof.
+
+## Temporary imagery authorisation
+Owner requested placeholder images for visualisation before Phase 4. The four AI-generated concepts are approved only as temporary layout illustrations and retain labels. They do not approve a real case, client relationship, testimonial, founder photo, article, metric or original brand illustration. The real case collection remains empty, and placeholder paths are rejected by the case-publication gate. No previous approval requirement is cleared by these images.

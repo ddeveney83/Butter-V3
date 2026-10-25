@@ -29,3 +29,6 @@ Home and shared navigation engineering implemented. Final visual acceptance rema
 
 ## Phase 3 — BLOCKED for portfolio publication
 Work index/filter engineering and case template implemented. Public case count remains zero. Before clearing the portfolio gate, supply at least one owner-approved publishable real case with delivery-role attribution, client permission, original cleared imagery and genuine outcome evidence. Do not enable design-review mode on a public host. Final ribbon/identity/media fidelity and all earlier launch gates remain unresolved.
+
+## Temporary imagery review
+Owner-authorised AI-generated placeholders now aid layout review. Labels and provenance must remain until approved final assets replace them. This does not clear official identity/ribbon/mascot/font, real project/media permissions, testimonial, evidence or content publication gates. Phase 4 remains unstarted.

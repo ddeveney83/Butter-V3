@@ -84,7 +84,10 @@ export function FAQSection({
             Testimonial and photograph awaiting approval. No client endorsement
             is published here.
           </p>
-          <AssetPlaceholder label="Approved testimonial photograph" />
+          <AssetPlaceholder
+            label="Approved testimonial photograph"
+            image="workshop"
+          />
         </div>
       ) : (
         <div>
