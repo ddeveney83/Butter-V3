@@ -88,3 +88,6 @@ The owner explicitly requested placeholder images to visualise the site. Four AI
 - Google Business Profile eligibility remains UNKNOWN: no confirmed real in-person customer contact, hours or eligibility decision. Do not infer eligibility from a Devon base or create a listing for online-only activity. No physical address, hours, map, GBP claim, LocalBusiness or ProfessionalService schema emitted.
 - Organization schema prepared from verified brief identity but withheld until approved publication and canonical origin. Person details only enter it through the cleared founder profile; no fabricated person, awards or ratings.
 - User-authorised ribbon/workshop concept images reused with labels; workshop is not a photograph of Butter staff or a local project. Official identity assets and real founder imagery remain outstanding.
+
+## Phase 4 owner identity clarification
+Owner confirmed Daniel Deveney as Butter's founder in this conversation. This name/role can appear on About independently of the full biography. No CV or career history is attached here, and no cross-chat retrieval capability is available in this session. Career/qualification/experience claims and a genuine portrait remain pending. The full founder profile stays null and Person schema remains withheld.

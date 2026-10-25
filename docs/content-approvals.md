@@ -39,3 +39,6 @@ Confirmed from master: independent studio identity, Devon base, South West/UK-wi
 Founder record is null pending approved name, role, biography, experience/qualifications and a genuine source portrait with rights/alt text. No name is inferred from GitHub identity. Biography and portrait must clear the same approval gate before display; generated workshop imagery cannot qualify as a founder portrait. No employment/agency history, awards, team or quantified experience invented.
 
 Optional regional page remains absent until there is substantive original approved local material. GBP eligibility needs confirmation of real in-person customer contact/operating circumstances before any listing discussion; current work does not establish it. No listing created or claimed.
+
+## Phase 4 owner identity clarification
+Owner confirmed Daniel Deveney as Butter's founder in this conversation. This name/role can appear on About independently of the full biography. No CV or career history is attached here, and no cross-chat retrieval capability is available in this session. Career/qualification/experience claims and a genuine portrait remain pending. The full founder profile stays null and Person schema remains withheld.

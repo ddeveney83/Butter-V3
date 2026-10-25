@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { UserRound, Plus } from "lucide-react";
-import { aboutContent } from "@/content/about";
+import { aboutContent, founderIdentity } from "@/content/about";
 import { services } from "@/content/services";
 import { approvedFounder, aboutStructuredData } from "@/lib/about";
 import { findRoute } from "@/content/routes";
@@ -190,12 +190,9 @@ export default function About() {
         ) : (
           <>
             <div>
-              <Eyebrow>Behind Butter / owner details pending</Eyebrow>
-              <h2 id="founder-title">
-                The person
-                <br />
-                behind the studio.
-              </h2>
+              <Eyebrow>Behind Butter / Founder</Eyebrow>
+              <h2 id="founder-title">{founderIdentity.name}</h2>
+              <p className="about-lead">{founderIdentity.role}</p>
               <p>
                 Founder biography, experience and portrait are awaiting
                 approval. This section will introduce the real person and their

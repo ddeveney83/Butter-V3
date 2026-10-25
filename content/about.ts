@@ -1,3 +1,9 @@
+// Confirmed directly by the owner in this conversation. Career details remain pending.
+export const founderIdentity = {
+  name: "Daniel Deveney",
+  role: "Founder",
+} as const;
+
 export interface FounderProfile {
   name: string;
   role: string;
