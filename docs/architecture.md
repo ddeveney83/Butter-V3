@@ -38,3 +38,8 @@ Use this existing isolated checkout; do not create a worktree unless requested. 
 ESLint 9.39.5 is retained because the installed Next preset’s import/react/a11y plugins do not declare ESLint 10 compatibility. npm reports upstream deprecation; lint executes cleanly. Revisit when the preset/plugin peer ranges support ESLint 10. Production dependency audit currently reports zero vulnerabilities.
 
 Next.js automatic agent-rule generation is disabled with `agentRules: false` so `npm run dev` preserves the authoritative supplied AGENTS.md. No project instruction documents were replaced.
+
+## Phase 1 and current working model
+Owner requested working directly on main; Phase 0 is now on main and Phase 1 is also delivered there. Do not require a branch or PR unless requested again. Review each phase before proceeding; public release remains separate.
+
+The development header/footer were replaced by SiteHeader/SiteFooter and reusable primitives. A native modal dialog handles mobile navigation; explicit first/last Tab wrapping, Escape, focus restoration and body scroll restoration are implemented. All noninteractive homepage content remains server-rendered. Asset placeholders reserve layout only, with visible status labels and no fictional source material. Routine icons use lucide-react.

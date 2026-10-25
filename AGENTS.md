@@ -24,3 +24,7 @@
 5. Report what changed, what ran, phase PASS/CONDITIONAL/BLOCKED status, indexed/public route and search gates, outstanding visual/content/asset/integration gaps, and the next recommended action.
 
 **If any brief or follow-up conflicts with `BUTTER_MASTER_SPEC.md`, do not silently replace brand foundations. Identify the conflict and ask for a decision before making a substantial aesthetic/architectural change.**
+
+## Owner-approved Git workflow
+
+The owner explicitly requested working and pushing directly on `main` after Phase 0 to simplify management. Use `main` for subsequent phases unless the owner changes this preference. Continue phase-by-phase review and stop before the next phase; this does not authorise website deployment or waive content/brand approval gates.

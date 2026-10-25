@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import {
-  DevelopmentHeader,
-  DevelopmentFooter,
-} from "@/components/layout/development-shell";
+import { SiteHeader } from "@/components/layout/site-header";
+import { SiteFooter } from "@/components/layout/site-footer";
 import "./globals.css";
 
 // Licensed provisional fonts; exact Butter brand font remains ASSET REQUIRED.
@@ -30,9 +28,9 @@ export default function RootLayout({
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-        <DevelopmentHeader />
+        <SiteHeader />
         {children}
-        <DevelopmentFooter />
+        <SiteFooter />
       </body>
     </html>
   );

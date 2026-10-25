@@ -26,7 +26,7 @@ test("navigation works, content is real HTML, and skip link supports keyboard", 
   request,
 }) => {
   const response = await request.get("/");
-  expect(await response.text()).toContain("Butter website foundations");
+  expect(await response.text()).toContain("Learning,");
   await page.goto("/");
   await page.keyboard.press("Tab");
   await expect(
@@ -34,12 +34,18 @@ test("navigation works, content is real HTML, and skip link supports keyboard", 
   ).toBeFocused();
   await page.keyboard.press("Enter");
   await expect(page.locator("main")).toBeFocused();
+  if (test.info().project.name === "mobile")
+    await page.getByRole("button", { name: "Open menu" }).click();
   await page
-    .getByRole("navigation", { name: "Primary" })
+    .getByRole("navigation", {
+      name: test.info().project.name === "mobile" ? "Mobile" : "Primary",
+    })
     .getByRole("link", { name: "Services", exact: true })
     .click();
   await expect(page).toHaveURL(/\/services$/);
-  await page.getByRole("link", { name: "Let’s talk" }).click();
+  if (test.info().project.name === "mobile")
+    await page.getByRole("button", { name: "Open menu" }).click();
+  await page.getByRole("link", { name: "Let’s talk", exact: false }).click();
   await expect(
     page.getByText("Enquiries cannot be submitted here yet.", { exact: false }),
   ).toBeVisible();
@@ -63,10 +69,68 @@ test("draft details, optional locality and source references are not served", as
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).not.toContain("<loc>");
 });
-test("capture Phase 0 shell evidence", async ({ page }, testInfo) => {
+test("capture Phase 1 homepage evidence", async ({ page }, testInfo) => {
   await page.goto("/");
   await page.screenshot({
-    path: testInfo.outputPath("phase-0-foundations.png"),
+    path: testInfo.outputPath("phase-1-first-fold.png"),
+  });
+  await page.screenshot({
+    path: testInfo.outputPath("phase-1-home.png"),
     fullPage: true,
   });
+});
+
+test("mobile menu traps focus, restores scrolling and closes with Escape or navigation", async ({
+  page,
+}, testInfo) => {
+  test.skip(testInfo.project.name !== "mobile", "Mobile interaction only");
+  await page.goto("/");
+  const toggle = page.getByRole("button", { name: "Open menu" });
+  await toggle.click();
+  const dialog = page.getByRole("dialog", { name: "Site navigation" });
+  await expect(dialog).toBeVisible();
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  await expect(page.getByRole("button", { name: "Close menu" })).toBeFocused();
+  await page.keyboard.press("Shift+Tab");
+  await expect(dialog.getByRole("link", { name: "Let’s talk" })).toBeFocused();
+  await page.keyboard.press("Tab");
+  await expect(page.getByRole("button", { name: "Close menu" })).toBeFocused();
+  await page.keyboard.press("Escape");
+  await expect(dialog).not.toBeVisible();
+  await expect(toggle).toBeFocused();
+  expect(await page.evaluate(() => document.body.style.overflow)).toBe("");
+  await toggle.click();
+  await dialog.getByRole("link", { name: "Services", exact: true }).click();
+  await expect(page).toHaveURL(/\/services$/);
+  await expect(dialog).not.toBeVisible();
+  expect(await page.evaluate(() => document.body.style.overflow)).toBe("");
+});
+
+test("home links resolve, proof is honest and all required widths reflow", async ({
+  page,
+  request,
+}) => {
+  await page.goto("/");
+  const paths = await page
+    .locator("main a[href]")
+    .evaluateAll((links) => [
+      ...new Set(links.map((link) => link.getAttribute("href")!)),
+    ]);
+  for (const path of paths)
+    expect((await request.get(path)).status()).toBe(200);
+  const text = await page.locator("main").innerText();
+  for (const unverified of ["13,000+", "93%", "20+", "British Red Cross"])
+    expect(text).not.toContain(unverified);
+  await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(
+    0,
+  );
+  for (const width of [1440, 1280, 1024, 768, 390, 375]) {
+    await page.setViewportSize({ width, height: 900 });
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBe(true);
+    await expect(page.locator("h1")).toBeVisible();
+  }
 });

@@ -51,3 +51,8 @@ Select analytics/consent tooling with owner approval; no non-essential tracking 
 
 ## Phase 0 search audit
 Published URLs: none. Draft static destinations: 12. Dynamic project/article patterns: inventoried, no entries. Optional Devon route: absent. HTML/H1/title/noindex/headers/robots/sitemap/404/navigation are automated browser targets. Canonical-domain and schema emission remain deliberately unconfigured pending approved facts. No analytics or conversion claim. Final commercial content, public indexing and rich data are later phase gates.
+
+## Phase 1 search audit
+Home now renders the real `Learning, designed to matter.` H1, descriptive service explanations and internal service/Work/Insights/Contact links in server HTML. Home metadata: `Butter | Digital learning design studio in Devon` and the brief's truthful Devon/South West/UK description. No geographic keyword added to navigation or repeated town pages.
+
+All responses remain noindex via metadata and response headers. Robots disallows crawling and sitemap remains empty: there are no approved publicly indexable routes. `SITE_URL` canonical derivation remains available, with emission pending the owner-confirmed HTTPS origin. Organization/WebSite JSON-LD intentionally withheld because canonical identity/assets remain unresolved. Service-specific schema, article schema and real proof belong to their later owning phases. No conversion tracker, personal-data collection or fake email submission exists. Search themes remain RESEARCH REQUIRED; AI citation and ranking outcomes unpromised.

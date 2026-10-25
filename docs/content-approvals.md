@@ -14,3 +14,6 @@ Only the geographic positioning, four service names, route/navigation requiremen
 | Trust logos/testimonials/stats | Not rendered | Explicit permissions and accurate attribution/evidence |
 
 Store approval identity/date and source/rights with actual content when received. Workflow: draft → approved → published; approval alone never makes an item public. Public lists, detail lookup and sitemap must all use the same published set. Current published set is empty. Never put confidential supporting material, customer enquiries or credentials in Git.
+
+## Phase 1 update
+Homepage display copy and offering descriptions follow the brief/reference and remain subject to owner review. No trust-logo, testimonial, statistic, project detail or article was approved by this implementation. All editorial collections remain empty and no detail links are fabricated. Contact CTA reaches the truthful, unconfigured Phase 6 scaffold. Owner's direct-main request changes Git workflow only.

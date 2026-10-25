@@ -38,3 +38,34 @@ Official wordmark/font/ribbon/mascot, cleared imagery and client logos, approved
 install_script and start_skill saved in the cloud environment configuration draft. These persist commands, not live processes; publishing the environment remains a separate user action.
 
 Next action: owner reviews Phase 0 architecture, search plan and asset ledger. Begin Phase 1 only on explicit instruction.
+
+## Phase 1 — CONDITIONAL (engineering validated; final visual/content approval pending)
+
+Owner instructed direct work/pushes on main and authorised Phase 1. Phase 0 was fast-forwarded and pushed to main first. Main is now the working branch; no PR or separate phase branch is required under the updated owner preference.
+
+### Delivered
+- Reference-ordered responsive homepage: hero, trust reservation, four-service yellow band, featured work reservation, three-step process, proof reservation, Insights reservation, yellow bottom CTA and compact footer.
+- Shared header/footer with exact Services/Work/About/Insights desktop menu, Home logo link, Contact CTA, active-page indication and keyboard-operable mobile modal menu. Native dialog plus explicit Tab boundary wrapping, Escape, focus/scroll restoration and link-close behaviour.
+- Reusable pill/text links, heading labels, wordmark treatment, asset placeholders and CTA; service/process content separated from layout. Routine Lucide outline icons added.
+- All Home links resolve to existing development destinations. Other page designs remain for phases 2–6. No unapproved case/article route or fake form submission introduced.
+- Updated visual, asset, content, search, launch and architecture records. Owner's main-branch preference recorded in AGENTS.md and README.
+
+### Current executed checks
+| Check | Outcome |
+| --- | --- |
+| Lint, strict typecheck, production build | PASS |
+| Unit tests | 2 passed; 0 failed/skipped |
+| Playwright | 11 passed; 0 failed; 1 intentionally skipped desktop copy of mobile-only menu test |
+| Formatting and diff whitespace | PASS |
+| Production dependency audit | 0 reported vulnerabilities |
+
+Browser tests cover server HTML, one H1/noindex/language across all 12 destinations, all Home link responses, keyboard skip link, menu focus wrapping/Escape/return focus/link-close/scroll restoration, absence of fake metrics/client claims, draft/reference exclusions, empty sitemap and robots. Overflow checked at 1440/1280/1024/768/390/375. Desktop/mobile full-page and first-fold screenshots captured and visually inspected; see visual-audit.md. Initial menu test exposed reverse Tab leaving the dialog's control sequence; explicit first/last wrapping fixed it and the affected suite passed. A pre-existing development process from our earlier startup occupied port 3000; it was stopped before production browser validation.
+
+### Search and evidence gate
+Home metadata is unique and descriptive, with real server-rendered service explanations and a subtle Devon/South West/UK cue. All routes remain non-indexable. Canonical is derived from SITE_URL only when an owner-approved origin exists; presently absent. No invented canonical, Organization/WebSite identity, local office, metrics, endorsement or author is emitted. Sitemap contains zero public URLs. Analytics is not configured and no conversions are claimed.
+
+Final visual fidelity cannot pass without the official ribbon, logo, mascot and confirmed fonts, approved imagery/project content, testimonials/metrics and articles. Those areas are visible development placeholders, not final production content. Shared component acceptance and final asset-dependent visual review remain owner decisions. No website deployment or Phase 2 work performed.
+
+Reusable startup instructions updated in the cloud environment draft to reflect main, the new homepage readiness check and current phase boundary. Saving is separate from environment publication.
+
+Next: owner reviews Phase 1 and supplies/approves source assets as available. Begin Phase 2 only on explicit instruction.

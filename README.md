@@ -2,7 +2,7 @@
 
 Independent digital learning studio | Devon, South West England and UK-wide
 
-**Status:** Phase 0 foundations implemented on `phase-0-foundation`: Next.js development shell, route inventory, design tokens, search safeguards and audit documents. This is **not a completed or publicly launchable website**. Phase 1 homepage implementation awaits owner review.
+**Status:** Phase 0 foundations and Phase 1 homepage implemented on `main`: Next.js development shell, route inventory, design tokens, search safeguards and audit documents. This is **not a completed or publicly launchable website**. Phase 1 visual acceptance remains conditional on approved brand assets and content.
 
 ## Begin here
 
@@ -19,7 +19,7 @@ Independent digital learning studio | Devon, South West England and UK-wide
 - Treat the four original PNGs as design evidence, not as production web page screenshots to paste into the live site.
 - Do not invent client relationships, case study results, testimonials, logo approvals, source brand font, mascot/ribbon SVGs or a physical office.
 - Devon-first local positioning; South West and UK-wide coverage. Technical SEO, AEO and GEO are required from Phase 0.
-- **GitHub `main` is the approved source of truth**; use separate branches and pull requests for each phase, with previews and checks before merging.
+- **GitHub `main` is the source of truth**; the owner has requested direct work and pushes on `main`. Continue reviewing one phase at a time before beginning the next.
 - Never commit credentials, form enquiry data, `.env.local` or generated build artifacts. Hosting/live content and GitHub source storage are separate.
 
 ## What is in this initial repository?
@@ -52,4 +52,4 @@ npm run dev
 
 Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, then `npm run test:e2e` (starts its own production server). Playwright automatically uses system Chromium in this cloud environment. See [architecture](docs/architecture.md), [phase status](docs/phase-status.md), [asset gaps](docs/decisions-and-gaps.md) and [search plan](docs/search-and-content-plan.md).
 
-All static destinations are labelled draft scaffolds with indexing disabled. Case/article detail routes and the optional Devon page remain unavailable until approved content exists. Do not deploy this as the finished website or merge phase work without review. No contact form/provider is configured.
+Home is implemented as a development benchmark; other static destinations remain labelled draft scaffolds. Indexing is disabled throughout. Case/article detail routes and the optional Devon page remain unavailable until approved content exists. Do not deploy this as the finished website or begin a new phase without instruction. No contact form/provider is configured.

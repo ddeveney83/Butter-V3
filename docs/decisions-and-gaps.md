@@ -47,3 +47,12 @@ Structural work can proceed with these recorded gaps. They prevent final visual/
 
 ## Tooling compatibility note
 ESLint 9.39.5 is a documented temporary compatibility pin: current Next preset plugins exclude ESLint 10 from peer ranges. ESLint 10 was evaluated and reverted to avoid unsupported peer dependencies. npm emits a deprecation warning, while lint passes. Upgrade with the compatible preset/plugin release. Playwright CDN denied downloads; system Chromium 154 successfully runs browser checks with no network-policy expansion.
+
+## Phase 1 decisions
+- Owner explicitly authorised direct work/pushes on main and Phase 1. Phase 0 fast-forwarded to main before homepage work; no history rewrite. This Git preference supersedes the starter-pack branch/PR guidance, without changing design or release requirements.
+- Shared header/footer, accessible modal mobile navigation, reusable action/eyebrow/wordmark/asset/CTA primitives, typed service/process data and complete homepage section structure implemented.
+- Lucide added for routine outline service icons, menu/close and arrows. No brand art replacement, animation library or tracking dependency added.
+- Official logo remains missing: lowercase text with dot is provisional, identified in source and audit, not claimed as original vector artwork.
+- Work images, trust marks, proof/testimonials, metrics, article imagery/content and mascot remain labelled development reservations. No unapproved client names, performance figures or fake articles rendered.
+- Canonical domain still missing: canonical omitted when SITE_URL empty; no invented production URL, email or social destination. Verified Organization/WebSite emission deferred until canonical identity is confirmed.
+- User-facing product copy remains concise UK English; geographic cue is a quiet secondary line, not a changed hero or Devon nav item.
