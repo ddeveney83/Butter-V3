@@ -2,7 +2,7 @@
 
 Independent digital learning studio | Devon, South West England and UK-wide
 
-**Status:** Design/development instructions and original concept references only. This is **not yet a built website**. It is a clean starting point for a new Next.js app to be created by Codex in Phase 0.
+**Status:** Phase 0 foundations implemented on `phase-0-foundation`: Next.js development shell, route inventory, design tokens, search safeguards and audit documents. This is **not a completed or publicly launchable website**. Phase 1 homepage implementation awaits owner review.
 
 ## Begin here
 
@@ -40,3 +40,16 @@ reference/
 ```
 
 Additional `app/`, `components/`, `lib/`, `content/`, `public/` and `docs/` folders will be created by Codex as implementation progresses, consistent with the master spec.
+
+## Development foundations
+
+Use Node 24 (`.nvmrc`) and npm.
+
+```sh
+npm ci
+npm run dev
+```
+
+Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, then `npm run test:e2e` (starts its own production server). Playwright automatically uses system Chromium in this cloud environment. See [architecture](docs/architecture.md), [phase status](docs/phase-status.md), [asset gaps](docs/decisions-and-gaps.md) and [search plan](docs/search-and-content-plan.md).
+
+All static destinations are labelled draft scaffolds with indexing disabled. Case/article detail routes and the optional Devon page remain unavailable until approved content exists. Do not deploy this as the finished website or merge phase work without review. No contact form/provider is configured.

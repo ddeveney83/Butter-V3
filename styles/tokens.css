@@ -1,0 +1,20 @@
+/* MEASURED APPROXIMATIONS from master spec §2.2, pending original brand values. */
+@theme inline {
+  --color-canvas: #faf8f0;
+  --color-cream: #f9f6ee;
+  --color-ink: #080808;
+  --color-butter: #feda4e;
+  --color-butter-soft: #ffe576;
+  --color-paper: #f4eee4;
+  --color-border: #ddd8ce;
+  --color-muted: #66635f;
+  --color-white: #ffffff;
+  --font-sans: var(--font-body), Arial, sans-serif;
+  --font-display: var(--font-heading), Arial, sans-serif;
+}
+:root {
+  --container-width: 90rem;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --radius-card: 0.75rem;
+  --radius-pill: 999px;
+}
