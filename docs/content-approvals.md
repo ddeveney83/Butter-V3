@@ -32,3 +32,10 @@ The optional review examples are layout labels and instructions, not draft comme
 
 ## Temporary imagery authorisation
 Owner requested placeholder images for visualisation before Phase 4. The four AI-generated concepts are approved only as temporary layout illustrations and retain labels. They do not approve a real case, client relationship, testimonial, founder photo, article, metric or original brand illustration. The real case collection remains empty, and placeholder paths are rejected by the case-publication gate. No previous approval requirement is cleared by these images.
+
+## Phase 4 About review
+Confirmed from master: independent studio identity, Devon base, South West/UK-wide scope, service offer and the five guiding principles. New page prose and workflow wording are owner-review editorial copy, not evidence of a track record.
+
+Founder record is null pending approved name, role, biography, experience/qualifications and a genuine source portrait with rights/alt text. No name is inferred from GitHub identity. Biography and portrait must clear the same approval gate before display; generated workshop imagery cannot qualify as a founder portrait. No employment/agency history, awards, team or quantified experience invented.
+
+Optional regional page remains absent until there is substantive original approved local material. GBP eligibility needs confirmation of real in-person customer contact/operating circumstances before any listing discussion; current work does not establish it. No listing created or claimed.

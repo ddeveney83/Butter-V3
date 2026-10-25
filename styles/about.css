@@ -1,0 +1,246 @@
+/* About extends existing editorial tokens; no new brand palette or component theme. */
+.about-page {
+  padding: 0;
+}
+.about-hero {
+  padding-block: 3rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3rem;
+}
+.about-hero h1 {
+  font-size: clamp(3.5rem, 6.5vw, 6.8rem);
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+}
+.about-hero > div > p:not(.eyebrow) {
+  font-size: 1.15rem;
+  max-width: 34rem;
+  margin-block: 1.75rem 1.5rem;
+}
+.about-hero-art {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+}
+.about-hero-art > svg {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+}
+.about-hero-art .image-placeholder {
+  min-height: 470px;
+  border-radius: 0;
+}
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  padding-block: 3rem;
+  border-top: 1px solid var(--color-border);
+}
+.about-story > div:last-child {
+  max-width: 46rem;
+}
+.about-lead {
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+.about-story p:not(.eyebrow) {
+  margin-bottom: 1.25rem;
+}
+.about-principles {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  padding-block: 3rem;
+  border-top: 1px solid var(--color-border);
+}
+.about-principles > div > p:not(.eyebrow) {
+  margin-top: 1.5rem;
+  max-width: 24rem;
+}
+.about-principles ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about-principles li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.about-principles li:first-child {
+  padding-top: 0;
+}
+.principle-number {
+  background: var(--color-butter);
+  border-radius: 50%;
+  min-width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+.about-principles h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+.about-principles li p {
+  margin: 0;
+  max-width: 40rem;
+  line-height: 1.5;
+}
+.about-location {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: var(--color-butter);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  margin-block: 1rem 2rem;
+}
+.about-location > div {
+  padding: 3rem;
+}
+.about-location p:not(.eyebrow) {
+  max-width: 36rem;
+  margin-top: 1.25rem;
+}
+.about-location .image-placeholder {
+  min-height: 360px;
+  border-radius: 0;
+}
+.about-founder {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 4rem;
+  padding-block: 3rem;
+  border-top: 1px solid var(--color-border);
+}
+.about-founder h2 {
+  margin-bottom: 1.5rem;
+}
+.about-founder p {
+  max-width: 40rem;
+}
+.about-founder > img {
+  width: 100%;
+  max-height: 540px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+.founder-reservation {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 1rem;
+  min-height: 280px;
+  padding: 2rem;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-card);
+  color: var(--color-muted);
+  text-align: center;
+}
+.founder-reservation p {
+  margin: 0;
+}
+.founder-reservation small {
+  font-size: 0.75rem;
+}
+.about-offerings {
+  padding-block: 3rem;
+  border-top: 1px solid var(--color-border);
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+}
+.about-offerings nav {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+}
+.about-offerings .text-link {
+  justify-content: space-between;
+  padding-block: 0.7rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 1rem;
+}
+@media (max-width: 1023px) {
+  .about-hero {
+    gap: 2rem;
+  }
+  .about-hero h1 {
+    font-size: clamp(3.2rem, 6.5vw, 5.5rem);
+  }
+  .about-story,
+  .about-principles,
+  .about-founder,
+  .about-offerings {
+    gap: 2.5rem;
+  }
+  .about-location > div {
+    padding: 2rem;
+  }
+  .about-hero-art .image-placeholder {
+    min-height: 380px;
+  }
+}
+@media (max-width: 767px) {
+  .about-hero,
+  .about-story,
+  .about-principles,
+  .about-location,
+  .about-founder,
+  .about-offerings {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .about-hero {
+    padding-top: 2.5rem;
+  }
+  .about-hero h1 {
+    font-size: clamp(3.15rem, 10vw, 4.5rem);
+  }
+  .about-hero > div > p:not(.eyebrow) {
+    font-size: 1.05rem;
+  }
+  .about-hero-art .image-placeholder {
+    min-height: 240px;
+  }
+  .about-hero-art > svg {
+    width: 35px;
+    height: 35px;
+  }
+  .about-story,
+  .about-principles,
+  .about-founder,
+  .about-offerings {
+    padding-block: 2.5rem;
+  }
+  .about-lead {
+    font-size: 1.2rem;
+  }
+  .about-location {
+    gap: 0;
+  }
+  .about-location > div {
+    padding: 2rem;
+  }
+  .about-location .image-placeholder {
+    min-height: 260px;
+  }
+  .about-principles li {
+    gap: 1rem;
+  }
+  .about-principles h3 {
+    font-size: 1.4rem;
+  }
+  .founder-reservation {
+    min-height: 220px;
+  }
+}

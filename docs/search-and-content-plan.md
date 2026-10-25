@@ -81,3 +81,15 @@ Current publishable cases: zero. Unknown, synthetic, preview and mockup client s
 
 ## Temporary imagery search check
 Page routes, titles, descriptions, canonical policy, Devon/South West/UK wording and structured-data gates are unchanged. All pages remain noindex and the sitemap empty. Concept figures use decorative empty image alt plus accessible captions identifying the scene and temporary status; they do not create false portfolio/entity evidence or image-only principal copy. No article/client schema or real case was added. Next/image optimises locally retained PNGs; no external image-host dependency or analytics was introduced.
+
+## Phase 4 About / Devon audit
+| Route | Intent / decision | Current status |
+| --- | --- | --- |
+| /about | Understand Butter's independent studio identity, approach and truthful geographic scope | Real server-rendered About content; unique title/description/H1; draft/noindex |
+| /elearning-design-devon | Potential substantive locally useful commissioning guide | Omitted: no distinct local evidence/material supplied; returns 404, no navigation/sitemap entry |
+
+About title: `About Butter | Independent digital learning studio in Devon`. Description explains the learning approach, Devon base and South West/UK reach. The visible page explains the studio/services, principles and practical working approach, with a dedicated proportionate geographic section. Contact/service/Work links resolve. No ranking, AI-citation, local project, town-office or city-keyword claims added. Search themes remain RESEARCH REQUIRED.
+
+Canonical URL derives from approved SITE_URL only when configured; currently absent. Publication remains draft; noindex metadata and response header remain, robots denies crawling and sitemap stays empty. Organization schema builder uses only verified name/description/areaServed and the approved origin; emission withheld until published. Founder/Person is withheld without cleared identity/biography/portrait. LocalBusiness/ProfessionalService, address, hours and GBP are not inferred. Eligibility cannot be established from the existing material; owner confirmation of actual in-person contact is needed before considering a profile. Online-only operations must not claim one.
+
+No thin regional page or town variants were created. Original local perspective, genuine regional examples or useful differentiated guidance would be prerequisites for reconsidering the optional page. No analytics tags or conversion-success claim added; enquiry delivery and measurement remain Phase 6/launch gates.

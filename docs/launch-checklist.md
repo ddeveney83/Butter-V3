@@ -32,3 +32,6 @@ Work index/filter engineering and case template implemented. Public case count r
 
 ## Temporary imagery review
 Owner-authorised AI-generated placeholders now aid layout review. Labels and provenance must remain until approved final assets replace them. This does not clear official identity/ribbon/mascot/font, real project/media permissions, testimonial, evidence or content publication gates. Phase 4 remains unstarted.
+
+## Phase 4 review
+About design and engineering ready for review. Remaining sign-off: expanded studio/working-style prose, owner-approved biography/credentials and genuine cleared portrait; official brand assets still missing. Devon/South West/UK statements use confirmed brief wording. Optional regional page intentionally omitted for quality; no eligibility/listing/address assumptions made. Phase 3 approved-case blocker and all contact/legal/deployment/indexing gates remain unresolved.

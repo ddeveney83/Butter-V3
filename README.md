@@ -2,7 +2,7 @@
 
 Independent digital learning studio | Devon, South West England and UK-wide
 
-**Status:** Phase 0 foundations, Phase 1 Home, Phase 2 Services and Phase 3 Work engineering implemented on `main`: Next.js development shell, route inventory, design tokens, search safeguards and audit documents. This is **not a completed or publicly launchable website**. Phase 1 visual acceptance remains conditional on approved brand assets and content.
+**Status:** Phases 0–4 foundations, Home, Services, Work engineering and About implemented on `main`: Next.js development shell, route inventory, design tokens, search safeguards and audit documents. This is **not a completed or publicly launchable website**. Phase 1 visual acceptance remains conditional on approved brand assets and content.
 
 ## Begin here
 
@@ -52,10 +52,12 @@ npm run dev
 
 Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, then `npm run test:e2e` (starts its own production server). Playwright automatically uses system Chromium in this cloud environment. See [architecture](docs/architecture.md), [phase status](docs/phase-status.md), [asset gaps](docs/decisions-and-gaps.md) and [search plan](docs/search-and-content-plan.md).
 
-Home, Services overview and all four service detail pages are implemented for development review; Work includes filters and a case template, with no approved real cases yet; remaining destinations are labelled draft scaffolds. Indexing is disabled throughout. Case/article detail routes and the optional Devon page remain unavailable until approved content exists. Do not deploy this as the finished website or begin a new phase without instruction. No contact form/provider is configured.
+Home, About, Services overview and all four service detail pages are implemented for development review; Work includes filters and a case template, with no approved real cases yet; remaining destinations are labelled draft scaffolds. Indexing is disabled throughout. Case/article detail routes and the optional Devon page remain unavailable until approved content exists. Do not deploy this as the finished website or begin a new phase without instruction. No contact form/provider is configured.
 
 ## Work design review (optional, local only)
 
 `ENABLE_DESIGN_REVIEW=true npm run dev` enables `/review/work` for local inspection of labelled layout examples and the case template. The route returns 404 by default, has no public navigation link and never publishes a project. Do not enable it on a public host. Real cases require owner/client approval, exact role attribution, cleared media and evidence; see `docs/content-approvals.md`.
 
-Temporary AI-generated images have been added at the owner’s request for layout visualisation. They remain labelled and separate from real case evidence; see [temporary imagery](docs/temporary-imagery.md). Phase 4 has not started.
+Temporary AI-generated images have been added at the owner’s request for layout visualisation. They remain labelled and separate from real case evidence; see [temporary imagery](docs/temporary-imagery.md). Phase 4 About is implemented for review; founder details and final assets await approval.
+
+About now has a dedicated studio/approach page with truthful Devon positioning. The optional Devon landing page remains omitted pending differentiated original content. Founder details are not inferred; see [phase status](docs/phase-status.md).

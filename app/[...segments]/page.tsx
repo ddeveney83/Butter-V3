@@ -10,6 +10,7 @@ export function generateStaticParams() {
       (route) =>
         route.path !== "/" &&
         route.path !== "/work" &&
+        route.path !== "/about" &&
         !route.path.startsWith("/services"),
     )
     .map((route) => ({ segments: route.path.slice(1).split("/") }));

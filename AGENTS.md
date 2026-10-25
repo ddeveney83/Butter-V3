@@ -31,4 +31,4 @@ The owner explicitly requested working and pushing directly on `main` after Phas
 
 ## Owner-authorised temporary image review
 
-Before Phase 4, the owner requested temporary images to visualise the layouts. AI-generated concept images in `public/assets/placeholders/` are permitted for this review, with visible “AI-generated placeholder” labels. They are not original brand artwork, real people/client projects, testimonials or publication evidence. Preserve these labels and the separate empty approved-case collection; final source-asset and approval gates still apply. Phase 4 requires a separate instruction.
+Before Phase 4, the owner requested temporary images to visualise the layouts. AI-generated concept images in `public/assets/placeholders/` are permitted for this review, with visible “AI-generated placeholder” labels. They are not original brand artwork, real people/client projects, testimonials or publication evidence. Preserve these labels and the separate empty approved-case collection; final source-asset and approval gates still apply. Phase work remains subject to the owner’s explicit per-phase instructions.

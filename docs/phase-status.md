@@ -138,3 +138,30 @@ Owner requested placeholder imagery before moving on. Added four locally retaine
 Validation passed: lint, strict typecheck, production build, 6 unit tests and 21 browser tests (one intentional desktop duplicate of a mobile-only test skipped). Format and whitespace checks passed. Browser screenshot helpers verify placeholder images fully load; responsive tests pass at 1440/1280/1024/768/390/375. Desktop/mobile screenshot review confirmed that images fill their intended areas with visible placeholder labels. The new Work preview initially overflowed at a narrower width; figure width constraints fixed it and the full suite passed. A publication test also confirms that placeholder image paths cannot qualify as cleared project media.
 
 No deployment, indexing, genuine case publication or Phase 4 work performed. Phase 3's first-real-case blocker remains; temporary imagery does not supply client evidence. Review current screenshots before authorising the next phase. Detailed provenance and replacement instructions: temporary-imagery.md.
+
+## Phase 4 — CONDITIONAL (About implemented; owner facts pending)
+Owner authorised the next phase after temporary image review; implementation stays directly on main. Phase 5 NOT STARTED. No deployment/indexing change.
+
+### Delivered
+- /about replaces its scaffold with a responsive editorial page: confirmed studio identity, five principles, working approach, Devon/South West/UK coverage, related service links and Contact CTA.
+- Existing visual primitives and labelled temporary ribbon/workshop imagery reused; no real staff photo or generated founder likeness claimed.
+- Nullable founder data and approval gate ensure biography/credentials/portrait appear only with meaningful approved identity and cleared real source image. Current record remains null and an explicit reservation is shown.
+- Organization data prepared using verified brief facts, gated on publication/canonical origin; no unsupported Person, address, hours, LocalBusiness, Google listing, award or rating.
+- Optional /elearning-design-devon evaluated and omitted: no differentiated original regional evidence/content supplied. It remains 404 and outside navigation/sitemap.
+
+### Executed checks
+| Check | Result |
+| --- | --- |
+| Lint | PASS |
+| Strict types / Next route types | PASS |
+| Unit tests | 8 passed; 0 failed/skipped |
+| Production build | PASS; About prerendered |
+| Browser suite | 25 passed; 0 failed; 1 intentional desktop duplicate of mobile-only menu test skipped |
+| Format / whitespace | PASS |
+
+About browser checks verify real server HTML, unique metadata/H1, noindex, five principles/three working steps, proportionate region wording, pending founder state, absent invented claims/schema, all internal links, active desktop/mobile About navigation, keyboard Contact CTA, optional Devon 404/sitemap exclusion and no overflow at all six required widths. Images loaded and full/first-fold captures inspected at desktop/mobile. Existing page, menu, FAQ and Work publication/filter checks remain passing. Unit checks reject missing founder approval/bio/rights and placeholder portraits, and verify geographic identity does not manufacture a local business or person.
+
+### Search / evidence acceptance
+About uses confirmed Devon base/South West focus/UK-wide remote scope without fabricated offices/local projects or a new Devon nav item. Unique descriptive title/H1/body/internal links in real HTML; domain/canonical still unconfigured. All pages remain draft/noindex; sitemap empty; no schema emitted while About is draft. No analytics or email delivery claimed. GBP eligibility remains unestablished because actual in-person contact/operating circumstances are unknown; no listing created. Optional regional page is deferred, not a missing mandatory route.
+
+Status CONDITIONAL for final content/brand approval: founder name, biography, credentials and genuine portrait remain requested; expanded editorial wording awaits owner review. Safe engineering work is complete without inventing missing facts. Earlier approved-case, identity-asset, contact/legal and release blockers persist. Next: owner reviews About and supplies founder material; begin Phase 5 only on instruction.
