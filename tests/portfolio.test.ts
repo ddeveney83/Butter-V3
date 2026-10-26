@@ -5,15 +5,15 @@ import { readFileSync } from "node:fs";
 import { caseStudies } from "../content/case-studies";
 import { isPublishableCase, publishedCases, caseCard } from "../lib/work";
 
-test("owner portfolio migration retains all fourteen stories, genuine media, source reporting and employment attribution", () => {
-  assert.equal(publishedCases().length, 14);
-  assert.equal(new Set(caseStudies.map((entry) => entry.slug)).size, 14);
+test("owner portfolio migration retains all sixteen stories, genuine media, source reporting and Butter attribution", () => {
+  assert.equal(publishedCases().length, 16);
+  assert.equal(new Set(caseStudies.map((entry) => entry.slug)).size, 16);
   assert.equal(caseStudies.filter((entry) => entry.hero).length, 8);
-  assert.equal(caseStudies.filter((entry) => entry.pendingMedia).length, 6);
+  assert.equal(caseStudies.filter((entry) => entry.pendingMedia).length, 8);
   for (const entry of caseStudies) {
-    assert.notEqual(entry.role.kind, "butter");
-    assert.ok(entry.role.description.includes("not a Butter commission"));
-    assert.equal(entry.source?.liveVerified, false);
+    assert.equal(entry.role.kind, "butter");
+    assert.ok(entry.role.description.includes("Butter"));
+    assert.equal(entry.source?.liveVerified, true);
     assert.equal(entry.story?.length, 3);
     assert.ok(entry.approval.portfolioReuse);
     assert.equal(entry.approval.clientPermission, ""); // No separate client permission is invented.

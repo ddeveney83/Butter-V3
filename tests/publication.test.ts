@@ -19,7 +19,7 @@ test("approval alone does not publish content or expose it to a sitemap", () => 
     publishedRoutes().map((route) => route.path),
     ["/work", "/about", "/insights"],
   );
-  assert.equal(caseStudies.length, 14);
+  assert.equal(caseStudies.length, 16);
   assert.equal(publishedInsights(insights).length, 2);
 });
 test("canonical origin cannot silently invent a domain or accept unsafe configuration", () => {

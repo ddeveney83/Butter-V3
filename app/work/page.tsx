@@ -13,7 +13,7 @@ export const metadata = {
   ...routeMetadata(findRoute("/work")!),
   title: "Digital learning work and case studies | Butter",
   description:
-    "Explore digital learning, platform and strategy projects from Daniel Deveney’s professional portfolio, with original imagery and clear role attribution.",
+    "Explore Butter’s digital learning, platform and strategy projects. Real challenges, thoughtful design and meaningful results.",
 };
 export default function Work() {
   const entries = publishedCases().map(caseCard);
@@ -28,10 +28,9 @@ export default function Work() {
             <span className="highlight">Meaningful results.</span>
           </h1>
           <p>
-            Learning design starts with a real problem. Explore projects from
-            Daniel’s professional portfolio, with clear scope, reported results
-            and delivery attribution. They are shown as Daniel’s professional
-            experience, rather than Butter commissions.
+            We turn complex learning challenges into clear, practical
+            experiences. Explore our work across learning design, platforms and
+            strategy, and see what a considered approach can change.
           </p>
           <ActionLink href="/contact" variant="pill">
             Start a project

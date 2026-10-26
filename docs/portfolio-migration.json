@@ -371,5 +371,14 @@
       "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Nansen%20Concept%20One%20Three?tr=w-1200,f-auto,q-80",
       "sha256": "4a5ef2b1c42ac65cb7dcd69d54442af924497a43be40da061bd0600d63122a73"
     }
-  ]
+  ],
+  "liveVerification": {
+    "checkedOn": "2026-10-26",
+    "catalogue": "https://danieldeveney.com/work",
+    "detailRoutesVerified": 16,
+    "addedRoutes": ["vaccination-programme", "food-safety-level-3"],
+    "impactSource": "Live individual project impact sections",
+    "foodSafetyDiscrepancy": "Introduction says 33%; impact says 25%. Display uses 25%.",
+    "ownerAttribution": "Latest owner instruction confirms Butter delivery; public personal attribution removed."
+  }
 }

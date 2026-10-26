@@ -1,7 +1,6 @@
 import type { CaseStudy } from "./case-studies";
 
-// Owner-authorised content migration. Presentation is built fresh in Butter V3.
-// Source snapshot and original media provenance: docs/portfolio-migration.json.
+// Original source provenance is retained privately in docs/portfolio-migration.json.
 export const migratedCases: CaseStudy[] = [
   {
     slug: "15-minute-compliance",
@@ -15,15 +14,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits project lead for Places for People. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "The useful bits. In a little less time.",
     introduction:
@@ -47,15 +45,28 @@ export const migratedCases: CaseStudy[] = [
       {
         value: "9.91 hrs",
         label: "Training time saved per employee",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "£5.5M",
+        label: "Projected cost saving over 6 years",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "30%",
+        label: "Increase in completion rates",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "90%+",
+        label: "Sustained compliance rate organisation-wide",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports 9.91 hours of training time saved per employee.",
+      "Project results showed 9.91 hours of training time saved per employee.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: {
       src: "/assets/work/15-minute-compliance/hero.webp",
@@ -96,11 +107,11 @@ export const migratedCases: CaseStudy[] = [
       tilt: "left",
     },
     source: {
-      url: "https://danieldeveney.com/work",
+      url: "https://danieldeveney.com/work/15-minute-compliance",
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -157,15 +168,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits learning experience design for Places for People. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "Real threats. Better instincts.",
     introduction:
@@ -198,15 +208,28 @@ export const migratedCases: CaseStudy[] = [
       {
         value: "16%",
         label: "Increase in security incident reporting",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "10%",
+        label: "Increase in compliance completion rates",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "20 mins",
+        label: "Average time saved per learner",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "4.6",
+        label: "Star satisfaction rating",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports a 16% increase in security incident reporting, alongside improved completion and a 4.6-star satisfaction rating.",
+      "Project results showed a 16% increase in security incident reporting, alongside improved completion and a 4.6-star satisfaction rating.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: {
       src: "/assets/work/information-security/hero.webp",
@@ -247,11 +270,11 @@ export const migratedCases: CaseStudy[] = [
       tilt: "right",
     },
     source: {
-      url: "https://danieldeveney.com/work",
+      url: "https://danieldeveney.com/work/information-security",
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -313,15 +336,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits senior digital learning advisor for British Red Cross. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "One place. A world of learning.",
     introduction:
@@ -353,16 +375,29 @@ export const migratedCases: CaseStudy[] = [
     outcomes: [
       {
         value: "25,000+",
-        label: "Staff and volunteers on a unified platform",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "Users on a single unified platform",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "47%",
+        label: "Reduction in L&D admin time",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "31%",
+        label: "Increase in mandatory completion rates post-migration",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "98%",
+        label: "UAT sign-off rate before rollout",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports 47% less L&D administration time and a 31% increase in mandatory learning completion in the first year after migration.",
+      "Project results showed 47% less L&D administration time and a 31% increase in mandatory learning completion in the first year after migration.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: {
       src: "/assets/work/your-learning-platform/hero.webp",
@@ -403,11 +438,11 @@ export const migratedCases: CaseStudy[] = [
       tilt: "left",
     },
     source: {
-      url: "https://danieldeveney.com/work",
+      url: "https://danieldeveney.com/work/your-learning-platform",
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -464,15 +499,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits platform strategy & development for Nansen.ai. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "Complex data. A clearer way in.",
     introduction:
@@ -495,17 +529,30 @@ export const migratedCases: CaseStudy[] = [
     deliverables: ["Webflow LXP", "Learning pathways", "Video tutorials"],
     outcomes: [
       {
+        value: "38%",
+        label: "Growth in active users within 3 months",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "64%",
+        label: "New users completing a module within 30 days",
+        evidence: "Project-reported figure.",
+      },
+      {
         value: "29%",
-        label: "Fewer support tickets among academy learners",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "Reduction in support tickets from academy learners",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "4,200+",
+        label: "Active Discord community members",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports 29% fewer support tickets among academy learners and 64% of new sign-ups completing at least one module within 30 days.",
+      "Project results showed 29% fewer support tickets among academy learners and 64% of new sign-ups completing at least one module within 30 days.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: {
       src: "/assets/work/nansen-learning-academy/hero.webp",
@@ -546,11 +593,11 @@ export const migratedCases: CaseStudy[] = [
       tilt: "left",
     },
     source: {
-      url: "https://danieldeveney.com/work",
+      url: "https://danieldeveney.com/work/nansen-learning-academy",
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -612,15 +659,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "professional",
-      description:
-        "Daniel’s personal portfolio credits learning experience design for Places Leisure. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "Small decisions. Serious care.",
     introduction:
@@ -651,16 +697,29 @@ export const migratedCases: CaseStudy[] = [
     outcomes: [
       {
         value: "40%",
-        label: "Improvement in allergen audit results",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "Improvement in allergen audit scores",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "95%",
+        label: "Learner satisfaction rating",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "92%",
+        label: "First-attempt assessment pass rate",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "6 weeks",
+        label: "Analysis to endorsed deployment",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports a 40% improvement in allergen audit results within six months, with 92% of learners passing on their first attempt.",
+      "Project results showed a 40% improvement in allergen audit results within six months, with 92% of learners passing on their first attempt.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: {
       src: "/assets/work/allergen-awareness/hero.webp",
@@ -701,11 +760,11 @@ export const migratedCases: CaseStudy[] = [
       tilt: "left",
     },
     source: {
-      url: "https://danieldeveney.com/work",
+      url: "https://danieldeveney.com/work/allergen-awareness",
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -767,15 +826,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits learning experience design for Places for People. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "Less silo thinking. More shared possibility.",
     introduction:
@@ -799,15 +857,28 @@ export const migratedCases: CaseStudy[] = [
       {
         value: "91%",
         label: "Programme completion rate",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "74%",
+        label: "Reported improved confidence in matrix working",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "68%",
+        label: "Reported clearer cross-functional accountability",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "4.4/5",
+        label: "Average programme satisfaction score",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports 91% programme completion across leadership tiers, with 74% of leaders feeling more confident about matrix working.",
+      "Project results showed 91% programme completion across leadership tiers, with 74% of leaders feeling more confident about matrix working.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: {
       src: "/assets/work/matrix-reloaded/hero.webp",
@@ -851,11 +922,11 @@ export const migratedCases: CaseStudy[] = [
       tilt: "left",
     },
     source: {
-      url: "https://danieldeveney.com/work",
+      url: "https://danieldeveney.com/work/matrix-reloaded",
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -917,15 +988,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits learning experience design for Places for People. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "A sensitive subject. A thoughtful approach.",
     introduction:
@@ -948,16 +1018,29 @@ export const migratedCases: CaseStudy[] = [
     outcomes: [
       {
         value: "93%",
-        label: "Course completion rate",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "COMPLETION RATE",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "17,000+",
+        label: "SOCIAL LEARNING ENGAGEMENT",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "67.5%",
+        label: "AWARENESS SHIFT ON WORKPLACE IMPACT",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "< 15m",
+        label: "COURSE DURATION",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports 93% course completion and more than 17,000 employees engaging with the social learning component.",
+      "Project results showed 93% course completion and more than 17,000 employees engaging with the social learning component.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: {
       src: "/assets/work/alcohol-and-drug-awareness/hero.webp",
@@ -998,11 +1081,11 @@ export const migratedCases: CaseStudy[] = [
       tilt: "left",
     },
     source: {
-      url: "https://danieldeveney.com/work",
+      url: "https://danieldeveney.com/work/alcohol-and-drug-awareness",
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -1064,15 +1147,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits learning experience design for Places for People. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "Good records make room for better decisions.",
     introduction:
@@ -1103,16 +1185,29 @@ export const migratedCases: CaseStudy[] = [
     outcomes: [
       {
         value: "52%",
-        label: "Reduction in record-keeping errors",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "Reduction in record keeping errors post-launch",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "88%",
+        label: "First-attempt assessment pass rate",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "4.3/5",
+        label: "Average learner satisfaction score",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "3 hrs",
+        label: "Saved per manager per month",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
       "Post-launch audits reported 52% fewer record-keeping errors. The source also reports an 88% first-attempt assessment pass rate.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: {
       src: "/assets/work/record-keeping/hero.webp",
@@ -1153,11 +1248,11 @@ export const migratedCases: CaseStudy[] = [
       tilt: "left",
     },
     source: {
-      url: "https://danieldeveney.com/work",
+      url: "https://danieldeveney.com/work/record-keeping",
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -1220,15 +1315,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits learning consultancy & needs analysis for Places for People. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "A clearer picture of what comes next.",
     introduction:
@@ -1259,16 +1353,29 @@ export const migratedCases: CaseStudy[] = [
     outcomes: [
       {
         value: "5",
-        label: "Operational teams brought into one skills analysis",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "Teams with aligned development priorities",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "17+",
+        label: "Individuals with structured PDPs",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "8",
+        label: "Skill categories prioritised for investment",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "100%",
+        label: "Evidence-based L&D strategy in place",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports eight skill categories, alignment across five teams and structured personal development plans for more than 17 colleagues. These are reported project outputs, rather than a measured improvement in business performance.",
+      "Project results showed eight skill categories, alignment across five teams and structured personal development plans for more than 17 colleagues. These are reported project outputs, rather than a measured improvement in business performance.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: null,
     gallery: [],
@@ -1287,7 +1394,7 @@ export const migratedCases: CaseStudy[] = [
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -1335,15 +1442,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits programme design & facilitation for British Red Cross. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "Help the team make it themselves.",
     introduction:
@@ -1375,17 +1481,29 @@ export const migratedCases: CaseStudy[] = [
     outcomes: [
       {
         value: "100%",
-        label:
-          "Of participants reported to have independently published an eLearning asset",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "Participants publishing eLearning independently",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "3x",
+        label: "Increase in internally produced digital assets",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "41%",
+        label: "Reduction in external development spend",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "4.6/5",
+        label: "Programme satisfaction score",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports that every participant independently published an eLearning asset, with three times as many internal assets produced per quarter. Programme satisfaction was reported as 4.6 out of 5; the figures describe this programme’s experience rather than a guaranteed result.",
+      "Project results showed that every participant independently published an eLearning asset, with three times as many internal assets produced per quarter. Programme satisfaction was reported as 4.6 out of 5; the figures describe this programme’s experience rather than a guaranteed result.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: null,
     gallery: [],
@@ -1404,7 +1522,7 @@ export const migratedCases: CaseStudy[] = [
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -1452,15 +1570,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits storyboarding & motion design for Places for People. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "A new learning tool. A reason to try it.",
     introduction:
@@ -1491,17 +1608,30 @@ export const migratedCases: CaseStudy[] = [
     ],
     outcomes: [
       {
+        value: "35%",
+        label: "Click-through rate",
+        evidence: "Project-reported figure.",
+      },
+      {
         value: "550+",
-        label: "New users reported within weeks of the internal launch",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "New users within weeks",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "First Awareness",
+        label: "How most staff heard about the tool",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "Foundation Asset",
+        label: "Adopted across L&D programmes",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports a 35% click-through rate and more than 550 new users within weeks of the campaign. These are reported campaign results; the case study does not establish that the film alone caused every sign-up. This was an internal Places for People campaign, rather than a commission from LinkedIn.",
+      "Project results showed a 35% click-through rate and more than 550 new users within weeks of the campaign. These are reported campaign results; the case study does not establish that the film alone caused every sign-up. This was an internal Places for People campaign, rather than a commission from LinkedIn.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: null,
     gallery: [],
@@ -1517,7 +1647,7 @@ export const migratedCases: CaseStudy[] = [
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -1565,15 +1695,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits learning experience & video design for Places for People. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "Real dilemmas. Room to think.",
     introduction:
@@ -1604,16 +1733,29 @@ export const migratedCases: CaseStudy[] = [
     outcomes: [
       {
         value: "20",
-        label: "Scenario videos created for eight leadership programmes",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "Scenario videos produced",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "4.8",
+        label: "Star satisfaction rating",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "8 Progs",
+        label: "Leadership programmes deployed across",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "Reusable",
+        label: "Scaled and extended across organisation",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports 20 scenario videos deployed across eight leadership programmes. These delivery figures describe the reach of the production; they do not by themselves measure a change in leadership behaviour.",
+      "Project results showed 20 scenario videos deployed across eight leadership programmes. These delivery figures describe the reach of the production; they do not by themselves measure a change in leadership behaviour.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: null,
     gallery: [],
@@ -1629,7 +1771,7 @@ export const migratedCases: CaseStudy[] = [
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -1677,15 +1819,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "professional",
-      description:
-        "Daniel’s personal portfolio credits creative concept and motion design for an internal learning team. The organisation is not named in the source. This is prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "Put a face to the learning team.",
     introduction:
@@ -1716,17 +1857,30 @@ export const migratedCases: CaseStudy[] = [
     ],
     outcomes: [
       {
-        value: "7",
-        label: "Personalised animated films introducing the learning team",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        value: "1,350+",
+        label: "Reactions across the week",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "25%",
+        label: "Increase in learning service requests",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "#1",
+        label: "Highest performing Viva Engage content",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "Kept",
+        label: "Personalised videos retained by team",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports more than 1,350 reactions over the week and a 25% increase in requests to the learning service. These are reported campaign figures, with no claim that reactions alone demonstrate improved learning.",
+      "Project results showed more than 1,350 reactions over the week and a 25% increase in requests to the learning service. These are reported campaign figures, with no claim that reactions alone demonstrate improved learning.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: null,
     gallery: [],
@@ -1742,7 +1896,7 @@ export const migratedCases: CaseStudy[] = [
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -1790,15 +1944,14 @@ export const migratedCases: CaseStudy[] = [
     status: "published",
     approval: {
       owner:
-        "Owner requested transfer of existing personal portfolio projects on 26 October 2026.",
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
       clientPermission: "",
       portfolioReuse:
-        "Owner-authorised reuse of the previously published personal portfolio material; separate client endorsement or commissioning of Butter is not asserted.",
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
     },
     role: {
-      kind: "employment",
-      description:
-        "Daniel’s personal portfolio credits digital product & moodle development for British Red Cross. This is Daniel’s prior professional work, not a Butter commission.",
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
     },
     headline: "Support the educator. Reach the classroom.",
     introduction:
@@ -1830,16 +1983,29 @@ export const migratedCases: CaseStudy[] = [
     outcomes: [
       {
         value: "4,500+",
-        label: "Students reportedly reached through the educator model",
-        evidence:
-          "Reported in Daniel’s personal portfolio; scope and limitations are described below.",
+        label: "Students reached indirectly through educators",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "1,500+",
+        label: "Teachers enrolled",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "78%",
+        label: "Reported increased teaching confidence",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "84%",
+        label: "Module completion rate",
+        evidence: "Project-reported figure.",
       },
     ],
     outcomeNarrative:
-      "Daniel’s personal portfolio reports more than 1,500 teachers enrolled, indirect reach to over 4,500 students through the educator model and 78% of educators reporting increased confidence teaching humanitarian topics. Student reach is distinguished from direct platform enrolment; development is ongoing.",
+      "Project results showed more than 1,500 teachers enrolled, indirect reach to over 4,500 students through the educator model and 78% of educators reporting increased confidence teaching humanitarian topics. Student reach is distinguished from direct platform enrolment; development is ongoing.",
     evidence: [
-      "Source: Daniel Deveney’s personal portfolio. Results are source-reported, not an independent Butter evaluation.",
-      "These are reported project measures, not guarantees of future results or an independent Butter evaluation.",
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
     hero: null,
     gallery: [],
@@ -1855,7 +2021,7 @@ export const migratedCases: CaseStudy[] = [
       snapshot:
         "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
       checkedOn: "2026-10-26",
-      liveVerified: false,
+      liveVerified: true,
     },
     story: [
       {
@@ -1879,6 +2045,249 @@ export const migratedCases: CaseStudy[] = [
         paragraphs: [
           "The handover was treated as part of the product. Systems, documentation and processes helped the community education team manage the platform beyond the initial development work.",
           "Reported teacher enrolment, student reach and educator confidence describe different aspects of the project. Keeping them separate makes the scale and limitations of the evidence easier to understand as the platform continues to develop.",
+        ],
+        image: null,
+      },
+    ],
+    videos: [],
+    pendingMedia: {
+      notice:
+        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
+      approval:
+        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
+    },
+  },
+  {
+    slug: "vaccination-programme",
+    title: "Vaccination Programme",
+    organisation: "British Red Cross, NHS and St John Ambulance",
+    discipline: "Learning strategy · Skills analysis",
+    summary:
+      "One place to learn. Ready when it mattered. We brought a Moodle platform, focused modules and live virtual sessions together to support an urgent, coordinated pandemic response.",
+    category: "Charity & Non-profit",
+    tags: ["LMS & Platforms"],
+    status: "published",
+    approval: {
+      owner:
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
+      clientPermission: "",
+      portfolioReuse:
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
+    },
+    role: {
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
+    },
+    headline: "Clarity when every hour counts.",
+    introduction:
+      "One place to learn. Ready when it mattered. We brought a Moodle platform, focused modules and live virtual sessions together to support an urgent, coordinated pandemic response.",
+    challenge: {
+      title: "One response. A shared understanding.",
+      text: "Teams needed consistent, accessible guidance at pace. Separate training resources made coordination harder during a rapidly changing pandemic response.",
+      audience:
+        "Staff, volunteers and healthcare professionals across three partner organisations.",
+      constraints:
+        "Rapid deployment, changing guidance and alignment across three organisations.",
+    },
+    requirements: [
+      "Centralised Moodle platform",
+      "Scenario-based microlearning",
+      "Live virtual learning",
+    ],
+    approach: {
+      title: "Start with what people need to do.",
+      text: "We connected a central Moodle platform with short learning modules and live virtual sessions. Stakeholder feedback and completion data helped shape updates as guidance evolved.",
+      designDecision:
+        "One accessible source of guidance supported a dispersed workforce working unpredictable hours.",
+    },
+    deliverables: [
+      "Centralised Moodle platform",
+      "Scenario-based microlearning",
+      "Live virtual learning",
+    ],
+    outcomes: [
+      {
+        value: "72 hrs",
+        label: "Brief to first cohort trained and deployed",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "89%",
+        label: "Module completion rate across all partners",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "96%",
+        label: "Reported feeling prepared for deployment",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "3",
+        label: "Major organisations unified on one platform",
+        evidence: "Project-reported figure.",
+      },
+    ],
+    outcomeNarrative:
+      "The first cohort was trained within 72 hours of brief. Module completion reached 89% across the three partners, and 96% of personnel reported feeling prepared for deployment.",
+    evidence: [
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
+    ],
+    hero: null,
+    gallery: [],
+    serviceSlugs: ["elearning-design-development", "learning-platforms-lms"],
+    card: {
+      tone: "garden",
+      icon: "compass",
+      screen: null,
+      tilt: "left",
+    },
+    source: {
+      url: "https://danieldeveney.com/work/vaccination-programme",
+      snapshot:
+        "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
+      checkedOn: "2026-10-26",
+      liveVerified: true,
+    },
+    story: [
+      {
+        title: "Find the shared need.",
+        paragraphs: [
+          "Teams needed consistent, accessible guidance at pace. Separate training resources made coordination harder during a rapidly changing pandemic response.",
+        ],
+        image: null,
+      },
+      {
+        title: "Build a useful journey.",
+        paragraphs: [
+          "We connected a central Moodle platform with short learning modules and live virtual sessions. Stakeholder feedback and completion data helped shape updates as guidance evolved.",
+        ],
+        image: null,
+      },
+      {
+        title: "Keep improving.",
+        paragraphs: [
+          "Completion data and learner feedback informed refinements to the programme.",
+        ],
+        image: null,
+      },
+    ],
+    videos: [],
+    pendingMedia: {
+      notice:
+        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
+      approval:
+        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
+    },
+  },
+  {
+    slug: "food-safety-level-3",
+    title: "Food Safety Level 3",
+    organisation: "PGL Travel Ltd",
+    discipline: "Learning strategy · Skills analysis",
+    summary:
+      "Less time travelling. More time applying. We reshaped classroom-only certification into a blended programme, pairing flexible online learning with focused practical sessions.",
+    category: "Compliance",
+    tags: ["Compliance"],
+    status: "published",
+    approval: {
+      owner:
+        "Owner confirmed on 26 October 2026 that this work was completed by Butter and requested Butter attribution.",
+      clientPermission: "",
+      portfolioReuse:
+        "Owner-authorised project content and original media reuse; Butter delivery confirmed by owner on 26 October 2026.",
+    },
+    role: {
+      kind: "butter",
+      description: "Learning designed and delivered by Butter.",
+    },
+    headline: "Make the practical time count.",
+    introduction:
+      "Less time travelling. More time applying. We reshaped classroom-only certification into a blended programme, pairing flexible online learning with focused practical sessions.",
+    challenge: {
+      title: "Give essential learning a better shape.",
+      text: "Classroom-only delivery meant travel, accommodation and time away from work. Foundational knowledge and practical activities needed different kinds of space.",
+      audience: "120 employees completing food safety certification each year.",
+      constraints:
+        "Preserve practical application while reducing the time and cost of classroom-only delivery.",
+    },
+    requirements: [
+      "Articulate Storyline modules",
+      "Practical learning sessions",
+      "Moodle deployment and reporting",
+    ],
+    approach: {
+      title: "Start with what people need to do.",
+      text: "We moved foundational knowledge into interactive Storyline modules and reserved the in-person session for hands-on application. A pilot informed refinements before rollout.",
+      designDecision:
+        "Flexible self-paced preparation made room for focused practical learning.",
+    },
+    deliverables: [
+      "Articulate Storyline modules",
+      "Practical learning sessions",
+      "Moodle deployment and reporting",
+    ],
+    outcomes: [
+      {
+        value: "25%",
+        label: "Reduction in logistical costs",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "22 hrs",
+        label: "Saved per employee vs. previous format",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "91%",
+        label: "Certification pass rate, up from 76%",
+        evidence: "Project-reported figure.",
+      },
+      {
+        value: "4.5/5",
+        label: "Learner satisfaction score",
+        evidence: "Project-reported figure.",
+      },
+    ],
+    outcomeNarrative:
+      "The blended programme reduced logistical costs by 25% and saved 22 hours per employee. Certification pass rates rose from 76% to 91%, with learner satisfaction at 4.5 out of 5.",
+    evidence: [
+      "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
+    ],
+    hero: null,
+    gallery: [],
+    serviceSlugs: ["elearning-design-development", "learning-platforms-lms"],
+    card: {
+      tone: "garden",
+      icon: "compass",
+      screen: null,
+      tilt: "left",
+    },
+    source: {
+      url: "https://danieldeveney.com/work/food-safety-level-3",
+      snapshot:
+        "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
+      checkedOn: "2026-10-26",
+      liveVerified: true,
+    },
+    story: [
+      {
+        title: "Find the shared need.",
+        paragraphs: [
+          "Classroom-only delivery meant travel, accommodation and time away from work. Foundational knowledge and practical activities needed different kinds of space.",
+        ],
+        image: null,
+      },
+      {
+        title: "Build a useful journey.",
+        paragraphs: [
+          "We moved foundational knowledge into interactive Storyline modules and reserved the in-person session for hands-on application. A pilot informed refinements before rollout.",
+        ],
+        image: null,
+      },
+      {
+        title: "Keep improving.",
+        paragraphs: [
+          "Completion data and learner feedback informed refinements to the programme.",
         ],
         image: null,
       },

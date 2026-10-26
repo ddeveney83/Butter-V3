@@ -75,17 +75,9 @@ export function CaseStudyLayout({
           <p className="case-headline">{study.headline}</p>
           <p>{study.introduction}</p>
           <p className="role-attribution">
-            <strong>
-              {review
-                ? "Attribution required"
-                : study.role.kind === "employment"
-                  ? "Experience gained in employment"
-                  : study.role.kind === "professional"
-                    ? "From Daniel’s professional portfolio"
-                    : "Butter engagement"}
-            </strong>
-            <br />
-            {study.role.description}
+            {review
+              ? "Attribution required"
+              : "Designed and delivered by Butter."}
           </p>
           <ActionLink href="/contact" variant="pill">
             Discuss a similar challenge
@@ -155,22 +147,14 @@ export function CaseStudyLayout({
       </section>
       <section className="case-narrative case-approach shell">
         <div>
-          <Eyebrow>
-            {!review && study.role.kind !== "butter"
-              ? "Daniel’s approach"
-              : "Our approach"}
-          </Eyebrow>
+          <Eyebrow>Our approach</Eyebrow>
           <h2>{study.approach.title}</h2>
           <p>{study.approach.text}</p>
           <h3>Design decision</h3>
           <p>{study.approach.designDecision}</p>
         </div>
         <aside aria-label="What was delivered">
-          <Eyebrow>
-            {!review && study.role.kind !== "butter"
-              ? "Project deliverables"
-              : "What we delivered"}
-          </Eyebrow>
+          <Eyebrow>What we delivered</Eyebrow>
           <ul className="case-deliverables">
             {study.deliverables.map((item) => (
               <li key={item}>
@@ -220,26 +204,14 @@ export function CaseStudyLayout({
             ))}
           </ul>
         )}
-        {study.source && (
-          <div className="case-source">
-            <p>
-              Project source: Daniel Deveney’s personal portfolio. Reported
-              results relate to that original engagement and Daniel’s role,
-              rather than a Butter commission.
-            </p>
-            <ActionLink href={study.source.url}>
-              View the original portfolio source
-            </ActionLink>
-          </div>
-        )}
       </section>
       {study.videos && study.videos.length > 0 && (
         <section className="case-films shell" aria-labelledby="film-title">
           <Eyebrow>See the work</Eyebrow>
           <h2 id="film-title">Original project film.</h2>
           <p>
-            Watch the film linked from the original portfolio on YouTube. The
-            player opens only when you follow the link.
+            Watch the project film on YouTube. The player opens only when you
+            follow the link.
           </p>
           {study.videos.map((video) => (
             <ActionLink

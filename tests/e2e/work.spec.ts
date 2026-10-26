@@ -3,15 +3,15 @@ import { test, expect } from "@playwright/test";
 import { caseStudies, workCategories } from "../../content/case-studies";
 
 const expectedCounts: Record<string, number> = {
-  All: 14,
-  "Charity & Non-profit": 3,
+  All: 16,
+  "Charity & Non-profit": 4,
   "Housing & Communities": 8,
   Maritime: 0,
-  Compliance: 5,
-  "LMS & Platforms": 3,
+  Compliance: 6,
+  "LMS & Platforms": 4,
   Strategy: 3,
 };
-test("Work shows sourced projects, filters honestly and matches the new two-column card reference", async ({
+test("Work shows sourced projects, filters honestly and matches the new three-column card reference", async ({
   page,
   request,
 }, testInfo) => {
@@ -21,7 +21,7 @@ test("Work shows sourced projects, filters honestly and matches the new two-colu
   await expect(page.locator("h1")).toHaveText(
     "Real challenges.Meaningful results.",
   );
-  await expect(page.locator(".work-card")).toHaveCount(14);
+  await expect(page.locator(".work-card")).toHaveCount(16);
   const html = await (await request.get("/work")).text();
   expect(html).toContain("15-Minute Compliance");
   expect(html).toContain("British Red Cross");
@@ -48,7 +48,7 @@ test("Work shows sourced projects, filters honestly and matches the new two-colu
       ).toBeVisible();
   }
   await filters.getByRole("button", { name: "All", exact: true }).click();
-  await expect(page.locator(".work-card")).toHaveCount(14);
+  await expect(page.locator(".work-card")).toHaveCount(16);
   const links = await page
     .locator('main a[href^="/"]')
     .evaluateAll((elements) => [
@@ -77,7 +77,7 @@ test("Work shows sourced projects, filters honestly and matches the new two-colu
         (element) =>
           getComputedStyle(element).gridTemplateColumns.split(" ").length,
       );
-    expect(columns).toBe(width >= 768 ? 2 : 1);
+    expect(columns).toBe(width >= 1024 ? 3 : width >= 768 ? 2 : 1);
   }
   await page.setViewportSize(
     testInfo.project.name === "mobile"
@@ -140,17 +140,13 @@ test("all migrated case studies show accurate source roles, real detail routes a
     await expect(page.locator("h1")).toHaveText(study.title);
     await expect(page).toHaveTitle(`${study.title} | Butter case study`);
     await expect(page.locator(".role-attribution")).toContainText(
-      study.role.kind === "employment"
-        ? "Experience gained in employment"
-        : "From Daniel’s professional portfolio",
-    );
-    await expect(page.locator(".role-attribution")).toContainText(
-      "not a Butter commission",
+      "Designed and delivered by Butter.",
     );
     await expect(page.locator(".case-story-section")).toHaveCount(3);
-    await expect(page.locator(".case-source a")).toHaveAttribute(
-      "href",
-      study.source!.url,
+    await expect(page.locator(".case-source")).toHaveCount(0);
+    await expect(page.locator(".case-proof > div")).toHaveCount(4);
+    expect(await page.locator("main").innerText()).not.toMatch(
+      /Daniel|personal portfolio/,
     );
     await expect(page.locator(".case-outcome")).toContainText(
       study.outcomeNarrative,
@@ -252,4 +248,35 @@ test("opt-in layout review remains separate from real portfolio projects", async
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).not.toContain("/review/");
   expect(sitemap).not.toContain("layout-only");
+});
+
+test("Home features three projects and impact panels use Butter yellow", async ({
+  page,
+}, testInfo) => {
+  await page.goto("/");
+  await expect(page.locator(".work-card")).toHaveCount(3);
+  expect(
+    await page
+      .locator(".work-card-grid")
+      .evaluate(
+        (el) => getComputedStyle(el).gridTemplateColumns.split(" ").length,
+      ),
+  ).toBe(testInfo.project.name === "desktop" ? 3 : 1);
+  await loadVisualImages(page);
+  await page
+    .locator(".work-card-grid")
+    .screenshot({ path: testInfo.outputPath("home-featured-work.png") });
+  await page.goto("/work/information-security");
+  expect(
+    await page
+      .locator(".case-proof")
+      .evaluate((el) => getComputedStyle(el).backgroundColor),
+  ).toBe("rgb(254, 218, 78)");
+  expect(
+    await page
+      .locator(".case-proof")
+      .evaluate(
+        (el) => getComputedStyle(el).gridTemplateColumns.split(" ").length,
+      ),
+  ).toBe(testInfo.project.name === "desktop" ? 4 : 1);
 });

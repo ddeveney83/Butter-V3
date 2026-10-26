@@ -29,7 +29,7 @@ export default function Home() {
   const articles = publishedInsights().slice(0, 3);
   const projects = publishedCases()
     .filter((study) => study.hero)
-    .slice(0, 2);
+    .slice(0, 3);
   return (
     <main id="main" className="home" tabIndex={-1}>
       <section className="hero shell" aria-labelledby="home-heading">
@@ -129,8 +129,8 @@ export default function Home() {
             </h2>
           </div>
           <p className="section-intro">
-            Selected projects from Daniel’s professional portfolio, with
-            original imagery and clear delivery attribution.
+            A selection of our work, from clearer compliance learning to
+            platforms that bring people and knowledge together.
           </p>
           <ActionLink href="/work">Explore all case studies</ActionLink>
         </div>
