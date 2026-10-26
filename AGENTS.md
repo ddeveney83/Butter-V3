@@ -61,3 +61,6 @@ Use the supplied public/assets/brand/Hero image.jpeg as the homepage hero only, 
 
 ## Owner Humankind card update — 26 October 2026
 Humankind uses the owner-uploaded screenshot for its card with compact browser chrome and no large Butter wordmark. Keep background, animation, tilt and icons unchanged; other cards retain their existing presentation.
+
+## Owner all-card frame refinement — 26 October 2026
+Use compact unbranded browser headers on all project artwork. Owner also requested tablet/mobile exploration: current studies use tablets for 15-Minute Compliance/Information Security and a phone for Learning at Work Week. Preserve all image sources, surfaces, icons and motion. These are presentation frames, not product-compatibility claims.

@@ -32,18 +32,14 @@ export function ProjectArtwork({
   return (
     <div
       className="project-artwork"
-      data-header={presentation?.compactHeader ? "compact" : undefined}
+      data-header="compact"
+      data-device={presentation?.device ?? "browser"}
       data-tone={presentation?.tone ?? "yellow"}
       data-tilt={presentation?.tilt ?? "left"}
     >
       <span className="project-orbit" aria-hidden="true" />
       <div className="project-window">
         <div className="project-window-bar" aria-hidden="true">
-          {!presentation?.compactHeader && (
-            <span className="project-window-brand">
-              butter<span>·</span>
-            </span>
-          )}
           <span className="project-window-dots">
             <i />
             <i />

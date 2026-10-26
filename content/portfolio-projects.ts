@@ -96,6 +96,7 @@ export const migratedCases: CaseStudy[] = [
     ],
     serviceSlugs: ["elearning-design-development", "ongoing-learning-support"],
     card: {
+      device: "tablet",
       tone: "garden",
       icon: "sprout",
       screen: {
@@ -259,6 +260,7 @@ export const migratedCases: CaseStudy[] = [
     ],
     serviceSlugs: ["elearning-design-development", "ongoing-learning-support"],
     card: {
+      device: "tablet",
       tone: "ink",
       icon: "shield",
       screen: {
@@ -2051,6 +2053,7 @@ export const migratedCases: CaseStudy[] = [
     ],
     serviceSlugs: ["elearning-design-development", "ongoing-learning-support"],
     card: {
+      device: "mobile",
       tone: "yellow",
       icon: "film",
       screen: {
@@ -2215,7 +2218,6 @@ export const migratedCases: CaseStudy[] = [
     serviceSlugs: ["learning-platforms-lms", "ongoing-learning-support"],
     card: {
       tone: "sage",
-      compactHeader: true,
       icon: "bulb",
       screen: {
         src: "/assets/work/humankind-educatorhub/Screenshot 2026-10-26 at 16.22.39.png",

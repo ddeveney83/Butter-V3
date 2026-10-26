@@ -89,14 +89,31 @@ test("Work shows sourced projects, filters honestly and matches the new three-co
     path: testInfo.outputPath("work-index.png"),
     fullPage: true,
   });
-  const humankind = page
+  await expect(page.locator(".work-card .project-window-brand")).toHaveCount(0);
+  await expect(
+    page.locator('.work-card .project-artwork[data-header="compact"]'),
+  ).toHaveCount(16);
+  await expect(
+    page.locator('.work-card .project-artwork[data-device="tablet"]'),
+  ).toHaveCount(2);
+  await expect(
+    page.locator('.work-card .project-artwork[data-device="mobile"]'),
+  ).toHaveCount(1);
+  const mobileCard = page
     .locator(".work-card")
     .filter({
       has: page.getByRole("heading", {
-        name: "Humankind EducatorHub",
+        name: "Learning at Work Week",
         exact: true,
       }),
     });
+  await mobileCard.screenshot({ path: testInfo.outputPath("phone-card.png") });
+  const humankind = page.locator(".work-card").filter({
+    has: page.getByRole("heading", {
+      name: "Humankind EducatorHub",
+      exact: true,
+    }),
+  });
   await expect(humankind.locator(".project-window-brand")).toHaveCount(0);
   await expect(humankind.locator(".project-artwork")).toHaveAttribute(
     "data-header",
