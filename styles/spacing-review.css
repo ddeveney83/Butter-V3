@@ -233,3 +233,15 @@
     gap: 2rem;
   }
 }
+
+/* Owner-supplied artwork replaces the ribbon in the homepage hero only. */
+.home .homepage-hero-art {
+  padding: 0;
+  align-items: center;
+}
+.home .homepage-hero-art > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+}

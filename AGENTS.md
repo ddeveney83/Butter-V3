@@ -55,3 +55,6 @@ Owner approved moderate spacing increases and subtle cream/paper component surfa
 
 ## Owner Services refinement — 26 October 2026
 Owner requested less compressed Services pages, grouped navbar links and original Work imagery. Apply the expanded spacing/surfaces to overview plus all four details; use curated original projects with labelled case links. Services stays an overview link with a separate disclosure for the four offerings; mobile shows nested links. This authorises the navigation grouping, readable 2x2 detail process, and scoped layout variation. No deployment authorisation.
+
+## Owner homepage hero artwork — 26 October 2026
+Use the supplied public/assets/brand/Hero image.jpeg as the homepage hero only, superseding the ribbon requirement in this location. Keep original media elsewhere. The illustration's numbers are not real project metrics.

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Compass, Layers, Presentation, Users, ArrowRight } from "lucide-react";
 import {
   ActionLink,
@@ -56,21 +57,14 @@ export default function Home() {
             Based in Devon. Working across the South West and UK-wide.
           </p>
         </div>
-        <div className="hero-art">
-          <div className="cross-note" aria-hidden="true">
-            <span>＋</span>
-            <span>
-              01 /<br />
-              Thoughtful
-              <br />
-              by design
-            </span>
-          </div>
-          <AssetPlaceholder
-            label="Original curled butter-yellow ribbon artwork"
-            image="ribbon"
+        <div className="hero-art homepage-hero-art">
+          <Image
+            src="/assets/brand/Hero image.jpeg"
+            alt="Illustration of a Butter learning experience with a tablet, quiz, video and learning journey."
+            width={2048}
+            height={2048}
+            sizes="(max-width: 767px) 100vw, 50vw"
             preload
-            className="ribbon-gap"
           />
         </div>
       </section>
