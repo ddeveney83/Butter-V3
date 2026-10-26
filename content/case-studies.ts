@@ -9,6 +9,7 @@ export interface CaseImage {
   rights: string;
 }
 export interface WorkPresentation {
+  compactHeader?: boolean;
   tone: "garden" | "ink" | "yellow" | "sage";
   icon: "sprout" | "shield" | "layers" | "bulb" | "compass" | "film";
   screen: CaseImage | null;

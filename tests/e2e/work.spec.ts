@@ -89,6 +89,26 @@ test("Work shows sourced projects, filters honestly and matches the new three-co
     path: testInfo.outputPath("work-index.png"),
     fullPage: true,
   });
+  const humankind = page
+    .locator(".work-card")
+    .filter({
+      has: page.getByRole("heading", {
+        name: "Humankind EducatorHub",
+        exact: true,
+      }),
+    });
+  await expect(humankind.locator(".project-window-brand")).toHaveCount(0);
+  await expect(humankind.locator(".project-artwork")).toHaveAttribute(
+    "data-header",
+    "compact",
+  );
+  await expect(humankind.locator(".project-screen img")).toHaveAttribute(
+    "alt",
+    "Humankind EducatorHub homepage with British Red Cross learning resources for educators.",
+  );
+  await humankind.screenshot({
+    path: testInfo.outputPath("humankind-card.png"),
+  });
   const card = page.locator(".work-card").first();
   await card.screenshot({ path: testInfo.outputPath("work-card.png") });
   if (testInfo.project.name === "desktop") {

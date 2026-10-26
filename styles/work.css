@@ -692,3 +692,11 @@
     order: initial;
   }
 }
+
+/* Compact browser chrome for the owner-selected Humankind card. */
+.project-artwork[data-header="compact"] .project-window-bar {
+  min-height: 22px;
+  height: 8%;
+  padding: 0.2rem 0.65rem;
+  justify-content: flex-end;
+}

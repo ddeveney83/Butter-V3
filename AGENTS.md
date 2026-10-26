@@ -58,3 +58,6 @@ Owner requested less compressed Services pages, grouped navbar links and origina
 
 ## Owner homepage hero artwork — 26 October 2026
 Use the supplied public/assets/brand/Hero image.jpeg as the homepage hero only, superseding the ribbon requirement in this location. Keep original media elsewhere. The illustration's numbers are not real project metrics.
+
+## Owner Humankind card update — 26 October 2026
+Humankind uses the owner-uploaded screenshot for its card with compact browser chrome and no large Butter wordmark. Keep background, animation, tilt and icons unchanged; other cards retain their existing presentation.

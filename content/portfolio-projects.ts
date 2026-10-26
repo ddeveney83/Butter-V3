@@ -2215,12 +2215,13 @@ export const migratedCases: CaseStudy[] = [
     serviceSlugs: ["learning-platforms-lms", "ongoing-learning-support"],
     card: {
       tone: "sage",
+      compactHeader: true,
       icon: "bulb",
       screen: {
-        src: "/assets/work/humankind-educatorhub/screen-1.webp",
-        alt: "Humankind EducatorHub: EducatorHub Interface 1",
+        src: "/assets/work/humankind-educatorhub/Screenshot 2026-10-26 at 16.22.39.png",
+        alt: "Humankind EducatorHub homepage with British Red Cross learning resources for educators.",
         rights:
-          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+          "Owner uploaded this screenshot to the project repository and requested its use on the Humankind card on 26 October 2026; provenance recorded in docs/portfolio-migration.json.",
       },
       tilt: "left",
     },

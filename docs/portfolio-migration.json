@@ -575,5 +575,14 @@
       "alt": "Upskilling Programme One",
       "error": "HTTP Error 404: Not Found"
     }
+  ],
+  "ownerUploads": [
+    {
+      "path": "/assets/work/humankind-educatorhub/Screenshot 2026-10-26 at 16.22.39.png",
+      "sha256": "c949188b85b83e23af52dfd4c0c3fac9c21192a49afd10ed9b67d254ad6a57e9",
+      "purpose": "Humankind card screenshot",
+      "sourceCommit": "1a6b057",
+      "checkedOn": "2026-10-26"
+    }
   ]
 }
