@@ -103,7 +103,7 @@ export function insightStructuredData(
       datePublished: entry.publishedOn,
       ...(entry.updatedOn ? { dateModified: entry.updatedOn } : {}),
       author: {
-        "@type": "Person",
+        "@type": entry.author.kind ?? "Person",
         name: entry.author.name,
         description: entry.author.biography,
         url: `${origin}/about`,

@@ -29,7 +29,8 @@ export function aboutStructuredData(
   profile = aboutContent.founder,
 ) {
   if (status !== "published" || !origin) return [];
-  const founder = approvedFounder(profile);
+  // Personal founder identity is intentionally omitted from public schema.
+  void profile;
   return [
     {
       "@context": "https://schema.org",
@@ -41,17 +42,6 @@ export function aboutStructuredData(
         "@type": "Place",
         name,
       })),
-      ...(founder
-        ? {
-            founder: {
-              "@type": "Person",
-              name: founder.name,
-              jobTitle: founder.role,
-              description: founder.biography.join(" "),
-              image: new URL(founder.portrait.src, origin).href,
-            },
-          }
-        : {}),
     },
   ];
 }

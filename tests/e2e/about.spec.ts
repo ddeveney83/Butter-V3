@@ -33,7 +33,7 @@ test("About has crawlable studio content, honest identity and complete internal 
   await expect(region).toContainText("UK-wide remote commissions");
   await expect(
     page.getByRole("img", {
-      name: "Daniel Deveney, founder of Butter",
+      name: "Founder of Butter",
       exact: true,
     }),
   ).toBeVisible();

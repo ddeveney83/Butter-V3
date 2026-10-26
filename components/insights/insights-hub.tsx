@@ -20,9 +20,9 @@ export function InsightsHub({
         <div className="shell insight-review-notice">
           <strong>Editorial review only</strong>
           <p>
-            AI-assisted drafts prepared for Daniel Deveney. Copy, authorship and
-            imagery await approval. These are not published articles. This
-            review route is disabled by default.
+            AI-assisted drafts prepared for Butter. Copy, authorship and imagery
+            await approval. These are not published articles. This review route
+            is disabled by default.
           </p>
         </div>
       )}

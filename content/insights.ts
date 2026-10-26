@@ -21,7 +21,12 @@ export interface Insight {
   publishedOn?: string;
   updatedOn?: string;
   approval: { owner: string; author: string };
-  author: { name: string; biography: string; approval: string };
+  author: {
+    name: string;
+    biography: string;
+    approval: string;
+    kind?: "Person" | "Organization";
+  };
   image: {
     src: string;
     alt: string;
@@ -42,9 +47,10 @@ export interface Insight {
   relatedSlugs: string[];
 }
 const proposedAuthor = {
-  name: "Daniel Deveney",
+  name: "Butter",
+  kind: "Organization" as const,
   biography:
-    "Butter founder with a background in learning design, vocational education and learning platform ownership.",
+    "An independent digital learning studio based in Devon, combining learning design, strategy and platform expertise.",
   approval:
     "Owner accepted the reviewed author summary and byline on 25 October 2026.",
 };
@@ -63,7 +69,7 @@ export const insights: Insight[] = [
     approval: {
       owner: "Owner accepted prepared review content on 25 October 2026.",
       author:
-        "Daniel Deveney accepted the reviewed copy and byline on 25 October 2026.",
+        "The owner accepted the reviewed copy and byline on 25 October 2026.",
     },
     author: { ...proposedAuthor },
     image: {
@@ -167,7 +173,7 @@ export const insights: Insight[] = [
     approval: {
       owner: "Owner accepted prepared review content on 25 October 2026.",
       author:
-        "Daniel Deveney accepted the reviewed copy and byline on 25 October 2026.",
+        "The owner accepted the reviewed copy and byline on 25 October 2026.",
     },
     author: { ...proposedAuthor },
     image: {

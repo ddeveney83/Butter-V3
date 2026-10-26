@@ -46,3 +46,6 @@ The latest explicit owner instruction supersedes the earlier personal/employment
 
 ## Owner imagery and gallery update — 26 October 2026
 All 16 cases now have original media from the live portfolio; provenance and hashes remain in docs/portfolio-migration.json. Owner explicitly requested removing the duplicated closing case gallery; keep media within the relevant story sections, once per case. No deployment/indexing authorisation.
+
+## Owner sitewide attribution instruction — 26 October 2026
+Remove personal Daniel Deveney credits from visible copy, bylines, accessibility text and public metadata across the whole site. Use Butter for editorial/project authorship; retain an unnamed founder introduction and private provenance. This supersedes earlier named byline/biography presentation approval. Preserve original project media.

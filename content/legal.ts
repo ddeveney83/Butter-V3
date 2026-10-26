@@ -84,7 +84,7 @@ export const legalDocuments: Record<"privacy" | "terms", LegalDocument> = {
         title: "Website content and temporary images",
         paragraphs: [
           "The website includes owner-supplied material and editorial content approved for the site. Third-party references and software retain their respective rights. This page does not grant rights to reuse third-party work.",
-          "Images labelled AI-generated placeholder are temporary illustrations. They are not real client projects, endorsements, Butter staff photographs or final brand artwork. Daniel’s founder portrait is supplied separately from his CV.",
+          "Images labelled AI-generated placeholder are temporary illustrations. They are not real client projects, endorsements, Butter staff photographs or final brand artwork. The founder portrait is supplied separately from his CV.",
         ],
       },
       {

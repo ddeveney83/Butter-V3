@@ -47,8 +47,8 @@ export function ArticleLayout({
             <div className="insight-review-notice">
               <strong>Draft for review · Not published</strong>
               <p>
-                AI-assisted editorial draft. Daniel has not approved this copy
-                or byline. Temporary imagery is for layout review only.
+                AI-assisted editorial draft. This copy has not been approved or
+                byline. Temporary imagery is for layout review only.
               </p>
             </div>
           )}
@@ -173,14 +173,14 @@ export function ArticleLayout({
               </ol>
             </section>
             <aside className="article-author" aria-label="Article author">
-              <h2>{review ? "Proposed author" : "About the author"}</h2>
+              <h2>{review ? "Proposed author" : "About Butter"}</h2>
               <p>
                 <strong>{entry.author.name}</strong>
               </p>
               <p>{entry.author.biography}</p>
               {review && (
                 <p className="approval-note">
-                  CV-informed author summary; wording and attribution require
+                  Studio author summary; wording and attribution require
                   approval.
                 </p>
               )}

@@ -18,7 +18,7 @@ function profile(): FounderProfile {
   };
 }
 test("founder identity is withheld without approved biography and genuine cleared portrait", () => {
-  assert.equal(approvedFounder()?.name, "Daniel Deveney");
+  assert.equal(approvedFounder()?.name, "Butter’s founder");
   assert.equal(approvedFounder(null), null);
   assert.equal(approvedFounder(profile())?.name, "Test-only person");
   for (const mutate of [

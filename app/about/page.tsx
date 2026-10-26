@@ -194,9 +194,10 @@ export default function About() {
               <h2 id="founder-title">{founderIdentity.name}</h2>
               <p className="about-lead">{founderIdentity.role}</p>
               <p>
-                Daniel’s CV has been supplied and a biography has been drafted
-                for review. The full founder introduction is awaiting approved
-                wording and selection of the portrait supplied in his CV.
+                The founder’s CV has been supplied and a biography has been
+                drafted for review. The full founder introduction is awaiting
+                approved wording and selection of the portrait supplied in his
+                CV.
               </p>
               <p className="approval-note">Development content reservation</p>
             </div>

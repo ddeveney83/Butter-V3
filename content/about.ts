@@ -1,6 +1,6 @@
 // Identity confirmed directly by the owner. CV received; biography draft in docs/founder-biography-draft.md.
 export const founderIdentity = {
-  name: "Daniel Deveney",
+  name: "Butter’s founder",
   role: "Founder",
 } as const;
 
@@ -22,9 +22,9 @@ export const aboutContent: {
     name: founderIdentity.name,
     role: founderIdentity.role,
     biography: [
-      "Daniel Deveney is the founder of Butter. He brings more than 20 years of experience across vocational education, learning and development, digital learning and platform ownership.",
+      "Butter’s founder brings more than 20 years of experience across vocational education, learning and development, digital learning and platform ownership.",
       "His career spans frontline team leadership, apprenticeship teaching and assessment, instructional design and the development of organisation-wide learning platforms. He combines practical teaching experience with learning needs analysis, accessible design and product ownership, helping connect the needs of learners with the decisions behind the technology.",
-      "Daniel’s background includes interactive eLearning, curriculum design, LMS implementation, reporting and ongoing improvement across charity, commercial and technology settings. That experience informs Butter’s focus on clear learning design, thoughtful technology and practical support.",
+      "His background includes interactive eLearning, curriculum design, LMS implementation, reporting and ongoing improvement across charity, commercial and technology settings. That experience informs Butter’s focus on clear learning design, thoughtful technology and practical support.",
     ],
     credentials: [
       "Level 4 Certificate in Education and Training",
@@ -34,8 +34,8 @@ export const aboutContent: {
     approval:
       "Owner accepted all prepared review content on 25 October 2026; CV-derived copy and supplied portrait.",
     portrait: {
-      src: "/assets/people/daniel-deveney-cv-portrait.jpg",
-      alt: "Daniel Deveney, founder of Butter",
+      src: "/assets/people/founder-portrait.jpg",
+      alt: "Founder of Butter",
       rights:
         "Portrait supplied in the owner's CV; website use accepted with the review content on 25 October 2026.",
     },

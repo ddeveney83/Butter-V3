@@ -69,7 +69,7 @@ export default function ContactPage() {
             <li>Are there any access, platform or timing requirements?</li>
           </ul>
           <p>Share what you know. The approach can take shape from there.</p>
-          <ActionLink href="/about">Meet Daniel and the studio</ActionLink>
+          <ActionLink href="/about">Meet the studio</ActionLink>
         </aside>
       </section>
       <section className="contact-explore shell">

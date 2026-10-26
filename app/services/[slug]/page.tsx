@@ -150,7 +150,7 @@ export default async function ServicePage({ params }: Props) {
                   title={featuredWork.title}
                 />
                 <div>
-                  <Eyebrow>From Daniel’s professional portfolio</Eyebrow>
+                  <Eyebrow>Featured Butter work</Eyebrow>
                   <h3>{featuredWork.title}</h3>
                   <p>{featuredWork.summary}</p>
                   <ActionLink href={`/work/${featuredWork.slug}`}>

@@ -169,9 +169,7 @@ test("Approved articles have accessible reading, sources, author and internal li
     await expect(
       page.getByText("Draft for review · Not published", { exact: true }),
     ).toHaveCount(0);
-    await expect(page.locator(".article-byline")).toContainText(
-      "By Daniel Deveney",
-    );
+    await expect(page.locator(".article-byline")).toContainText("By Butter");
     await expect(page.locator(".article-byline")).toContainText(
       "Published 25 October 2026",
     );
