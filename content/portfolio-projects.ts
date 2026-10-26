@@ -2061,7 +2061,7 @@ export const migratedCases: CaseStudy[] = [
     slug: "vaccination-programme",
     title: "Vaccination Programme",
     organisation: "British Red Cross, NHS and St John Ambulance",
-    discipline: "Learning strategy · Skills analysis",
+    discipline: "LMS · Blended learning · Rapid deployment",
     summary:
       "One place to learn. Ready when it mattered. We brought a Moodle platform, focused modules and live virtual sessions together to support an urgent, coordinated pandemic response.",
     category: "Charity & Non-profit",
@@ -2183,7 +2183,7 @@ export const migratedCases: CaseStudy[] = [
     slug: "food-safety-level-3",
     title: "Food Safety Level 3",
     organisation: "PGL Travel Ltd",
-    discipline: "Learning strategy · Skills analysis",
+    discipline: "Blended learning · Food safety",
     summary:
       "Less time travelling. More time applying. We reshaped classroom-only certification into a blended programme, pairing flexible online learning with focused practical sessions.",
     category: "Compliance",
