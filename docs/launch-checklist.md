@@ -56,3 +56,10 @@ About design and engineering ready for review. Remaining sign-off: expanded stud
 - [ ] Verify canonical/origin behaviour and host-level edge/shared abuse protection on the actual deployment; per-process memory limits alone do not establish global enforcement.
 - [ ] Final original identity/illustration/editorial assets and first approved genuine case with rights/evidence.
 - [ ] Phase 7 QA and Phase 8 launch authorisation. No deployment/indexing or analytics activation by Phase 6 work.
+
+## Portfolio migration update — 26 October 2026
+- [x] Fourteen source-backed professional portfolio stories included with explicit role attribution and source-reporting limits.
+- [x] Thirty-two original images copied unchanged; source hashes recorded and checked. New cards use real images and accessible reduced-motion-aware interaction.
+- [ ] Enable approved domain/CDN access and verify current live inventory/content against the GitHub snapshot; do not claim a fresh live crawl until it succeeds.
+- [ ] Obtain original imagery for the six explicitly media-pending projects; resolve any source-date/role clarifications and any additional client-specific restrictions before release.
+- [ ] Complete final identity/editorial artwork, deferred inbox/provider receipt and legal operating facts, then separately authorise Phase 7/launch. Migration does not activate indexing/deployment.

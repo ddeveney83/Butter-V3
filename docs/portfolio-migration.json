@@ -1,0 +1,375 @@
+{
+  "retrievedOn": "2026-10-26",
+  "liveSiteVerified": false,
+  "repository": "https://github.com/ddeveney83/butter",
+  "commit": "0f650d91b646843c7228d24c5b317652e1d44e4b",
+  "sourceDocs": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/docs/portfolio-content.md",
+  "projects": [
+    {
+      "slug": "15-minute-compliance",
+      "source": {
+        "url": "https://danieldeveney.com/work",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "original"
+    },
+    {
+      "slug": "information-security",
+      "source": {
+        "url": "https://danieldeveney.com/work",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "original"
+    },
+    {
+      "slug": "your-learning-platform",
+      "source": {
+        "url": "https://danieldeveney.com/work",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "original"
+    },
+    {
+      "slug": "nansen-learning-academy",
+      "source": {
+        "url": "https://danieldeveney.com/work",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "original"
+    },
+    {
+      "slug": "allergen-awareness",
+      "source": {
+        "url": "https://danieldeveney.com/work",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "original"
+    },
+    {
+      "slug": "matrix-reloaded",
+      "source": {
+        "url": "https://danieldeveney.com/work",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "original"
+    },
+    {
+      "slug": "alcohol-and-drug-awareness",
+      "source": {
+        "url": "https://danieldeveney.com/work",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "original"
+    },
+    {
+      "slug": "record-keeping",
+      "source": {
+        "url": "https://danieldeveney.com/work",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projects.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "original"
+    },
+    {
+      "slug": "strategic-skills-mapping",
+      "source": {
+        "url": "https://danieldeveney.com/work/strategic-skills-mapping",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "awaiting-originals"
+    },
+    {
+      "slug": "ld-digital-upskilling",
+      "source": {
+        "url": "https://danieldeveney.com/work/ld-digital-upskilling",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "awaiting-originals"
+    },
+    {
+      "slug": "linkedin-learning",
+      "source": {
+        "url": "https://danieldeveney.com/work/linkedin-learning",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "awaiting-originals"
+    },
+    {
+      "slug": "ai-enabled-scenario-learning",
+      "source": {
+        "url": "https://danieldeveney.com/work/ai-enabled-scenario-learning",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "awaiting-originals"
+    },
+    {
+      "slug": "laaw-2024",
+      "source": {
+        "url": "https://danieldeveney.com/work/laaw-2024",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "awaiting-originals"
+    },
+    {
+      "slug": "humankind-educatorhub",
+      "source": {
+        "url": "https://danieldeveney.com/work/humankind-educatorhub",
+        "snapshot": "https://github.com/ddeveney83/butter/blob/0f650d91b646843c7228d24c5b317652e1d44e4b/src/data/projectCaseStudies.ts",
+        "checkedOn": "2026-10-26",
+        "liveVerified": false
+      },
+      "mediaStatus": "awaiting-originals"
+    }
+  ],
+  "images": [
+    {
+      "project": "allergen-awareness",
+      "path": "/assets/work/allergen-awareness/hero.webp",
+      "repositoryPath": "public/work/allergen-awareness/hero.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Allergy%20Awareness%20Hero?updatedAt=1778763912851&tr=w-1200,f-auto,q-80",
+      "sha256": "817ca7ef0c45b2e7529193ecd5c616badf95d5e441068031e979e5807e7c39c7"
+    },
+    {
+      "project": "allergen-awareness",
+      "path": "/assets/work/allergen-awareness/screen-1.webp",
+      "repositoryPath": "public/work/allergen-awareness/screen-1.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Virtual%20Host?updatedAt=1778766949554&tr=w-1200,f-auto,q-80",
+      "sha256": "50b4a29350fa212d55a9a58f127a9d9647dac6a903790bd5fc849fe6071a4268"
+    },
+    {
+      "project": "allergen-awareness",
+      "path": "/assets/work/allergen-awareness/screen-2.webp",
+      "repositoryPath": "public/work/allergen-awareness/screen-2.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Allergy%20branchin?updatedAt=1778764007154&tr=w-1200,f-auto,q-80",
+      "sha256": "3f8767b052b16de47c64ed9d51a2653d936729398e4bb69ba0e57e1879f444dc"
+    },
+    {
+      "project": "allergen-awareness",
+      "path": "/assets/work/allergen-awareness/screen-3.webp",
+      "repositoryPath": "public/work/allergen-awareness/screen-3.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Universal%20Content?updatedAt=1778766949597&tr=w-1200,f-auto,q-80",
+      "sha256": "252fd9e301c366002390cdc88e480a03b4c7a6f6c9b989484e14c5ac30f2edbd"
+    },
+    {
+      "project": "matrix-reloaded",
+      "path": "/assets/work/matrix-reloaded/hero.webp",
+      "repositoryPath": "public/work/matrix-reloaded/hero.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/MatrixworkingMockup?tr=w-1200,f-auto,q-80",
+      "sha256": "3e12577d3d86b403191dad44507fe15bb28cf5dd6c924e8c91ee30059c0da677"
+    },
+    {
+      "project": "matrix-reloaded",
+      "path": "/assets/work/matrix-reloaded/screen-1.webp",
+      "repositoryPath": "public/work/matrix-reloaded/screen-1.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Matrix%20working%20Cover?updatedAt=1782158815474&tr=w-1200,f-auto,q-80",
+      "sha256": "8e8bae06eb4a21a6581735b503b4c526285478ebdb4daa4adca7863addf02728"
+    },
+    {
+      "project": "matrix-reloaded",
+      "path": "/assets/work/matrix-reloaded/screen-2.webp",
+      "repositoryPath": "public/work/matrix-reloaded/screen-2.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/PfP%20silo?updatedAt=1782158728420&tr=w-1200,f-auto,q-80",
+      "sha256": "c9b96c3717f9a186bbe6d9a143bdeda308649d802fdf35d232c6b76f57be6257"
+    },
+    {
+      "project": "matrix-reloaded",
+      "path": "/assets/work/matrix-reloaded/screen-3.webp",
+      "repositoryPath": "public/work/matrix-reloaded/screen-3.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Coca%20Cola%20Matrix?updatedAt=1782158728663&tr=w-1200,f-auto,q-80",
+      "sha256": "86f24746a31f02cd0ce747bf86db86775850bd1d7aa31a3af89a197e36a91a5d"
+    },
+    {
+      "project": "alcohol-and-drug-awareness",
+      "path": "/assets/work/alcohol-and-drug-awareness/hero.webp",
+      "repositoryPath": "public/work/alcohol-and-drug-awareness/hero.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Alcohol%20and%20Drug%20Awareness%20Mockup?tr=w-1200,f-auto,q-80",
+      "sha256": "705db7a5669e4ced832b61550018fee74a9aa611369516da76fda8b120358c9b"
+    },
+    {
+      "project": "alcohol-and-drug-awareness",
+      "path": "/assets/work/alcohol-and-drug-awareness/screen-1.webp",
+      "repositoryPath": "public/work/alcohol-and-drug-awareness/screen-1.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Alcohol%20and%20Drug%20Awareness%2001?tr=w-1200,f-auto,q-80",
+      "sha256": "1de60a73f0637b16a607da1666adcc7e0b11ec88a6ec6a2d9e5b448307bbdf3c"
+    },
+    {
+      "project": "alcohol-and-drug-awareness",
+      "path": "/assets/work/alcohol-and-drug-awareness/screen-2.webp",
+      "repositoryPath": "public/work/alcohol-and-drug-awareness/screen-2.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Alcohol%20and%20Drug%20Awareness%2003?tr=w-1200,f-auto,q-80",
+      "sha256": "c2fb7392bf80fe2c45cd7129b07ad7a888e9863ca98c7f4143f0cf4bd92e44af"
+    },
+    {
+      "project": "alcohol-and-drug-awareness",
+      "path": "/assets/work/alcohol-and-drug-awareness/screen-3.webp",
+      "repositoryPath": "public/work/alcohol-and-drug-awareness/screen-3.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Alcohol%20and%20Drug%20Awareness%2007?tr=w-1200,f-auto,q-80",
+      "sha256": "288b0c13cd713bbd91537a8cbe96cc51a95801c3d9efc04beee0a178e621009c"
+    },
+    {
+      "project": "record-keeping",
+      "path": "/assets/work/record-keeping/hero.webp",
+      "repositoryPath": "public/work/record-keeping/hero.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/recordkeeping%20and%20info%20management.png?tr=w-1200,f-auto,q-80",
+      "sha256": "fed835278a6d8c6ef118f8e46a6984a2104d986dcc387fbcd15cd3f8e190f36e"
+    },
+    {
+      "project": "record-keeping",
+      "path": "/assets/work/record-keeping/screen-1.webp",
+      "repositoryPath": "public/work/record-keeping/screen-1.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Record%20keeping%20and%20Info%20management%20One?tr=w-1200,f-auto,q-80",
+      "sha256": "23b973d71876e3cdc9471529972b188f227bb9f30d970328993655561f00c493"
+    },
+    {
+      "project": "record-keeping",
+      "path": "/assets/work/record-keeping/screen-2.webp",
+      "repositoryPath": "public/work/record-keeping/screen-2.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Record%20keeping%20and%20Info%20management%20two?tr=w-1200,f-auto,q-80",
+      "sha256": "607df7abe81f80572d6f07a379a5803d861f5048cdc6c6bf4fb919ed7e1d02b7"
+    },
+    {
+      "project": "record-keeping",
+      "path": "/assets/work/record-keeping/screen-3.webp",
+      "repositoryPath": "public/work/record-keeping/screen-3.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Record%20keeping%20and%20Info%20management%20four?tr=w-1200,f-auto,q-80",
+      "sha256": "1da79d934bd20798c8197494222277879ae447aad08994730a08b0104708db07"
+    },
+    {
+      "project": "15-minute-compliance",
+      "path": "/assets/work/15-minute-compliance/hero.webp",
+      "repositoryPath": "public/work/15-minute-compliance/hero.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/15minutecompliancemockup.png?updatedAt=1779805905211&tr=w-1200,f-auto,q-80",
+      "sha256": "3f55f10fb7b844dc4ec2e2344f51a4700e0dc741048e47f5295076b1b27394c9"
+    },
+    {
+      "project": "15-minute-compliance",
+      "path": "/assets/work/15-minute-compliance/screen-1.webp",
+      "repositoryPath": "public/work/15-minute-compliance/screen-1.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/COSHH%20welcome?tr=w-1200,f-auto,q-80",
+      "sha256": "7a4cb0099f81672194b184fc2ed00f0539a42e9aeb7a90de2e455239f78d878c"
+    },
+    {
+      "project": "15-minute-compliance",
+      "path": "/assets/work/15-minute-compliance/screen-2.webp",
+      "repositoryPath": "public/work/15-minute-compliance/screen-2.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Rise%20360%20Environmental%20course?tr=w-1200,f-auto,q-80",
+      "sha256": "e05afca468322e5d4fe47b2bc0b4c476184ac736ea48a60dcfcd4a6df41547a7"
+    },
+    {
+      "project": "15-minute-compliance",
+      "path": "/assets/work/15-minute-compliance/screen-3.webp",
+      "repositoryPath": "public/work/15-minute-compliance/screen-3.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/GDPR%20landing%20page?tr=w-1200,f-auto,q-80",
+      "sha256": "3876be8ece4fdd422f1e7d4280424ae78df8dbefcb12e873c7479dc39baeecc5"
+    },
+    {
+      "project": "information-security",
+      "path": "/assets/work/information-security/hero.webp",
+      "repositoryPath": "public/work/information-security/hero.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Information%20Security%20hero?tr=w-1200,f-auto,q-80",
+      "sha256": "f7bffbf3993605c376d43b09fed61bde1bdfece0d901f770d2019e755bf59ec1"
+    },
+    {
+      "project": "information-security",
+      "path": "/assets/work/information-security/screen-1.webp",
+      "repositoryPath": "public/work/information-security/screen-1.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Info%20sec%20gamification?tr=w-1200,f-auto,q-80",
+      "sha256": "d0550f4f299098074c0f54fda9545dcdcfe11b03191a1d2bb8270a978ac705a9"
+    },
+    {
+      "project": "information-security",
+      "path": "/assets/work/information-security/screen-2.webp",
+      "repositoryPath": "public/work/information-security/screen-2.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/info%20sec%20real%20example?tr=w-1200,f-auto,q-80",
+      "sha256": "2baf17e1a42743a5ef38a4dbea4de2db3ea4e60dc93d806ed63a1d77eb3aab21"
+    },
+    {
+      "project": "information-security",
+      "path": "/assets/work/information-security/screen-3.webp",
+      "repositoryPath": "public/work/information-security/screen-3.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Info%20sec%20-%20gamified%20journey?tr=w-1200,f-auto,q-80",
+      "sha256": "9097c2c2fff919b0db456d17a3fc02afaefca01f647ae5a95493d3110f376951"
+    },
+    {
+      "project": "your-learning-platform",
+      "path": "/assets/work/your-learning-platform/hero.webp",
+      "repositoryPath": "public/work/your-learning-platform/hero.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Your%20Learning%20Platform%20Hero?updatedAt=1782159171963&tr=w-1200,f-auto,q-80",
+      "sha256": "7ae77deb80b94c146699f3dfdccb1bc593264b5773b4bc0b7362ccae6488cb74"
+    },
+    {
+      "project": "your-learning-platform",
+      "path": "/assets/work/your-learning-platform/screen-1.webp",
+      "repositoryPath": "public/work/your-learning-platform/screen-1.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Mobile%20app%20user%20guide?tr=w-1200,f-auto,q-80",
+      "sha256": "a4ef019ecdb73ae192e7afc5b2040114ea1dfc482c8690aabbb5c1badc33efaa"
+    },
+    {
+      "project": "your-learning-platform",
+      "path": "/assets/work/your-learning-platform/screen-2.webp",
+      "repositoryPath": "public/work/your-learning-platform/screen-2.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Admin%20backend?tr=w-1200,f-auto,q-80",
+      "sha256": "9de5fc20bb2433959c7cdc21ee319ce2b0783735df3c2b705f12ba0d8b8010f2"
+    },
+    {
+      "project": "your-learning-platform",
+      "path": "/assets/work/your-learning-platform/screen-3.webp",
+      "repositoryPath": "public/work/your-learning-platform/screen-3.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Personalised%20landing%20page?tr=w-1200,f-auto,q-80",
+      "sha256": "2056b427218e8a96b05a0722abe4a1411733120b67fb2bb6856b7b8872b71b1f"
+    },
+    {
+      "project": "nansen-learning-academy",
+      "path": "/assets/work/nansen-learning-academy/hero.webp",
+      "repositoryPath": "public/work/nansen-learning-academy/hero.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/NansenMockup.png?tr=w-1200,f-auto,q-80",
+      "sha256": "726ccefcc64ac51a635cc80ce897eb59f9ac9dc6594dccadefef9fda06f49782"
+    },
+    {
+      "project": "nansen-learning-academy",
+      "path": "/assets/work/nansen-learning-academy/screen-1.webp",
+      "repositoryPath": "public/work/nansen-learning-academy/screen-1.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Nansen%20Concept%20One?tr=w-1200,f-auto,q-80",
+      "sha256": "a43b464c9ee83e238b76f78e66acaf8d07c157cd26128a0add76590bae9c8508"
+    },
+    {
+      "project": "nansen-learning-academy",
+      "path": "/assets/work/nansen-learning-academy/screen-2.webp",
+      "repositoryPath": "public/work/nansen-learning-academy/screen-2.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Nansen%20Concept%20Two?tr=w-1200,f-auto,q-80",
+      "sha256": "6d3bb9928ce12ecb3b89a72c4ecd0daaf24172342fe471513d9654b0bdaa86d6"
+    },
+    {
+      "project": "nansen-learning-academy",
+      "path": "/assets/work/nansen-learning-academy/screen-3.webp",
+      "repositoryPath": "public/work/nansen-learning-academy/screen-3.webp",
+      "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Nansen%20Concept%20One%20Three?tr=w-1200,f-auto,q-80",
+      "sha256": "4a5ef2b1c42ac65cb7dcd69d54442af924497a43be40da061bd0600d63122a73"
+    }
+  ]
+}

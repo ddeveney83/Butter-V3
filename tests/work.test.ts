@@ -78,7 +78,7 @@ test("publication fails closed when status, role, rights or evidence are incompl
   }
   assert.equal(isPublishableCase(reviewCase), false);
   assert.equal(publishedCases([complete, reviewCase]).length, 1);
-  assert.equal(publishedCases().length, 0);
+  assert.equal(publishedCases().length, 14);
 });
 test("category filtering handles overlapping tags, all and empty results without altering input", () => {
   const entries = [

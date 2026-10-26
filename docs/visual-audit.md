@@ -116,3 +116,19 @@ Screenshots captured and inspected:
 - Existing full-suite Home/Services/Work captures retained for regression comparison.
 
 The screenshot helper now waits for every image, including the off-screen lazy founder portrait, so full-page evidence does not show its loading space. A form-result focus race found during testing was fixed using post-commit focus, and a legal external-link glyph was replaced with the shared arrow component. Original logo/font/ribbon/mascot and final editorial imagery remain gaps; all temporary illustration badges persist. No pixel-perfect claim or final brand sign-off.
+
+## Portfolio card reference update — 26 October 2026
+Owner supplied a new two-column project-card reference with angled browser frames, real screen content, fine orbit lines, playful foreground symbols, a round top-right arrow and a title/meta/arrow row. This explicitly replaces the older Work index's three-column card composition for this component. Inspected the original four PNGs as the continuing page/system authority; hero, navigation, typography, case-study sections, shared CTA and footer remain in the existing design language.
+
+Built ProjectArtwork and WorkCards freshly in V3. The first four Work cards match the new reference's project order and source screens: environmental sustainability, information-security room scenario, British Red Cross platform and Nansen Academy. Original files are unchanged. Main page remains warm cream/ink/yellow; garden/sage/charcoal are scoped measured artwork surfaces from the new image. The browser header uses V3's current text wordmark treatment, not an asserted official logo asset. Sparse Lucide symbols approximate the playful motifs; exact supplied custom plant/mascot/bulb artwork is not claimed.
+
+Compared resting/hover desktop card captures and full desktop/mobile Work captures with the owner's attached reference: consistent 1.6 aspect ratio, two equal desktop columns, one mobile column, inset angled windows, outlined frames, restrained offset shadow, separate foreground symbol, clean headings/meta and accessible single-link cards. Window rotates gently towards level with 1.025 scale; symbol independently rotates/scales and the arrow nudges. No autoplay or motion library. Hover is limited to hover-capable pointers; keyboard focus is visible and receives equivalent treatment; reduced motion retains resting transforms. Six-width overflow/column checks cover 1440/1280/1024/768/390/375.
+
+Case pages retain the original reference 03 hero/challenge/approach/proof/service/CTA grammar, now with actual sourced copy/images and three alternating narrative/image sections. Employment work uses Daniel's approach and project-deliverables labels. Six missing-image cases have clear text reservations and no fabricated/AI/SVG client screenshot. Source/result context is visible. Home now features two genuine cards; all four services link to matching real cases without modifying their service architecture. Existing page screenshots remain in the full regression set.
+
+Current screenshot evidence:
+- `test-results/work-Work-shows-sourced-pr-918b0-w-two-column-card-reference-{desktop,mobile}/work-index.png` and `work-card.png`.
+- Desktop `work-card-hover.png` in the same folder.
+- `test-results/work-all-migrated-case-stu-7b261-tes-and-explicit-media-gaps-{desktop,mobile}/{information-security,your-learning-platform,humankind-educatorhub}.png`.
+
+Source completeness is not final: the live personal site is still network-blocked; screenshots prove the V3 implementation against the supplied image and documented GitHub snapshot, not that a fresh live crawl succeeded. Exact custom card art, original global brand assets and six image sets remain gaps. No pixel-perfect claim.

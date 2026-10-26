@@ -1,12 +1,11 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
-import { workCategories, type WorkCategory } from "@/content/case-studies";
+import { workCategories, type WorkCategory } from "@/content/work-categories";
 import type { WorkCardData } from "@/lib/work";
 import { filterWork } from "@/lib/work-filter";
-import { AssetPlaceholder, Eyebrow } from "@/components/ui/primitives";
+import { Eyebrow } from "@/components/ui/primitives";
+import { WorkCards } from "./work-cards";
 export function WorkGallery({
   entries,
   review = false,
@@ -56,55 +55,17 @@ export function WorkGallery({
       </p>
       <div id="work-results">
         {visible.length ? (
-          <div className="work-card-grid">
-            {visible.map((entry) => (
-              <article key={entry.slug} className="work-card">
-                {entry.image ? (
-                  <Image
-                    src={entry.image.src}
-                    alt={entry.image.alt}
-                    width={720}
-                    height={450}
-                    sizes="(max-width: 600px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                  />
-                ) : (
-                  <AssetPlaceholder
-                    label="Approved project image required"
-                    image={
-                      entry.category === "Strategy"
-                        ? "workshop"
-                        : entry.category === "Compliance"
-                          ? "headphones"
-                          : "laptop"
-                    }
-                  />
-                )}
-                <Eyebrow>{entry.category}</Eyebrow>
-                <h2>
-                  <Link href={entry.href}>{entry.title}</Link>
-                </h2>
-                <p>{entry.summary}</p>
-                <Link
-                  className="work-card-arrow"
-                  href={entry.href}
-                  aria-label={`${review ? "Review layout" : "Read case study"}: ${entry.title}`}
-                >
-                  <ArrowRight size={18} aria-hidden="true" />
-                </Link>
-              </article>
-            ))}
-          </div>
+          <WorkCards entries={visible} review={review} />
         ) : (
           <div className="work-empty">
-            <Eyebrow>Portfolio in preparation</Eyebrow>
+            <Eyebrow>Portfolio</Eyebrow>
             <h2>
               {category === "All"
                 ? "Case studies are being prepared."
                 : "No approved case studies in this category yet."}
             </h2>
             <p>
-              Project stories and imagery will appear here once their
-              publication permissions and delivery attribution are confirmed.
+              Explore another category or discuss the kind of support you need.
             </p>
             {category !== "All" && (
               <button

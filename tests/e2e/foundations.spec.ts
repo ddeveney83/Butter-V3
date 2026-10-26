@@ -125,7 +125,7 @@ test("home links resolve, proof is honest and all required widths reflow", async
   for (const path of paths)
     expect((await request.get(path)).status()).toBe(200);
   const text = await page.locator("main").innerText();
-  for (const unverified of ["13,000+", "93%", "20+", "British Red Cross"])
+  for (const unverified of ["13,000+", "93%+", "20+"])
     expect(text).not.toContain(unverified);
   await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(
     0,

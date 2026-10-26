@@ -11,6 +11,8 @@ import { routes } from "@/content/routes";
 import { siteConfig } from "@/lib/site-config";
 import { publishedInsights, insightCard } from "@/lib/insights";
 import { InsightCards } from "@/components/insights/insight-cards";
+import { WorkCards } from "@/components/work/work-cards";
+import { publishedCases, caseCard } from "@/lib/work";
 
 export const metadata = {
   ...routeMetadata(routes[0]),
@@ -25,6 +27,9 @@ const icons = {
 };
 export default function Home() {
   const articles = publishedInsights().slice(0, 3);
+  const projects = publishedCases()
+    .filter((study) => study.hero)
+    .slice(0, 2);
   return (
     <main id="main" className="home" tabIndex={-1}>
       <section className="hero shell" aria-labelledby="home-heading">
@@ -124,24 +129,12 @@ export default function Home() {
             </h2>
           </div>
           <p className="section-intro">
-            Selected projects will appear here once their imagery, scope and
-            publication permissions are approved.
+            Selected projects from Daniel’s professional portfolio, with
+            original imagery and clear delivery attribution.
           </p>
           <ActionLink href="/work">Explore all case studies</ActionLink>
         </div>
-        <div className="three-grid" aria-label="Reserved work imagery">
-          {[1, 2, 3].map((slot) => (
-            <div key={slot}>
-              <AssetPlaceholder
-                label={`Featured project image ${slot}`}
-                image={
-                  slot === 2 ? "workshop" : slot === 3 ? "headphones" : "laptop"
-                }
-              />
-              <p className="approval-note">Project details awaiting approval</p>
-            </div>
-          ))}
-        </div>
+        <WorkCards entries={projects.map(caseCard)} headingLevel={3} />
       </section>
       <section
         className="process-section shell"

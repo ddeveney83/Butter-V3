@@ -68,7 +68,7 @@ export const routes: RouteRecord[] = [
     title: "Work",
     phase: 3,
     intent: "Assess approved project evidence",
-    status: "approved",
+    status: "published",
     description:
       "Assess approved project evidence. Content and publication approval pending.",
   },

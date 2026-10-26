@@ -1,18 +1,18 @@
 import type { PublicationStatus } from "./routes";
-export const workCategories = [
-  "All",
-  "Charity & Non-profit",
-  "Housing & Communities",
-  "Maritime",
-  "Compliance",
-  "LMS & Platforms",
-  "Strategy",
-] as const;
-export type WorkCategory = Exclude<(typeof workCategories)[number], "All">;
+import { migratedCases } from "./portfolio-projects";
+import type { WorkCategory } from "./work-categories";
+export { workCategories } from "./work-categories";
+export type { WorkCategory } from "./work-categories";
 export interface CaseImage {
   src: string;
   alt: string;
   rights: string;
+}
+export interface WorkPresentation {
+  tone: "garden" | "ink" | "yellow" | "sage";
+  icon: "sprout" | "shield" | "layers" | "bulb" | "compass" | "film";
+  screen: CaseImage | null;
+  tilt: "left" | "right";
 }
 export interface CaseStudy {
   slug: string;
@@ -21,8 +21,12 @@ export interface CaseStudy {
   category: WorkCategory;
   tags: WorkCategory[];
   status: PublicationStatus;
-  approval: { owner: string; clientPermission: string };
-  role: { kind: "butter" | "employment"; description: string };
+  approval: {
+    owner: string;
+    clientPermission: string;
+    portfolioReuse?: string;
+  };
+  role: { kind: "butter" | "employment" | "professional"; description: string };
   headline: string;
   introduction: string;
   challenge: {
@@ -40,6 +44,18 @@ export interface CaseStudy {
   hero: CaseImage | null;
   gallery: CaseImage[];
   serviceSlugs: string[];
+  organisation?: string;
+  discipline?: string;
+  card?: WorkPresentation;
+  source?: {
+    url: string;
+    snapshot: string;
+    checkedOn: string;
+    liveVerified: boolean;
+  };
+  pendingMedia?: { notice: string; approval: string };
+  story?: { title: string; paragraphs: string[]; image: CaseImage | null }[];
+  videos?: { id: string; title: string }[];
 }
-// No approved source narratives, rights or role attribution have been supplied.
-export const caseStudies: CaseStudy[] = [];
+// Owner requested migration of their existing personal portfolio on 26 October 2026.
+export const caseStudies: CaseStudy[] = migratedCases;

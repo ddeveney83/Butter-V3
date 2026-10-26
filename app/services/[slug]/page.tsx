@@ -18,6 +18,8 @@ import {
 } from "@/components/sections/service-sections";
 import { routeMetadata } from "@/lib/seo";
 import { findRoute } from "@/content/routes";
+import { publishedCases } from "@/lib/work";
+import { ProjectArtwork } from "@/components/work/project-artwork";
 
 type Props = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
@@ -36,6 +38,13 @@ export async function generateMetadata({ params }: Props) {
 export default async function ServicePage({ params }: Props) {
   const service = findServiceDetail((await params).slug);
   if (!service) notFound();
+  const relatedWork = publishedCases().filter(
+    (study) => study.hero && study.serviceSlugs.includes(service.slug),
+  );
+  const featuredWork =
+    (service.slug === "elearning-design-development"
+      ? relatedWork.find((study) => study.slug === "information-security")
+      : undefined) ?? relatedWork[0];
   const schema = serviceSchema(
     service,
     findRoute(`/services/${service.slug}`)!.status,
@@ -133,16 +142,36 @@ export default async function ServicePage({ params }: Props) {
         <div className="approach-main">
           <ProcessSteps steps={service.steps} />
           <div className="service-feature">
-            <AssetPlaceholder label="Approved service-related project imagery" />
-            <div>
-              <Eyebrow>Featured work · approval pending</Eyebrow>
-              <h3>Evidence that tells the full story.</h3>
-              <p>
-                Project images, delivery scope and results will appear here only
-                with permission and verified attribution.
-              </p>
-              <ActionLink href="/work">Explore our work</ActionLink>
-            </div>
+            {featuredWork ? (
+              <>
+                <ProjectArtwork
+                  image={featuredWork.hero}
+                  presentation={featuredWork.card}
+                  title={featuredWork.title}
+                />
+                <div>
+                  <Eyebrow>From Daniel’s professional portfolio</Eyebrow>
+                  <h3>{featuredWork.title}</h3>
+                  <p>{featuredWork.summary}</p>
+                  <ActionLink href={`/work/${featuredWork.slug}`}>
+                    Read the full case study
+                  </ActionLink>
+                </div>
+              </>
+            ) : (
+              <>
+                <AssetPlaceholder label="Approved service-related project imagery" />
+                <div>
+                  <Eyebrow>Featured work · approval pending</Eyebrow>
+                  <h3>Evidence that tells the full story.</h3>
+                  <p>
+                    Project images, delivery scope and results will appear here
+                    only with permission and verified attribution.
+                  </p>
+                  <ActionLink href="/work">Explore our work</ActionLink>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>

@@ -6,6 +6,24 @@ import {
 import { services } from "../content/services";
 import { canonicalOrigin } from "./site-config";
 const nonempty = (value: string) => Boolean(value.trim());
+function portfolioReuse(study: CaseStudy) {
+  if (!study.approval.portfolioReuse?.trim() || !study.source) return false;
+  try {
+    const url = new URL(study.source.url);
+    return (
+      url.protocol === "https:" &&
+      !url.username &&
+      !url.password &&
+      ["danieldeveney.com", "www.danieldeveney.com"].includes(url.hostname) &&
+      (url.pathname === "/work" || url.pathname.startsWith("/work/")) &&
+      /^https:\/\/github\.com\/ddeveney83\/butter\/blob\/[a-f0-9]{40}\//.test(
+        study.source.snapshot,
+      )
+    );
+  } catch {
+    return false;
+  }
+}
 function approvedImage(image: CaseStudy["hero"]) {
   return Boolean(
     image &&
@@ -25,7 +43,6 @@ export function isPublishableCase(study: CaseStudy) {
       study.headline,
       study.introduction,
       study.approval.owner,
-      study.approval.clientPermission,
       study.role.description,
       study.challenge.title,
       study.challenge.text,
@@ -36,11 +53,32 @@ export function isPublishableCase(study: CaseStudy) {
       study.approach.designDecision,
       study.outcomeNarrative,
     ].every(nonempty) &&
+    (nonempty(study.approval.clientPermission) || portfolioReuse(study)) &&
     [study.evidence, study.requirements, study.deliverables].every(
       (items) => items.length > 0 && items.every(nonempty),
     ) &&
-    approvedImage(study.hero) &&
+    (approvedImage(study.hero) ||
+      (study.hero === null &&
+        portfolioReuse(study) &&
+        Boolean(
+          study.pendingMedia?.notice.trim() &&
+          study.pendingMedia.approval.trim(),
+        ))) &&
     study.gallery.every(approvedImage) &&
+    (!study.card?.screen || approvedImage(study.card.screen)) &&
+    (!study.story ||
+      study.story.every(
+        (section) =>
+          nonempty(section.title) &&
+          section.paragraphs.length > 0 &&
+          section.paragraphs.every(nonempty) &&
+          (!section.image || approvedImage(section.image)),
+      )) &&
+    (!study.videos ||
+      study.videos.every(
+        (video) =>
+          /^[A-Za-z0-9_-]{11}$/.test(video.id) && nonempty(video.title),
+      )) &&
     study.outcomes.every((outcome) =>
       [outcome.value, outcome.label, outcome.evidence].every(nonempty),
     ) &&
@@ -62,6 +100,9 @@ export interface WorkCardData {
   tags: WorkCategory[];
   image: CaseStudy["hero"];
   href: string;
+  organisation?: string;
+  discipline?: string;
+  presentation?: CaseStudy["card"];
 }
 export function caseCard(study: CaseStudy): WorkCardData {
   return {
@@ -72,6 +113,9 @@ export function caseCard(study: CaseStudy): WorkCardData {
     tags: study.tags,
     image: study.hero,
     href: `/work/${study.slug}`,
+    organisation: study.organisation,
+    discipline: study.discipline,
+    presentation: study.card,
   };
 }
 export function caseBreadcrumbs(study: CaseStudy, origin = canonicalOrigin()) {

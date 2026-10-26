@@ -52,7 +52,7 @@ npm run dev
 
 Checks: `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, then `npm run test:e2e` (starts its own production server). Playwright automatically uses system Chromium in this cloud environment. See [architecture](docs/architecture.md), [phase status](docs/phase-status.md), [asset gaps](docs/decisions-and-gaps.md) and [search plan](docs/search-and-content-plan.md).
 
-Home, About, Services overview and all four details, Work, Insights, Contact, Privacy and Terms now have implemented pages. The owner accepted the founder biography/CV portrait and two substantive Insights articles; these appear in normal page lists and detail routes. Work still awaits the first genuine approved case. Temporary AI illustrations retain visible labels.
+Home, About, Services overview and all four details, Work, Insights, Contact, Privacy and Terms now have implemented pages. The owner accepted the founder biography/CV portrait and two substantive Insights articles; these appear in normal page lists and detail routes. Work now includes fourteen sourced stories from Daniel’s professional portfolio, with original imagery for eight and explicit imagery-pending states for six. Temporary AI illustrations retain visible labels.
 
 Contact has a finished form and server-side Resend adapter, but **email delivery is disabled at the owner's request** until account/inbox/domain configuration is supplied. Privacy and Terms are substantial drafts pending the trading identity, hosting and retention decisions. No real inbox receipt or legal approval is claimed. See [contact setup](docs/contact-setup.md).
 
@@ -62,4 +62,8 @@ All pages remain noindex, SITE_URL is unset and sitemap empty. No deployment or 
 
 `ENABLE_DESIGN_REVIEW=true npm run dev` enables `/review/work` for labelled fictional layout examples, never genuine portfolio proof. Keep it false on public hosts; it is not authentication. Insights review routes now return 404 because both prepared drafts have been accepted and moved to their normal article URLs.
 
-Review the [accepted biography](docs/founder-biography-draft.md), [LMS guide](docs/editorial-review/choosing-an-lms-for-your-organisation.md) and [accessibility guide](docs/editorial-review/practical-accessibility-for-digital-learning.md). The full CV and private contact fields are not committed or served. Original brand/editorial assets, real case evidence, email activation, final legal text and launch approval remain outstanding.
+Review the [accepted biography](docs/founder-biography-draft.md), [LMS guide](docs/editorial-review/choosing-an-lms-for-your-organisation.md) and [accessibility guide](docs/editorial-review/practical-accessibility-for-digital-learning.md). The full CV and private contact fields are not committed or served. Original brand/editorial assets, six project image sets, current live-source verification, email activation, final legal text and launch approval remain outstanding.
+
+## Personal portfolio migration
+
+Fourteen source-backed cases, original image provenance, role attribution, two-column cards and reduced-motion-aware hover effects are now implemented. The original portfolio domain is still network-blocked, so this import uses the documented source snapshot in the owner’s older GitHub repository; it does not claim a fresh live crawl. See [migration inventory and access notes](docs/portfolio-migration.md) and [source/image ledger](docs/portfolio-migration.json). No old application styling/backend or artificial course demos were imported.

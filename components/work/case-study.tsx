@@ -6,23 +6,21 @@ import {
   CheckCircle,
   Presentation,
   ChartNoAxesColumnIncreasing,
+  ImageOff,
 } from "lucide-react";
 import type { CaseStudy } from "@/content/case-studies";
 import { services } from "@/content/services";
-import {
-  ActionLink,
-  AssetPlaceholder,
-  BottomCTA,
-  Eyebrow,
-} from "@/components/ui/primitives";
+import { ActionLink, BottomCTA, Eyebrow } from "@/components/ui/primitives";
 function ProjectImage({
   image,
   label,
   className = "",
+  preload = false,
 }: {
   image: CaseStudy["hero"];
   label: string;
   className?: string;
+  preload?: boolean;
 }) {
   return image ? (
     <Image
@@ -32,9 +30,16 @@ function ProjectImage({
       width={1200}
       height={800}
       sizes="(max-width: 767px) 100vw, 60vw"
+      preload={preload}
     />
   ) : (
-    <AssetPlaceholder label={label} className={className} />
+    <div className={`project-media-pending ${className}`} role="note">
+      <ImageOff aria-hidden="true" size={34} />
+      <p>Original project imagery is being prepared.</p>
+      <small>
+        {label}. No substitute is presented as a real project screenshot.
+      </small>
+    </div>
   );
 }
 export function CaseStudyLayout({
@@ -75,7 +80,9 @@ export function CaseStudyLayout({
                 ? "Attribution required"
                 : study.role.kind === "employment"
                   ? "Experience gained in employment"
-                  : "Butter engagement"}
+                  : study.role.kind === "professional"
+                    ? "From Daniel’s professional portfolio"
+                    : "Butter engagement"}
             </strong>
             <br />
             {study.role.description}
@@ -86,9 +93,19 @@ export function CaseStudyLayout({
         </div>
         <ProjectImage
           image={study.hero}
-          label="Approved project hero photograph"
+          label={
+            review
+              ? "Case study hero layout"
+              : `${study.title} project overview`
+          }
+          preload
         />
       </section>
+      {study.pendingMedia && (
+        <div className="shell case-media-notice">
+          <p>{study.pendingMedia.notice}</p>
+        </div>
+      )}
       {(study.outcomes.length > 0 || review) && (
         <section
           className="case-proof wide-shell"
@@ -138,14 +155,22 @@ export function CaseStudyLayout({
       </section>
       <section className="case-narrative case-approach shell">
         <div>
-          <Eyebrow>Our approach</Eyebrow>
+          <Eyebrow>
+            {!review && study.role.kind !== "butter"
+              ? "Daniel’s approach"
+              : "Our approach"}
+          </Eyebrow>
           <h2>{study.approach.title}</h2>
           <p>{study.approach.text}</p>
           <h3>Design decision</h3>
           <p>{study.approach.designDecision}</p>
         </div>
         <aside aria-label="What was delivered">
-          <Eyebrow>What we delivered</Eyebrow>
+          <Eyebrow>
+            {!review && study.role.kind !== "butter"
+              ? "Project deliverables"
+              : "What we delivered"}
+          </Eyebrow>
           <ul className="case-deliverables">
             {study.deliverables.map((item) => (
               <li key={item}>
@@ -156,6 +181,23 @@ export function CaseStudyLayout({
           </ul>
         </aside>
       </section>
+      {study.story && (
+        <section className="case-story shell" aria-label="Project story">
+          {study.story.map((section) => (
+            <section key={section.title} className="case-story-section">
+              <div>
+                <h2>{section.title}</h2>
+                {section.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+              {section.image && (
+                <ProjectImage image={section.image} label={section.title} />
+              )}
+            </section>
+          ))}
+        </section>
+      )}
       {(study.gallery.length > 0 || review) && (
         <section className="case-gallery shell" aria-label="Project gallery">
           {(review ? [null, null] : study.gallery).map((image, index) => (
@@ -178,7 +220,37 @@ export function CaseStudyLayout({
             ))}
           </ul>
         )}
+        {study.source && (
+          <div className="case-source">
+            <p>
+              Project source: Daniel Deveney’s personal portfolio. Reported
+              results relate to that original engagement and Daniel’s role,
+              rather than a Butter commission.
+            </p>
+            <ActionLink href={study.source.url}>
+              View the original portfolio source
+            </ActionLink>
+          </div>
+        )}
       </section>
+      {study.videos && study.videos.length > 0 && (
+        <section className="case-films shell" aria-labelledby="film-title">
+          <Eyebrow>See the work</Eyebrow>
+          <h2 id="film-title">Original project film.</h2>
+          <p>
+            Watch the film linked from the original portfolio on YouTube. The
+            player opens only when you follow the link.
+          </p>
+          {study.videos.map((video) => (
+            <ActionLink
+              key={video.id}
+              href={`https://www.youtube.com/watch?v=${video.id}`}
+            >
+              {video.title}
+            </ActionLink>
+          ))}
+        </section>
+      )}
       <nav className="case-services shell" aria-label="Related services">
         <Eyebrow>Related services</Eyebrow>
         {study.serviceSlugs.map((slug) => {
