@@ -370,6 +370,192 @@
       "repositoryPath": "public/work/nansen-learning-academy/screen-3.webp",
       "sourceURL": "https://ik.imagekit.io/graniteglitch/Hellodan/Nansen%20Concept%20One%20Three?tr=w-1200,f-auto,q-80",
       "sha256": "4a5ef2b1c42ac65cb7dcd69d54442af924497a43be40da061bd0600d63122a73"
+    },
+    {
+      "path": "/assets/work/vaccination-programme/hero.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Vaccination%20programme?tr=w-1200,f-auto,q-80",
+      "sha256": "732641ab5eaeddea469f27c8e1d2e94eaf90ff0b4efe867bce3c180403c378cc",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/vaccination-programme/screen-1.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Vaccination%20Programme%20One?tr=w-1200,f-auto,q-80",
+      "sha256": "75cc63856ad9d5e514a57a08fe7b4d842d05b56a7090dbdca537fb34233e761c",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/vaccination-programme/screen-2.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Vaccination%20Programme%20Two?tr=w-1200,f-auto,q-80",
+      "sha256": "5a5ae4fa9b966753ff1ced61d5f977e7ca0723f7b68a749383fa3606f38ec7b6",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/vaccination-programme/screen-3.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Vaccination%20Programme%20Three?tr=w-1200,f-auto,q-80",
+      "sha256": "42652025321042a132c6691b31c869be2b4b6a297681b8e05995e7e9b49222c5",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/humankind-educatorhub/hero.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/HumankindEducatorHub%20hero?updatedAt=1778757016318&tr=w-1200,f-auto,q-80",
+      "sha256": "e790ab68badb0413e84e5439c6288e90f6365df4fa7f2e5455b46b5310239983",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/humankind-educatorhub/screen-1.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/EducatorHub03?updatedAt=1778756962592&tr=w-1200,f-auto,q-80",
+      "sha256": "a7c36280be1fa3ca6ababe7f06a2344caba416644184cafdc4666ca32d17d540",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/humankind-educatorhub/screen-2.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/EducatorHub04?updatedAt=1778756962575&tr=w-1200,f-auto,q-80",
+      "sha256": "6c803d9b0cfbfd2e5ddf48d5d82c5eccf06ec52079a6e441ce09b5fb1518b5da",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/humankind-educatorhub/screen-3.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/EducatorHub05?updatedAt=1778756962536&tr=w-1200,f-auto,q-80",
+      "sha256": "016ed533d3ac0615a29b07c164ea62aa6cbb378befc484187c469e280dad9347",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/strategic-skills-mapping/hero.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/DarkMagMockup01A_MicroVolume.png?updatedAt=1778529320406&tr=w-1200,f-auto,q-80",
+      "sha256": "de9c2434b9ed069df0290005b81ab8da830f28991031d4d291617b098ef5a312",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/strategic-skills-mapping/screen-1.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/T&D%20Report%2001?updatedAt=1778614611576&tr=w-1200,f-auto,q-80",
+      "sha256": "2414519bdf36bd12176fb61190ba7d27d87f515ce38ebbcfe48929553bec6b2d",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/strategic-skills-mapping/screen-2.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/T&D%20report%2002?updatedAt=1778614630652&tr=w-1200,f-auto,q-80",
+      "sha256": "d189fbd14e84f885480928b0e060388a9c0660ae4c1eef046068a8a73215b1f9",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/strategic-skills-mapping/screen-3.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/T&D%20report%2003?tr=w-1200,f-auto,q-80",
+      "sha256": "68539190045ccf13e1b42d950219f3e70660f02b9ce0806babc03c79bdab4ef0",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/linkedin-learning/hero.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/LinkedIn%20Learning?tr=w-1200,f-auto,q-80",
+      "sha256": "3a3a97b48fe1fa2257b5dc64a8315233909925ba3ac2e73a2e964f3c4dbca69b",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/linkedin-learning/screen-1.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Screenshot%202026-05-14%20at%2013.34.08.png?tr=w-1200,f-auto,q-80",
+      "sha256": "74fce7cd8583ff1cc62ddc5cd49578137f2380d76e70acfeb5c8f43e852511b4",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/linkedin-learning/screen-2.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Screenshot%202026-05-14%20at%2013.33.54.png?tr=w-1200,f-auto,q-80",
+      "sha256": "86db23eab4dbaa86b56f19816b24cf6675a1ece8c0c3c8e4e36f7168f0f9c7d1",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/linkedin-learning/screen-3.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Screenshot%202026-05-14%20at%2013.34.16.png?tr=w-1200,f-auto,q-80",
+      "sha256": "6b5dd43efd9b09131eef36b3ccd0da8ac5d45e4e1e6c03da3a79f28362733f31",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/laaw-2024/hero.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/LAAW2024?tr=w-1200,f-auto,q-80",
+      "sha256": "140f7ebf38e88a0c743ec1c1004deb2889aaac4317eca91068d63d574beaefb5",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/laaw-2024/screen-1.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/LAAW%2001?tr=w-1200,f-auto,q-80",
+      "sha256": "9ec1eb26caa77dfc8dcdfc2bb0752a34eb5b412e9ec02c7433207432ed50a53c",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/laaw-2024/screen-2.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/LAAW%2002?tr=w-1200,f-auto,q-80",
+      "sha256": "76e7e278b66dd7f958be3c159080ec4970dd063e194a8947fc75f21c2071f121",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/laaw-2024/screen-3.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/LAAW%2003?tr=w-1200,f-auto,q-80",
+      "sha256": "aa816801a7af1a76c8c763be00d34804d7b0b72c4c2a8a6b3028420c42d5fd7a",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/food-safety-level-3/hero.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Foodsafety%20Level%203?tr=w-1200,f-auto,q-80",
+      "sha256": "7a13883b810ebeffecffed34751c1bd3a4139ef17749f9aa1639b2c2222f3873",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/food-safety-level-3/screen-1.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Food%20Safety%20Three?tr=w-1200,f-auto,q-80",
+      "sha256": "6d0ca070d53ee76a3d28b7480e461792240239a0cd8f50955960e1808b506a9f",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/food-safety-level-3/screen-2.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Food%20Safety%20Four?tr=w-1200,f-auto,q-80",
+      "sha256": "8ee23ced0e63329f9dfc217d81ad482a3fc98bb2145c2eadab72214c94fe3d20",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/food-safety-level-3/screen-3.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Food%20Safety%20One?tr=w-1200,f-auto,q-80",
+      "sha256": "67b3825b5a5fea4d6dced156afc7d9caa5450746ae0d0ef066138facf5d86e0a",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/ld-digital-upskilling/hero.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/veggie%20Ninja.png?tr=w-1200,f-auto,q-80",
+      "sha256": "ed4b33c92777609dafd254afca571f08173ffb8b9474341364b7396a942922ee",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/ld-digital-upskilling/screen-1.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Upskilling%20Programme%20Four?tr=w-1200,f-auto,q-80",
+      "sha256": "266a130717264ad8da1f698656692918c3234ccdf67dfc552d85fd0cf70541c6",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/ld-digital-upskilling/screen-3.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Hellodan/Upskilling%20Programme%20Two?tr=w-1200,f-auto,q-80",
+      "sha256": "9d94c2d55da342070d46895bdefcc071cf45ac4759fe440eec5ba0069723d7cf",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/ai-enabled-scenario-learning/hero.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/AI%20conversations%20-%20hero?tr=w-1200,f-auto,q-80",
+      "sha256": "2674bddb71393bff72f5f7b2cd9fd9aa6a46e95d1f37323fb61351201d02d72e",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/ai-enabled-scenario-learning/screen-1.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Ai%20conversation%2001?tr=w-1200,f-auto,q-80",
+      "sha256": "c574778de462e73443e6518dce263016d1bc133a9f77b5fbf8ad2e67198fc291",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/ai-enabled-scenario-learning/screen-2.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Ai%20conversation%2002?tr=w-1200,f-auto,q-80",
+      "sha256": "ccac7cec465a29d27ac15da3058216cf990e0b18c3cc080325ec76b72283f9ec",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "path": "/assets/work/ai-enabled-scenario-learning/screen-3.webp",
+      "source": "https://ik.imagekit.io/graniteglitch/Granite%20&%20Glitch/Ai%20conversation%2003?tr=w-1200,f-auto,q-80",
+      "sha256": "6229e9f70e80c1a2e34f044eafa17bdbed8266f1f830a65e6199ecbaef462437",
+      "checkedOn": "2026-10-26"
     }
   ],
   "liveVerification": {
@@ -380,5 +566,14 @@
     "impactSource": "Live individual project impact sections",
     "foodSafetyDiscrepancy": "Introduction says 33%; impact says 25%. Display uses 25%.",
     "ownerAttribution": "Latest owner instruction confirms Butter delivery; public personal attribution removed."
-  }
+  },
+  "unavailableImages": [
+    {
+      "slug": "ld-digital-upskilling",
+      "path": "/assets/work/ld-digital-upskilling/screen-2.webp",
+      "url": "https://ik.imagekit.io/graniteglitch/Hellodan/Upskilling%20Programme%20one?tr=w-1200,f-auto,q-80",
+      "alt": "Upskilling Programme One",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
 }

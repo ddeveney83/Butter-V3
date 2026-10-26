@@ -43,3 +43,6 @@ On 26 October 2026 the owner requested importing projects from their personal po
 
 ## Owner portfolio presentation update — 26 October 2026
 The latest explicit owner instruction supersedes the earlier personal/employment attribution presentation: present these projects as Butter work, without public Daniel Deveney/source attributions. Keep provenance internally. Home shows one desktop row of three projects; Work uses three desktop columns; case impact uses four columns on butter yellow, responsive below desktop. This scoped follow-up does not authorise deployment or indexing.
+
+## Owner imagery and gallery update — 26 October 2026
+All 16 cases now have original media from the live portfolio; provenance and hashes remain in docs/portfolio-migration.json. Owner explicitly requested removing the duplicated closing case gallery; keep media within the relevant story sections, once per case. No deployment/indexing authorisation.

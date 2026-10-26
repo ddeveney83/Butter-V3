@@ -145,6 +145,9 @@ test("all migrated case studies show accurate source roles, real detail routes a
     await expect(page.locator(".case-story-section")).toHaveCount(3);
     await expect(page.locator(".case-source")).toHaveCount(0);
     await expect(page.locator(".case-proof > div")).toHaveCount(4);
+    await expect(
+      page.locator(".case-media-notice, .project-media-pending, .case-gallery"),
+    ).toHaveCount(0);
     expect(await page.locator("main").innerText()).not.toMatch(
       /Daniel|personal portfolio/,
     );
@@ -164,7 +167,13 @@ test("all migrated case studies show accurate source roles, real detail routes a
       await expect(page.locator(".case-hero img")).toHaveCount(0);
     } else {
       await expect(page.locator(".case-hero img")).toHaveCount(1);
-      await expect(page.locator(".case-gallery img")).toHaveCount(3);
+      await expect(page.locator(".case-gallery")).toHaveCount(0);
+      const images = await page
+        .locator(".case-hero img, .case-story img")
+        .evaluateAll((elements) =>
+          elements.map((el) => el.getAttribute("src")),
+        );
+      expect(new Set(images).size).toBe(images.length);
     }
     await expect(page.locator("iframe")).toHaveCount(0);
     const links = await page
@@ -187,6 +196,8 @@ test("all migrated case studies show accurate source roles, real detail routes a
       [
         "information-security",
         "humankind-educatorhub",
+        "ld-digital-upskilling",
+        "food-safety-level-3",
         "your-learning-platform",
       ].includes(study.slug)
     ) {

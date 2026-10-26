@@ -8,8 +8,8 @@ import { isPublishableCase, publishedCases, caseCard } from "../lib/work";
 test("owner portfolio migration retains all sixteen stories, genuine media, source reporting and Butter attribution", () => {
   assert.equal(publishedCases().length, 16);
   assert.equal(new Set(caseStudies.map((entry) => entry.slug)).size, 16);
-  assert.equal(caseStudies.filter((entry) => entry.hero).length, 8);
-  assert.equal(caseStudies.filter((entry) => entry.pendingMedia).length, 8);
+  assert.equal(caseStudies.filter((entry) => entry.hero).length, 16);
+  assert.equal(caseStudies.filter((entry) => entry.pendingMedia).length, 0);
   for (const entry of caseStudies) {
     assert.equal(entry.role.kind, "butter");
     assert.ok(entry.role.description.includes("Butter"));
@@ -49,9 +49,12 @@ test("owner portfolio migration retains all sixteen stories, genuine media, sour
   );
 });
 test("source reuse and explicit image reservations cannot silently bypass publication validation", () => {
-  const entry = structuredClone(
-    caseStudies.find((entry) => entry.pendingMedia)!,
-  );
+  const entry = structuredClone(caseStudies[0]);
+  entry.hero = null;
+  entry.pendingMedia = {
+    notice: "Original imagery pending",
+    approval: "Owner-approved media reservation",
+  };
   assert.equal(isPublishableCase(entry), true);
   const noApproval = structuredClone(entry);
   noApproval.pendingMedia!.approval = "";
@@ -76,11 +79,11 @@ test("source reuse and explicit image reservations cannot silently bypass public
   };
   assert.equal(isPublishableCase(fabricated), false);
 });
-test("all thirty-two locally hosted original images match their recorded source hashes", () => {
+test("all sixty-three locally hosted original images match their recorded source hashes", () => {
   const ledger = JSON.parse(
     readFileSync("docs/portfolio-migration.json", "utf8"),
   ) as { images: { path: string; sha256: string }[] };
-  assert.equal(ledger.images.length, 32);
+  assert.equal(ledger.images.length, 63);
   for (const image of ledger.images)
     assert.equal(
       createHash("sha256")

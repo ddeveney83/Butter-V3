@@ -1,6 +1,6 @@
 import type { CaseStudy } from "./case-studies";
 
-// Original source provenance is retained privately in docs/portfolio-migration.json.
+// Original source provenance is retained internally in docs/portfolio-migration.json.
 export const migratedCases: CaseStudy[] = [
   {
     slug: "15-minute-compliance",
@@ -1377,8 +1377,32 @@ export const migratedCases: CaseStudy[] = [
     evidence: [
       "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: "/assets/work/strategic-skills-mapping/hero.webp",
+      alt: "Strategic Skills Mapping: Strategic Skills Mapping hero",
+      rights:
+        "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+    },
+    gallery: [
+      {
+        src: "/assets/work/strategic-skills-mapping/screen-1.webp",
+        alt: "Strategic Skills Mapping: T&D Report 01",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/strategic-skills-mapping/screen-2.webp",
+        alt: "Strategic Skills Mapping: T&D Report 02",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/strategic-skills-mapping/screen-3.webp",
+        alt: "Strategic Skills Mapping: T&D Report 03",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+    ],
     serviceSlugs: [
       "learning-strategy-consultancy",
       "elearning-design-development",
@@ -1386,7 +1410,12 @@ export const migratedCases: CaseStudy[] = [
     card: {
       tone: "garden",
       icon: "compass",
-      screen: null,
+      screen: {
+        src: "/assets/work/strategic-skills-mapping/screen-1.webp",
+        alt: "Strategic Skills Mapping: T&D Report 01",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
       tilt: "left",
     },
     source: {
@@ -1403,7 +1432,12 @@ export const migratedCases: CaseStudy[] = [
           "The starting point was the work people needed to do. Conversations with leaders and individual contributors explored everyday responsibilities, changing expectations and barriers to good performance.",
           "Grouping those insights made it possible to distinguish an individual development need from a shared team priority. The analysis gave stakeholders something concrete to discuss before choosing learning interventions.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/strategic-skills-mapping/screen-1.webp",
+          alt: "Strategic Skills Mapping: T&D Report 01",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Make the gaps visible.",
@@ -1411,7 +1445,12 @@ export const migratedCases: CaseStudy[] = [
           "Eight categories provided a common language for skills that had previously been described in different ways. Technical knowledge sat alongside behavioural skills and the capabilities specific to each role.",
           "Comparing the current picture with future needs helped teams discuss where to focus. The framework supported prioritisation without treating every gap as a request for another course.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/strategic-skills-mapping/screen-2.webp",
+          alt: "Strategic Skills Mapping: T&D Report 02",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Turn insight into a next step.",
@@ -1419,16 +1458,15 @@ export const migratedCases: CaseStudy[] = [
           "Recommendations were translated into personal development plans with colleagues and their managers. Each plan connected a recognised need to an actionable development opportunity.",
           "The resulting framework and plans gave the teams a reference for ongoing development conversations. The value of the work was a clearer basis for decisions, with follow-up needed to establish longer-term performance impact.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/strategic-skills-mapping/screen-3.webp",
+          alt: "Strategic Skills Mapping: T&D Report 03",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
     ],
     videos: [],
-    pendingMedia: {
-      notice:
-        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
-      approval:
-        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
-    },
   },
   {
     slug: "ld-digital-upskilling",
@@ -1505,8 +1543,26 @@ export const migratedCases: CaseStudy[] = [
     evidence: [
       "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: "/assets/work/ld-digital-upskilling/hero.webp",
+      alt: "L&D Digital Upskilling: L&D Digital Upskilling hero",
+      rights:
+        "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+    },
+    gallery: [
+      {
+        src: "/assets/work/ld-digital-upskilling/screen-1.webp",
+        alt: "L&D Digital Upskilling: Upskilling Programme Four",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/ld-digital-upskilling/screen-3.webp",
+        alt: "L&D Digital Upskilling: Upskilling Programme Two",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+    ],
     serviceSlugs: [
       "learning-strategy-consultancy",
       "elearning-design-development",
@@ -1514,7 +1570,12 @@ export const migratedCases: CaseStudy[] = [
     card: {
       tone: "yellow",
       icon: "compass",
-      screen: null,
+      screen: {
+        src: "/assets/work/ld-digital-upskilling/screen-1.webp",
+        alt: "L&D Digital Upskilling: Upskilling Programme Four",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
       tilt: "left",
     },
     source: {
@@ -1531,7 +1592,12 @@ export const migratedCases: CaseStudy[] = [
           "The programme began with the decisions behind a useful learning experience. ADDIE, SAM, Bloom’s taxonomy and Gagné’s instructional events gave the team different ways to plan and evaluate their work.",
           "Facilitated exercises connected these ideas to real briefs. The blend of face-to-face and virtual sessions supported both existing colleagues and people joining the team during the programme.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/ld-digital-upskilling/screen-1.webp",
+          alt: "L&D Digital Upskilling: Upskilling Programme Four",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Give practice a purpose.",
@@ -1539,7 +1605,12 @@ export const migratedCases: CaseStudy[] = [
           "Self-paced resources and practical tool exercises helped colleagues move from watching a demonstration to creating an asset. Peer forums created space to share work, compare approaches and ask questions.",
           "The emphasis was on making informed design choices rather than collecting software features. Each practice activity gave colleagues a chance to connect a tool to a learning need.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/ld-digital-upskilling/screen-3.webp",
+          alt: "L&D Digital Upskilling: Upskilling Programme Two",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Make something worth sharing.",
@@ -1551,12 +1622,6 @@ export const migratedCases: CaseStudy[] = [
       },
     ],
     videos: [],
-    pendingMedia: {
-      notice:
-        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
-      approval:
-        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
-    },
   },
   {
     slug: "linkedin-learning",
@@ -1633,13 +1698,42 @@ export const migratedCases: CaseStudy[] = [
     evidence: [
       "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: "/assets/work/linkedin-learning/hero.webp",
+      alt: "Introducing AI Conversations: LinkedIn Learning hero",
+      rights:
+        "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+    },
+    gallery: [
+      {
+        src: "/assets/work/linkedin-learning/screen-1.webp",
+        alt: "Introducing AI Conversations: Frame 1",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/linkedin-learning/screen-2.webp",
+        alt: "Introducing AI Conversations: Frame 2",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/linkedin-learning/screen-3.webp",
+        alt: "Introducing AI Conversations: Frame 3",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+    ],
     serviceSlugs: ["elearning-design-development", "ongoing-learning-support"],
     card: {
       tone: "sage",
       icon: "film",
-      screen: null,
+      screen: {
+        src: "/assets/work/linkedin-learning/screen-1.webp",
+        alt: "Introducing AI Conversations: Frame 1",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
       tilt: "left",
     },
     source: {
@@ -1656,7 +1750,12 @@ export const migratedCases: CaseStudy[] = [
           "The opening needed to answer a simple question: why would a busy colleague care? Familiar workplace scenarios introduced the need before the product appeared.",
           "This gave the campaign a human starting point. The tool became a way to practise something useful, with a short narrative carrying viewers towards the demonstration.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/linkedin-learning/screen-1.webp",
+          alt: "Introducing AI Conversations: Frame 1",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Show the experience clearly.",
@@ -1664,7 +1763,12 @@ export const migratedCases: CaseStudy[] = [
           "Screen captures and interface mockups showed what a colleague would encounter after clicking through. The sequence focused on the useful steps, keeping the film short enough for an internal launch.",
           "Voiceover supported the story, while high-contrast captions kept it understandable when watched without sound. The visual treatment connected the practical demonstration to the wider campaign.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/linkedin-learning/screen-2.webp",
+          alt: "Introducing AI Conversations: Frame 2",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Make the next action obvious.",
@@ -1672,16 +1776,15 @@ export const migratedCases: CaseStudy[] = [
           "The closing invitation directed colleagues to their learning accounts to try the feature. Recognition, demonstration and action formed one continuous journey.",
           "The reported click-through and new-user figures provide context for the launch. They are useful signals of adoption, with further evidence needed to understand sustained use and learning outcomes.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/linkedin-learning/screen-3.webp",
+          alt: "Introducing AI Conversations: Frame 3",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
     ],
     videos: [],
-    pendingMedia: {
-      notice:
-        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
-      approval:
-        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
-    },
   },
   {
     slug: "ai-enabled-scenario-learning",
@@ -1757,13 +1860,42 @@ export const migratedCases: CaseStudy[] = [
     evidence: [
       "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: "/assets/work/ai-enabled-scenario-learning/hero.webp",
+      alt: "AI-Enabled Scenario Learning: AI Scenario Learning hero",
+      rights:
+        "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+    },
+    gallery: [
+      {
+        src: "/assets/work/ai-enabled-scenario-learning/screen-1.webp",
+        alt: "AI-Enabled Scenario Learning: AI Conversation Frame 1",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/ai-enabled-scenario-learning/screen-2.webp",
+        alt: "AI-Enabled Scenario Learning: AI Conversation Frame 2",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/ai-enabled-scenario-learning/screen-3.webp",
+        alt: "AI-Enabled Scenario Learning: AI Conversation Frame 3",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+    ],
     serviceSlugs: ["elearning-design-development", "ongoing-learning-support"],
     card: {
       tone: "garden",
       icon: "film",
-      screen: null,
+      screen: {
+        src: "/assets/work/ai-enabled-scenario-learning/screen-1.webp",
+        alt: "AI-Enabled Scenario Learning: AI Conversation Frame 1",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
       tilt: "left",
     },
     source: {
@@ -1780,7 +1912,12 @@ export const migratedCases: CaseStudy[] = [
           "Each scenario began with a situation leaders could recognise. The scripts created a reason to think and talk before introducing the relevant leadership concept.",
           "The whole–part–whole structure let facilitators return to the opening situation after exploring the theory. That return created space to reconsider a response with a different perspective.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/ai-enabled-scenario-learning/screen-1.webp",
+          alt: "AI-Enabled Scenario Learning: AI Conversation Frame 1",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Create a consistent cast.",
@@ -1788,7 +1925,12 @@ export const migratedCases: CaseStudy[] = [
           "AI presenters supported production across a set of programmes, with varied characters and custom environments used to make each situation distinct. Branding held the collection together.",
           "The production choices served the facilitated experience: a clear setup, a manageable amount of information and an intentional point to pause. The videos supported conversation rather than replacing the facilitator.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/ai-enabled-scenario-learning/screen-2.webp",
+          alt: "AI-Enabled Scenario Learning: AI Conversation Frame 2",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Design beyond the video.",
@@ -1796,16 +1938,15 @@ export const migratedCases: CaseStudy[] = [
           "Reusable resources helped facilitators connect the films to their sessions. Discussion and reflection made the scenarios part of a wider learning experience.",
           "The collection reached eight leadership programmes. Its production scale is documented separately from learning impact, which would require evidence about how leaders applied the ideas at work.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/ai-enabled-scenario-learning/screen-3.webp",
+          alt: "AI-Enabled Scenario Learning: AI Conversation Frame 3",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
     ],
     videos: [],
-    pendingMedia: {
-      notice:
-        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
-      approval:
-        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
-    },
   },
   {
     slug: "laaw-2024",
@@ -1882,13 +2023,42 @@ export const migratedCases: CaseStudy[] = [
     evidence: [
       "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: "/assets/work/laaw-2024/hero.webp",
+      alt: "Learning at Work Week: LAAW 2024 hero",
+      rights:
+        "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+    },
+    gallery: [
+      {
+        src: "/assets/work/laaw-2024/screen-1.webp",
+        alt: "Learning at Work Week: LAAW Frame 1",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/laaw-2024/screen-2.webp",
+        alt: "Learning at Work Week: LAAW Frame 2",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/laaw-2024/screen-3.webp",
+        alt: "Learning at Work Week: LAAW Frame 3",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+    ],
     serviceSlugs: ["elearning-design-development", "ongoing-learning-support"],
     card: {
       tone: "yellow",
       icon: "film",
-      screen: null,
+      screen: {
+        src: "/assets/work/laaw-2024/screen-1.webp",
+        alt: "Learning at Work Week: LAAW Frame 1",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
       tilt: "left",
     },
     source: {
@@ -1905,7 +2075,12 @@ export const migratedCases: CaseStudy[] = [
           "The idea brought the people behind the learning service into view. Each animated introduction connected a team member’s personality and expertise to the support available to colleagues.",
           "A shared superhero concept made the films feel like one campaign, while individual treatments gave viewers a reason to recognise and remember the people involved.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/laaw-2024/screen-1.webp",
+          alt: "Learning at Work Week: LAAW Frame 1",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Design for the feed.",
@@ -1913,7 +2088,12 @@ export const migratedCases: CaseStudy[] = [
           "Each film ran for 30 to 60 seconds in a square format suited to Viva Engage. Strong contrast and captions kept the message available to colleagues scrolling without sound.",
           "The original production used an acid-yellow, black and indigo palette with bold display typography. Final media can retain that project identity inside the butter case-study frame.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/laaw-2024/screen-2.webp",
+          alt: "Learning at Work Week: LAAW Frame 2",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Connect attention to a service.",
@@ -1921,16 +2101,15 @@ export const migratedCases: CaseStudy[] = [
           "Learning at Work Week gave the team a timely reason to introduce its offer. The campaign paired a memorable creative treatment with an existing route to ask the team for help.",
           "The reported reactions and increase in service requests indicate interest during the launch period. They offer a more useful account of the campaign than presenting animation views as a learning outcome.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/laaw-2024/screen-3.webp",
+          alt: "Learning at Work Week: LAAW Frame 3",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
     ],
     videos: [],
-    pendingMedia: {
-      notice:
-        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
-      approval:
-        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
-    },
   },
   {
     slug: "humankind-educatorhub",
@@ -2007,13 +2186,42 @@ export const migratedCases: CaseStudy[] = [
     evidence: [
       "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: "/assets/work/humankind-educatorhub/hero.webp",
+      alt: "Humankind EducatorHub: Humankind EducatorHub hero",
+      rights:
+        "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+    },
+    gallery: [
+      {
+        src: "/assets/work/humankind-educatorhub/screen-1.webp",
+        alt: "Humankind EducatorHub: EducatorHub Interface 1",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/humankind-educatorhub/screen-2.webp",
+        alt: "Humankind EducatorHub: EducatorHub Interface 2",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/humankind-educatorhub/screen-3.webp",
+        alt: "Humankind EducatorHub: EducatorHub Interface 3",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+    ],
     serviceSlugs: ["learning-platforms-lms", "ongoing-learning-support"],
     card: {
       tone: "sage",
       icon: "bulb",
-      screen: null,
+      screen: {
+        src: "/assets/work/humankind-educatorhub/screen-1.webp",
+        alt: "Humankind EducatorHub: EducatorHub Interface 1",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
       tilt: "left",
     },
     source: {
@@ -2030,7 +2238,12 @@ export const migratedCases: CaseStudy[] = [
           "Sensitive humanitarian topics ask more of an educator than subject knowledge alone. The platform needed to make a useful teaching framework and appropriate resources easy to find.",
           "The journey connected personal development with classroom application. Self-paced learning sat alongside downloadable materials so educators could move from building their own confidence to planning a lesson.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/humankind-educatorhub/screen-1.webp",
+          alt: "Humankind EducatorHub: EducatorHub Interface 1",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Build around the learning.",
@@ -2038,7 +2251,12 @@ export const migratedCases: CaseStudy[] = [
           "The build used Moodle with a custom homepage and an educator-focused route from first visit to course completion. Platform decisions were made alongside product, content design and marketing colleagues.",
           "Sprint-based work supported an evolving product. The aim was a coherent experience in which the technology, teaching approach and brand worked together for busy secondary-school professionals.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/humankind-educatorhub/screen-2.webp",
+          alt: "Humankind EducatorHub: EducatorHub Interface 2",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Leave the team ready to run it.",
@@ -2046,16 +2264,15 @@ export const migratedCases: CaseStudy[] = [
           "The handover was treated as part of the product. Systems, documentation and processes helped the community education team manage the platform beyond the initial development work.",
           "Reported teacher enrolment, student reach and educator confidence describe different aspects of the project. Keeping them separate makes the scale and limitations of the evidence easier to understand as the platform continues to develop.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/humankind-educatorhub/screen-3.webp",
+          alt: "Humankind EducatorHub: EducatorHub Interface 3",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
     ],
     videos: [],
-    pendingMedia: {
-      notice:
-        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
-      approval:
-        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
-    },
   },
   {
     slug: "vaccination-programme",
@@ -2132,13 +2349,42 @@ export const migratedCases: CaseStudy[] = [
     evidence: [
       "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: "/assets/work/vaccination-programme/hero.webp",
+      alt: "Vaccination Programme: Vaccination Programme hero",
+      rights:
+        "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+    },
+    gallery: [
+      {
+        src: "/assets/work/vaccination-programme/screen-1.webp",
+        alt: "Vaccination Programme: Vaccination Programme One",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/vaccination-programme/screen-2.webp",
+        alt: "Vaccination Programme: Vaccination Programme Two",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/vaccination-programme/screen-3.webp",
+        alt: "Vaccination Programme: Vaccination Programme Three",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+    ],
     serviceSlugs: ["elearning-design-development", "learning-platforms-lms"],
     card: {
       tone: "garden",
       icon: "compass",
-      screen: null,
+      screen: {
+        src: "/assets/work/vaccination-programme/screen-1.webp",
+        alt: "Vaccination Programme: Vaccination Programme One",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
       tilt: "left",
     },
     source: {
@@ -2154,30 +2400,39 @@ export const migratedCases: CaseStudy[] = [
         paragraphs: [
           "Teams needed consistent, accessible guidance at pace. Separate training resources made coordination harder during a rapidly changing pandemic response.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/vaccination-programme/screen-1.webp",
+          alt: "Vaccination Programme: Vaccination Programme One",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Build a useful journey.",
         paragraphs: [
           "We connected a central Moodle platform with short learning modules and live virtual sessions. Stakeholder feedback and completion data helped shape updates as guidance evolved.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/vaccination-programme/screen-2.webp",
+          alt: "Vaccination Programme: Vaccination Programme Two",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Keep improving.",
         paragraphs: [
           "Completion data and learner feedback informed refinements to the programme.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/vaccination-programme/screen-3.webp",
+          alt: "Vaccination Programme: Vaccination Programme Three",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
     ],
     videos: [],
-    pendingMedia: {
-      notice:
-        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
-      approval:
-        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
-    },
   },
   {
     slug: "food-safety-level-3",
@@ -2253,13 +2508,42 @@ export const migratedCases: CaseStudy[] = [
     evidence: [
       "Figures describe this project and its reported measurement period. They are not guarantees of future results.",
     ],
-    hero: null,
-    gallery: [],
+    hero: {
+      src: "/assets/work/food-safety-level-3/hero.webp",
+      alt: "Food Safety Level 3: Food Safety Level 3 hero",
+      rights:
+        "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+    },
+    gallery: [
+      {
+        src: "/assets/work/food-safety-level-3/screen-1.webp",
+        alt: "Food Safety Level 3: Food Safety Three",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/food-safety-level-3/screen-2.webp",
+        alt: "Food Safety Level 3: Food Safety Four",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+      {
+        src: "/assets/work/food-safety-level-3/screen-3.webp",
+        alt: "Food Safety Level 3: Food Safety One",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
+    ],
     serviceSlugs: ["elearning-design-development", "learning-platforms-lms"],
     card: {
       tone: "garden",
       icon: "compass",
-      screen: null,
+      screen: {
+        src: "/assets/work/food-safety-level-3/screen-1.webp",
+        alt: "Food Safety Level 3: Food Safety Three",
+        rights:
+          "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+      },
       tilt: "left",
     },
     source: {
@@ -2275,29 +2559,38 @@ export const migratedCases: CaseStudy[] = [
         paragraphs: [
           "Classroom-only delivery meant travel, accommodation and time away from work. Foundational knowledge and practical activities needed different kinds of space.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/food-safety-level-3/screen-1.webp",
+          alt: "Food Safety Level 3: Food Safety Three",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Build a useful journey.",
         paragraphs: [
           "We moved foundational knowledge into interactive Storyline modules and reserved the in-person session for hands-on application. A pilot informed refinements before rollout.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/food-safety-level-3/screen-2.webp",
+          alt: "Food Safety Level 3: Food Safety Four",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
       {
         title: "Keep improving.",
         paragraphs: [
           "Completion data and learner feedback informed refinements to the programme.",
         ],
-        image: null,
+        image: {
+          src: "/assets/work/food-safety-level-3/screen-3.webp",
+          alt: "Food Safety Level 3: Food Safety One",
+          rights:
+            "Owner-authorised original project media retrieved from the live portfolio on 26 October 2026; source URL and local file hash recorded in docs/portfolio-migration.json.",
+        },
       },
     ],
     videos: [],
-    pendingMedia: {
-      notice:
-        "Original project imagery is being prepared. No substitute is presented as a project screenshot or client deliverable.",
-      approval:
-        "Owner requested this documented project’s inclusion on 26 October 2026; publish the sourced narrative with an explicit image reservation rather than invented screenshots.",
-    },
   },
 ];

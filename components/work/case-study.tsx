@@ -182,17 +182,6 @@ export function CaseStudyLayout({
           ))}
         </section>
       )}
-      {(study.gallery.length > 0 || review) && (
-        <section className="case-gallery shell" aria-label="Project gallery">
-          {(review ? [null, null] : study.gallery).map((image, index) => (
-            <ProjectImage
-              key={image?.src ?? index}
-              image={image}
-              label={`Approved interface or device screenshot ${index + 1}`}
-            />
-          ))}
-        </section>
-      )}
       <section className="case-outcome shell">
         <Eyebrow>Outcomes and evidence</Eyebrow>
         <h2>What changed, and how we know.</h2>
