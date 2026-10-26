@@ -1,0 +1,235 @@
+/* Owner-approved spacing/surface review: Home, Work and Information Security. */
+.home,
+.work-page,
+.case-spacing-review {
+  --space-section: clamp(3rem, 6vw, 6rem);
+  --space-panel: clamp(1.5rem, 3.5vw, 3rem);
+  --space-heading: clamp(2rem, 3vw, 2.5rem);
+}
+.home p:not(.eyebrow),
+.work-page p:not(.eyebrow),
+.case-spacing-review p:not(.eyebrow) {
+  line-height: 1.6;
+}
+.home .hero,
+.work-page .work-hero {
+  padding-block: clamp(3.5rem, 6vw, 6rem);
+}
+.home .hero-description,
+.work-page .work-hero p:not(.eyebrow) {
+  max-width: 48ch;
+  margin-block: 2rem;
+}
+.home .locality {
+  margin-top: 1.5rem;
+}
+.home .trust-strip {
+  padding-block: 2.5rem;
+}
+.home .services-panel {
+  padding: var(--space-panel);
+}
+.home .section-top {
+  margin-bottom: var(--space-heading);
+  gap: 2.5rem;
+}
+.home .service-grid {
+  margin-top: 3rem;
+}
+.home .service-column h3 {
+  margin-top: 1.5rem;
+}
+.home .service-column p {
+  margin-bottom: 1.5rem;
+}
+.home .work-section,
+.home .process-section,
+.home .insights-section {
+  padding-block: var(--space-section);
+}
+.home .process-section {
+  background: var(--color-cream);
+  border-top: 0;
+}
+.home .process-grid {
+  padding-top: 0.75rem;
+  gap: 3rem;
+}
+.home .step-top {
+  margin-bottom: 1.5rem;
+}
+.home .proof-copy,
+.home .proof-metrics {
+  padding: var(--space-panel);
+}
+.home .proof-metrics {
+  background: var(--color-cream);
+}
+.home .proof-copy h2 {
+  margin-bottom: 1.5rem;
+}
+.home .work-card-grid,
+.work-page .work-card-grid {
+  gap: 4rem 2.5rem;
+}
+.home .project-card-heading,
+.work-page .project-card-heading {
+  margin-block: 1.5rem 0.875rem;
+}
+.home .insights-section .insight-card-grid {
+  gap: 2.5rem;
+}
+.work-page .work-gallery {
+  padding-block: 1rem var(--space-section);
+}
+.work-page .work-filters {
+  gap: 0.75rem;
+}
+.work-page .result-count {
+  margin-block: 1.5rem 2.5rem;
+}
+.work-page .work-partnership {
+  margin-bottom: var(--space-section);
+  background: var(--color-paper);
+}
+.work-page .work-partnership > div:first-child {
+  padding: var(--space-panel);
+}
+.work-page .work-partnership p:not(.eyebrow) {
+  max-width: 48ch;
+  margin-block: 1.5rem 2rem;
+}
+.home .bottom-cta,
+.work-page .bottom-cta,
+.case-spacing-review .bottom-cta {
+  padding-block: var(--space-panel);
+}
+.case-spacing-review {
+  padding-top: 2.5rem;
+}
+.case-spacing-review .breadcrumbs {
+  margin-bottom: 2.5rem;
+}
+.case-spacing-review .case-hero {
+  background: var(--color-cream);
+}
+.case-spacing-review .case-hero-copy {
+  padding: clamp(2rem, 5vw, 5rem) var(--space-panel);
+}
+.case-spacing-review .case-hero-copy > p {
+  max-width: 48ch;
+}
+.case-spacing-review .case-headline {
+  margin-block: 1.5rem;
+}
+.case-spacing-review .role-attribution {
+  margin-block: 1.5rem 2rem;
+}
+.case-spacing-review .case-proof {
+  padding: var(--space-panel);
+  margin-top: 2.5rem;
+}
+.case-spacing-review .case-proof > div {
+  padding-inline: 1.5rem;
+}
+.case-spacing-review .case-proof > div:first-child {
+  padding-left: 0;
+}
+.case-spacing-review .case-proof > div:last-child {
+  padding-right: 0;
+}
+.case-spacing-review .case-narrative,
+.case-spacing-review .case-story-section {
+  padding-block: var(--space-section);
+  gap: clamp(2rem, 5vw, 5rem);
+}
+.case-spacing-review .case-narrative p,
+.case-spacing-review .case-story-section p,
+.case-spacing-review .case-outcome p,
+.case-spacing-review .case-outcome ul {
+  max-width: 62ch;
+}
+.case-spacing-review .case-narrative h2,
+.case-spacing-review .case-story-section h2 {
+  margin-bottom: 2rem;
+}
+.case-spacing-review .case-requirements {
+  padding: var(--space-panel);
+}
+.case-spacing-review .case-approach > aside {
+  padding: var(--space-panel);
+  background: var(--color-cream);
+  border-radius: var(--radius-card);
+}
+.case-spacing-review .case-deliverables,
+.case-spacing-review .case-requirements ul {
+  gap: 1.5rem;
+}
+.case-spacing-review .case-story-section {
+  align-items: center;
+}
+.case-spacing-review .case-outcome {
+  padding-block: var(--space-panel);
+  background: var(--color-paper);
+  border-radius: var(--radius-card);
+}
+.case-spacing-review .case-outcome h2 {
+  margin-bottom: 1.5rem;
+}
+.case-spacing-review .case-films {
+  padding-block: 3rem;
+}
+.case-spacing-review .case-services {
+  padding-block: 2.5rem var(--space-section);
+}
+@media (max-width: 1023px) {
+  .home .service-column {
+    padding-inline: 1rem;
+  }
+  .home .service-column:first-child {
+    padding-left: 0;
+  }
+  .home .service-column:last-child {
+    padding-right: 0;
+  }
+  .home .process-grid {
+    gap: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .home .hero,
+  .work-page .work-hero {
+    padding-block: 3.5rem;
+  }
+  .home .section-top {
+    gap: 2rem;
+  }
+  .home .service-grid {
+    margin-top: 2rem;
+  }
+  .home .service-column {
+    padding: 0;
+  }
+  .home .work-card-grid,
+  .work-page .work-card-grid {
+    gap: 3rem;
+  }
+  .home .process-grid {
+    gap: 2rem;
+  }
+  .case-spacing-review {
+    padding-top: 1.5rem;
+  }
+  .case-spacing-review .case-hero-copy {
+    padding: 2rem 1.5rem;
+  }
+  .case-spacing-review .case-proof {
+    gap: 2rem;
+  }
+  .case-spacing-review .case-proof > div {
+    padding-inline: 0;
+  }
+  .case-spacing-review .case-story-section {
+    gap: 2rem;
+  }
+}

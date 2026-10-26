@@ -5,6 +5,7 @@
 @import "../styles/about.css";
 @import "../styles/insights.css";
 @import "../styles/contact.css";
+@import "../styles/spacing-review.css";
 * {
   box-sizing: border-box;
 }

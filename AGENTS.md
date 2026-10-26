@@ -49,3 +49,6 @@ All 16 cases now have original media from the live portfolio; provenance and has
 
 ## Owner sitewide attribution instruction — 26 October 2026
 Remove personal Daniel Deveney credits from visible copy, bylines, accessibility text and public metadata across the whole site. Use Butter for editorial/project authorship; retain an unnamed founder introduction and private provenance. This supersedes earlier named byline/biography presentation approval. Preserve original project media.
+
+## Owner spacing and surface review — 26 October 2026
+Owner approved moderate spacing increases and subtle cream/paper component surfaces. Review scope is Home, Work and Information Security case, isolated in styles/spacing-review.css and case-spacing-review. Retain three desktop project columns, four yellow impact columns, typography and assets. Review these examples before extending the treatment to other routes.

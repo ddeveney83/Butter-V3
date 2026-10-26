@@ -92,6 +92,10 @@ test("Work shows sourced projects, filters honestly and matches the new three-co
   const card = page.locator(".work-card").first();
   await card.screenshot({ path: testInfo.outputPath("work-card.png") });
   if (testInfo.project.name === "desktop") {
+    // Screenshots scroll cards beneath the pointer; reset hover before measuring.
+    await card.scrollIntoViewIfNeeded();
+    await page.mouse.move(0, 0);
+    await page.emulateMedia({ reducedMotion: "reduce" });
     await page.emulateMedia({ reducedMotion: "no-preference" });
     const window = card.locator(".project-window");
     const initial = await window.evaluate(

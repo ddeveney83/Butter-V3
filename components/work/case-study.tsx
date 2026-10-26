@@ -58,7 +58,10 @@ export function CaseStudyLayout({
     ChartNoAxesColumnIncreasing,
   ];
   return (
-    <article className="case-layout" aria-labelledby={headingId}>
+    <article
+      className={`case-layout${!review && study.slug === "information-security" ? " case-spacing-review" : ""}`}
+      aria-labelledby={headingId}
+    >
       <nav className="breadcrumbs shell" aria-label="Breadcrumb">
         <Link href="/">Home</Link>
         <span aria-hidden="true">/</span>
