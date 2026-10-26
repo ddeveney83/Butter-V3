@@ -1,14 +1,24 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { services } from "@/content/services";
 import { primaryNavigation, findRoute } from "@/content/routes";
 import { Wordmark, ActionLink } from "@/components/ui/primitives";
 
 export function SiteHeader() {
   const pathname = usePathname();
   const dialog = useRef<HTMLDialogElement>(null);
+  const submenu = useRef<HTMLDetailsElement>(null);
+  useEffect(() => {
+    function dismiss(event: PointerEvent) {
+      if (!submenu.current?.contains(event.target as Node) && submenu.current)
+        submenu.current.open = false;
+    }
+    document.addEventListener("pointerdown", dismiss);
+    return () => document.removeEventListener("pointerdown", dismiss);
+  }, []);
   const [open, setOpen] = useState(false);
   function closeMenu() {
     dialog.current?.close();
@@ -23,21 +33,81 @@ export function SiteHeader() {
     setOpen(true);
   }
   function links(close = false) {
-    return primaryNavigation.map((path) => (
-      <Link
-        key={path}
-        href={path}
-        onClick={close ? closeMenu : undefined}
-        aria-current={
-          pathname === path || pathname.startsWith(path + "/")
-            ? "page"
-            : undefined
-        }
-      >
-        {findRoute(path)!.title}
-      </Link>
-    ));
+    return primaryNavigation.map((path) => {
+      const link = (
+        <Link
+          href={path}
+          onClick={() => {
+            if (close) closeMenu();
+            if (submenu.current) submenu.current.open = false;
+          }}
+          aria-current={
+            pathname === path || pathname.startsWith(path + "/")
+              ? "page"
+              : undefined
+          }
+        >
+          {findRoute(path)!.title}
+        </Link>
+      );
+      if (path !== "/services") return <span key={path}>{link}</span>;
+      const children = services.map((service) => (
+        <Link
+          key={service.slug}
+          href={`/services/${service.slug}`}
+          onClick={() => {
+            if (close) closeMenu();
+            if (submenu.current) submenu.current.open = false;
+          }}
+          aria-current={
+            pathname === `/services/${service.slug}` ? "page" : undefined
+          }
+        >
+          {service.title}
+        </Link>
+      ));
+      return close ? (
+        <div key={path} className="mobile-services-group">
+          {link}
+          <div
+            className="mobile-service-links"
+            aria-label="Individual services"
+          >
+            {children}
+          </div>
+        </div>
+      ) : (
+        <div key={path} className="nav-services">
+          {link}
+          <details
+            ref={submenu}
+            className="services-disclosure"
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node))
+                event.currentTarget.open = false;
+            }}
+            onKeyDown={(event) => {
+              if (event.key === "Escape") {
+                event.preventDefault();
+                event.stopPropagation();
+                event.currentTarget.open = false;
+                event.currentTarget.querySelector("summary")?.focus();
+              }
+            }}
+          >
+            <summary aria-label="Show individual services">
+              <ChevronDown aria-hidden="true" size={15} />
+            </summary>
+            <div className="services-submenu">
+              <p className="eyebrow">Explore our services</p>
+              {children}
+            </div>
+          </details>
+        </div>
+      );
+    });
   }
+
   return (
     <header className="site-header shell">
       <div className="header-row">

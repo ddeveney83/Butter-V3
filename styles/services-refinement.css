@@ -1,0 +1,305 @@
+/* Owner-requested service spacing, original project media and grouped navigation. */
+.services-page,
+.service-detail {
+  --service-space: clamp(3rem, 6vw, 6rem);
+  --service-inset: clamp(1.5rem, 3.5vw, 3rem);
+}
+.services-page p:not(.eyebrow),
+.service-detail p:not(.eyebrow) {
+  line-height: 1.6;
+}
+.services-page .services-hero,
+.service-detail .detail-hero {
+  padding-block: var(--service-space);
+  gap: 3rem;
+}
+.services-page .services-hero {
+  grid-template-columns: 1.5fr 1fr;
+}
+.services-page .overview-art {
+  display: none;
+}
+.services-page .overview-intro {
+  align-self: center;
+  padding: 0;
+  max-width: 44ch;
+}
+.services-page .overview-intro > p:first-child {
+  margin-bottom: 2rem;
+}
+.services-page .services-catalog {
+  gap: 1.5rem;
+}
+.services-page .catalog-card {
+  background: var(--color-cream);
+}
+.services-page .catalog-copy {
+  padding: 2rem 1.5rem;
+}
+.services-page .catalog-copy h2 {
+  margin-bottom: 1.25rem;
+}
+.services-page .catalog-copy p {
+  margin-bottom: 2rem;
+}
+.services-page .partnership {
+  margin-block: var(--service-space);
+  grid-template-columns: 1.3fr 1fr 0.3fr;
+}
+.services-page .partnership-copy {
+  padding: var(--service-inset);
+}
+.services-page .partnership-copy p:not(.eyebrow) {
+  margin-block: 1.5rem 2rem;
+  max-width: 48ch;
+}
+.services-page .process-section,
+.services-page .service-faq,
+.service-detail .detail-approach,
+.service-detail .solutions-section,
+.service-detail .service-faq {
+  padding-block: var(--service-space);
+  gap: 4rem;
+}
+.services-page .process-section {
+  background: var(--color-cream);
+  border-top: 0;
+}
+.services-page .process-grid {
+  padding-top: 0.75rem;
+}
+.services-page .bottom-cta,
+.service-detail .bottom-cta {
+  padding-block: var(--service-inset);
+}
+.service-project-image {
+  margin: 0;
+  min-width: 0;
+  background: var(--color-paper);
+}
+.service-project-image > a {
+  display: block;
+}
+.service-project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.5;
+  object-fit: contain;
+}
+.service-project-image figcaption {
+  padding: 1rem 1.25rem;
+  display: grid;
+  gap: 0.375rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.service-project-image figcaption > a {
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.service-project-image figcaption > span {
+  color: var(--color-muted);
+}
+.service-detail .detail-art {
+  padding-top: 3rem;
+  display: block;
+  align-self: center;
+}
+.service-detail .detail-art .service-project-image {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+.service-detail .detail-description {
+  max-width: 48ch;
+  margin-block: 2rem;
+}
+.service-detail .benefit-band {
+  padding: var(--service-inset);
+  background: var(--color-cream);
+}
+.service-detail .benefit-band h2 {
+  margin-bottom: 1rem;
+}
+.service-detail .detail-approach {
+  grid-template-columns: 1fr 2fr;
+}
+.service-detail .approach-intro p:not(.eyebrow) {
+  margin-block: 1.5rem 2rem;
+  max-width: 48ch;
+}
+.service-detail .four-steps {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+.service-detail .four-steps p {
+  max-width: 30ch;
+}
+.service-detail .service-feature {
+  margin-top: 3rem;
+  grid-template-columns: 1fr;
+}
+.service-detail .service-feature > div:last-child {
+  padding: var(--service-inset);
+}
+.service-detail .service-feature .project-artwork {
+  aspect-ratio: 1.8;
+}
+.service-detail .service-feature p:not(.eyebrow) {
+  max-width: 60ch;
+  margin-block: 1.5rem;
+}
+.service-detail .solutions-section {
+  background: var(--color-cream);
+}
+.service-detail .solutions-grid {
+  gap: 2.5rem;
+  padding-top: 2rem;
+}
+.service-detail .solutions-grid h3 {
+  margin-bottom: 0.875rem;
+}
+.service-detail .service-scope {
+  padding-block: var(--service-inset);
+  margin-block: 3rem;
+  background: var(--color-paper);
+}
+.service-detail .service-scope p {
+  max-width: 65ch;
+  margin-bottom: 0;
+}
+.service-detail .related-services {
+  padding-block: 2rem var(--service-space);
+}
+.services-page .faq-item button,
+.service-detail .faq-item button {
+  padding-block: 1.5rem;
+}
+.nav-services {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.services-disclosure summary {
+  cursor: pointer;
+  list-style: none;
+  width: 32px;
+  min-height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 0.3rem;
+}
+.services-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+.services-disclosure[open] summary {
+  background: var(--color-paper);
+}
+.services-disclosure[open] summary svg {
+  transform: rotate(180deg);
+}
+.services-submenu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  width: min(25rem, 80vw);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.5rem;
+  z-index: 20;
+  box-shadow: 0 8px 24px rgb(8 8 8 / 0.06);
+}
+.services-submenu .eyebrow {
+  margin-bottom: 0.75rem;
+}
+.desktop-nav .services-submenu a {
+  padding: 0.875rem 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+  line-height: 1.4;
+}
+.desktop-nav .services-submenu a:hover {
+  background: var(--color-paper);
+}
+.desktop-nav .services-submenu a:last-child {
+  border-bottom: 0;
+}
+.mobile-menu .mobile-service-links {
+  display: grid;
+  gap: 0.25rem;
+  margin-block: 0.5rem 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-butter);
+}
+.mobile-menu .mobile-service-links a {
+  font-size: 1rem;
+  padding-block: 0.75rem;
+  line-height: 1.4;
+}
+.mobile-menu {
+  max-height: 100dvh;
+  overflow-y: auto;
+}
+@media (max-width: 1023px) {
+  .services-page .services-catalog {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  .services-page .services-hero {
+    grid-template-columns: 1.4fr 1fr;
+  }
+  .services-page .partnership {
+    grid-template-columns: 1fr 1fr;
+  }
+  .services-page .keyword-rail {
+    display: none;
+  }
+  .service-detail .detail-approach {
+    grid-template-columns: 1fr;
+  }
+  .service-detail .service-feature {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .services-page .services-hero,
+  .services-page .services-catalog,
+  .services-page .partnership,
+  .service-detail .detail-hero,
+  .service-detail .solutions-section,
+  .service-detail .service-feature {
+    grid-template-columns: 1fr;
+  }
+  .services-page .services-hero,
+  .service-detail .detail-hero {
+    gap: 2.5rem;
+  }
+  .services-page .services-hero h1 {
+    font-size: clamp(2.8rem, 9vw, 4rem);
+  }
+  .services-page .process-section,
+  .services-page .service-faq,
+  .service-detail .detail-approach,
+  .service-detail .solutions-section,
+  .service-detail .service-faq {
+    gap: 2.5rem;
+  }
+  .service-detail .detail-art {
+    padding-top: 0;
+  }
+  .service-detail .detail-art > svg {
+    display: none;
+  }
+  .service-detail .four-steps {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .service-detail .service-feature .project-artwork {
+    aspect-ratio: 1.5;
+  }
+  .service-detail .solutions-grid {
+    gap: 2rem;
+  }
+}

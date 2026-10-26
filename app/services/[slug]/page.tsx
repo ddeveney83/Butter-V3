@@ -1,3 +1,5 @@
+import { serviceExample } from "@/lib/service-work";
+import { ServiceProjectImage } from "@/components/sections/service-project-image";
 import { serviceSchema } from "@/lib/service-schema";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -41,10 +43,7 @@ export default async function ServicePage({ params }: Props) {
   const relatedWork = publishedCases().filter(
     (study) => study.hero && study.serviceSlugs.includes(service.slug),
   );
-  const featuredWork =
-    (service.slug === "elearning-design-development"
-      ? relatedWork.find((study) => study.slug === "information-security")
-      : undefined) ?? relatedWork[0];
+  const featuredWork = serviceExample(service.slug) ?? relatedWork[0];
   const schema = serviceSchema(
     service,
     findRoute(`/services/${service.slug}`)!.status,
@@ -92,15 +91,11 @@ export default async function ServicePage({ params }: Props) {
         </div>
         <div className="detail-art">
           <Plus aria-hidden="true" size={50} strokeWidth={1} />
-          <AssetPlaceholder
-            label={service.heroAsset}
-            image={
-              service.slug === "learning-strategy-consultancy" ||
-              service.slug === "ongoing-learning-support"
-                ? "workshop"
-                : "laptop"
-            }
-          />
+          {featuredWork ? (
+            <ServiceProjectImage study={featuredWork} preload />
+          ) : (
+            <AssetPlaceholder label={service.heroAsset} />
+          )}
         </div>
       </section>
       <section
@@ -146,7 +141,13 @@ export default async function ServicePage({ params }: Props) {
               <>
                 <ProjectArtwork
                   image={featuredWork.hero}
-                  presentation={featuredWork.card}
+                  presentation={{
+                    ...featuredWork.card!,
+                    screen:
+                      featuredWork.story?.[0]?.image ??
+                      featuredWork.card?.screen ??
+                      featuredWork.hero,
+                  }}
                   title={featuredWork.title}
                 />
                 <div>
@@ -212,7 +213,7 @@ export default async function ServicePage({ params }: Props) {
         <h2 id="scope-title">A clear scope, from the start.</h2>
         <p>{service.boundary}</p>
       </section>
-      <FAQSection items={service.faqs} split />
+      <FAQSection items={service.faqs} />
       <RelatedServices current={service.slug} />
       <BottomCTA heading="Let’s create something better." />
     </main>

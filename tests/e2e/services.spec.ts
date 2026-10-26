@@ -132,3 +132,62 @@ test("four overview destinations and distinct service structures are complete", 
     await page.goto("/services");
   }
 });
+
+test("Services navigation exposes the four offerings with keyboard and touch", async ({
+  page,
+}, testInfo) => {
+  await page.goto("/");
+  if (testInfo.project.name === "mobile") {
+    await page.getByRole("button", { name: "Open menu" }).click();
+    const group = page.locator(".mobile-service-links");
+    await expect(group.getByRole("link")).toHaveCount(4);
+    await group.getByRole("link").nth(2).click();
+    await expect(page).toHaveURL(/learning-strategy-consultancy$/);
+    await expect(page.getByRole("dialog")).not.toBeVisible();
+  } else {
+    const disclosure = page.locator(".services-disclosure");
+    const summary = page.locator(
+      'summary[aria-label="Show individual services"]',
+    );
+    await summary.focus();
+    await page.keyboard.press("Enter");
+    await expect(disclosure).toHaveAttribute("open", "");
+    await expect(disclosure.getByRole("link")).toHaveCount(4);
+    await page.keyboard.press("Tab");
+    await expect(disclosure.getByRole("link").first()).toBeFocused();
+    await page.keyboard.press("Escape");
+    await expect(disclosure).not.toHaveAttribute("open");
+    await expect(summary).toBeFocused();
+    await summary.click();
+    await disclosure.getByRole("link").nth(1).click();
+    await expect(page).toHaveURL(/learning-platforms-lms$/);
+    await expect(disclosure).not.toHaveAttribute("open");
+    await summary.click();
+    await page.locator("h1").click();
+    await expect(disclosure).not.toHaveAttribute("open");
+  }
+});
+
+test("services show original project media and matching case-study links", async ({
+  page,
+}) => {
+  await page.goto("/services");
+  await expect(
+    page.locator(".catalog-card .service-project-image"),
+  ).toHaveCount(4);
+  await expect(page.locator(".catalog-card .image-placeholder")).toHaveCount(0);
+  for (const service of serviceDetails) {
+    await page.goto(`/services/${service.slug}`);
+    await expect(
+      page.locator(".detail-art .service-project-image img"),
+    ).toHaveCount(1);
+    await expect(page.locator(".testimonial-reservation")).toHaveCount(0);
+    const href = await page
+      .locator(".detail-art figure > a")
+      .getAttribute("href");
+    await expect(page.locator(".service-feature a")).toHaveAttribute(
+      "href",
+      href!,
+    );
+  }
+});

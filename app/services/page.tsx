@@ -1,3 +1,5 @@
+import { serviceExample } from "@/lib/service-work";
+import { ServiceProjectImage } from "@/components/sections/service-project-image";
 import { Plus } from "lucide-react";
 import { services, processSteps } from "@/content/services";
 import { overviewFAQs } from "@/content/service-details";
@@ -21,6 +23,7 @@ export const metadata = {
     "Explore eLearning design, learning platforms, strategy and ongoing support from Butter, a Devon-based studio working across the South West and UK.",
 };
 export default function Services() {
+  const partnershipWork = serviceExample("ongoing-learning-support");
   return (
     <main id="main" className="services-page" tabIndex={-1}>
       <section className="services-hero shell" aria-labelledby="services-title">
@@ -67,6 +70,7 @@ export default function Services() {
       >
         {services.map((service) => {
           const Icon = serviceIcons[service.icon];
+          const example = serviceExample(service.slug);
           return (
             <article className="catalog-card" key={service.slug}>
               <div className="catalog-copy">
@@ -80,14 +84,7 @@ export default function Services() {
                   <span className="sr-only"> about {service.title}</span>
                 </ActionLink>
               </div>
-              <AssetPlaceholder
-                label={`${service.title} photograph`}
-                image={
-                  service.icon === "strategy" || service.icon === "support"
-                    ? "workshop"
-                    : "laptop"
-                }
-              />
+              {example && <ServiceProjectImage study={example} />}
             </article>
           );
         })}
@@ -111,10 +108,12 @@ export default function Services() {
             Let’s talk about your goals
           </ActionLink>
         </div>
-        <AssetPlaceholder
-          label="Approved photograph of a learning partnership"
-          image="workshop"
-        />
+        {partnershipWork && (
+          <ServiceProjectImage
+            study={partnershipWork}
+            image={partnershipWork.story?.[0]?.image ?? partnershipWork.hero}
+          />
+        )}
         <div className="keyword-rail" aria-hidden="true">
           Strategy
           <br />

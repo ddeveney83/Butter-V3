@@ -52,3 +52,6 @@ Remove personal Daniel Deveney credits from visible copy, bylines, accessibility
 
 ## Owner spacing and surface review — 26 October 2026
 Owner approved moderate spacing increases and subtle cream/paper component surfaces. Review scope is Home, Work and Information Security case, isolated in styles/spacing-review.css and case-spacing-review. Retain three desktop project columns, four yellow impact columns, typography and assets. Review these examples before extending the treatment to other routes.
+
+## Owner Services refinement — 26 October 2026
+Owner requested less compressed Services pages, grouped navbar links and original Work imagery. Apply the expanded spacing/surfaces to overview plus all four details; use curated original projects with labelled case links. Services stays an overview link with a separate disclosure for the four offerings; mobile shows nested links. This authorises the navigation grouping, readable 2x2 detail process, and scoped layout variation. No deployment authorisation.
